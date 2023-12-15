@@ -48,6 +48,7 @@
 		FACED4A82B2CB44B00B6BBC3 /* BankAppSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAppSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACED4AC2B2CB44B00B6BBC3 /* BankAppSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppSwiftUIUITests.swift; sourceTree = "<group>"; };
 		FACED4AE2B2CB44B00B6BBC3 /* BankAppSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FACED4BC2B2CBE7200B6BBC3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 		FACED4802B2CB44A00B6BBC3 = {
 			isa = PBXGroup;
 			children = (
+				FACED4BC2B2CBE7200B6BBC3 /* .gitignore */,
 				FACED48B2B2CB44A00B6BBC3 /* BankAppSwiftUI */,
 				FACED4A12B2CB44B00B6BBC3 /* BankAppSwiftUITests */,
 				FACED4AB2B2CB44B00B6BBC3 /* BankAppSwiftUIUITests */,
