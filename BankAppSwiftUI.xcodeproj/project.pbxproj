@@ -7,11 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57BDE02B2D31C50096CDAC /* SplashView.swift */; };
+		FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */; };
+		FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */; };
+		FA5ADD902B33333500504EB0 /* BancaInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8F2B33333500504EB0 /* BancaInternetView.swift */; };
+		FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A5442B32AE38000B27E6 /* TransferenciaView.swift */; };
+		FA66A5472B32AE45000B27E6 /* PagosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A5462B32AE45000B27E6 /* PagosView.swift */; };
+		FA66A5492B32AE4F000B27E6 /* PrestamosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A5482B32AE4F000B27E6 /* PrestamosView.swift */; };
+		FA66A54B2B32AE5E000B27E6 /* ParaTiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A54A2B32AE5E000B27E6 /* ParaTiView.swift */; };
+		FA66A54E2B32AF04000B27E6 /* ConsultasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A54D2B32AF04000B27E6 /* ConsultasView.swift */; };
+		FA66A5502B32AF39000B27E6 /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A54F2B32AF39000B27E6 /* PrincipalView.swift */; };
+		FA6A8DC22B3116AA002F76B0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8DC12B3116AA002F76B0 /* WelcomeView.swift */; };
+		FA6A8DC52B31180E002F76B0 /* ModalOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8DC42B31180E002F76B0 /* ModalOptionView.swift */; };
+		FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8DC92B31224D002F76B0 /* DocumentNumberView.swift */; };
+		FA6A8DD62B313170002F76B0 /* Colores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DD52B313170002F76B0 /* Colores.xcassets */; };
+		FA6A8DE22B313345002F76B0 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DD92B313345002F76B0 /* Inter-Light.ttf */; };
+		FA6A8DE32B313345002F76B0 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDA2B313345002F76B0 /* Inter-Bold.ttf */; };
+		FA6A8DE42B313345002F76B0 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDB2B313345002F76B0 /* Inter-Medium.ttf */; };
+		FA6A8DE52B313345002F76B0 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDC2B313345002F76B0 /* Inter-SemiBold.ttf */; };
+		FA6A8DE62B313345002F76B0 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDD2B313345002F76B0 /* Inter-Black.ttf */; };
+		FA6A8DE72B313345002F76B0 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDE2B313345002F76B0 /* Inter-Regular.ttf */; };
+		FA6A8DE82B313345002F76B0 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDF2B313345002F76B0 /* Inter-Thin.ttf */; };
+		FA6A8DE92B313345002F76B0 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DE02B313345002F76B0 /* Inter-ExtraBold.ttf */; };
+		FA6A8DEA2B313345002F76B0 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DE12B313345002F76B0 /* Inter-ExtraLight.ttf */; };
+		FA6A8DEE2B3133D9002F76B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DEC2B3133D9002F76B0 /* Localizable.strings */; };
+		FA6A8DF42B313D2E002F76B0 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */; };
+		FA6DFA6B2B33C8590023295F /* UserResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6DFA6A2B33C8590023295F /* UserResponse.json */; };
+		FA6DFA722B33CDD60023295F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA6E2B33CDD60023295F /* Assets.swift */; };
+		FA6DFA732B33CDD60023295F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA6F2B33CDD60023295F /* Fonts.swift */; };
+		FA6DFA742B33CDD60023295F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA702B33CDD60023295F /* JSON.swift */; };
+		FA6DFA752B33CDD60023295F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA712B33CDD60023295F /* Strings.swift */; };
+		FA9BDBE32B30A8320037392B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BDBE22B30A8320037392B /* RegisterView.swift */; };
 		FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */; };
-		FACED48F2B2CB44A00B6BBC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED48E2B2CB44A00B6BBC3 /* ContentView.swift */; };
-		FACED4912B2CB44B00B6BBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACED4902B2CB44B00B6BBC3 /* Assets.xcassets */; };
+		FACED4912B2CB44B00B6BBC3 /* Imagenes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */; };
 		FACED4942B2CB44B00B6BBC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACED4932B2CB44B00B6BBC3 /* Preview Assets.xcassets */; };
-		FACED4962B2CB44B00B6BBC3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED4952B2CB44B00B6BBC3 /* Persistence.swift */; };
 		FACED4992B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FACED4972B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld */; };
 		FACED4A32B2CB44B00B6BBC3 /* BankAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED4A22B2CB44B00B6BBC3 /* BankAppSwiftUITests.swift */; };
 		FACED4AD2B2CB44B00B6BBC3 /* BankAppSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED4AC2B2CB44B00B6BBC3 /* BankAppSwiftUIUITests.swift */; };
@@ -36,12 +65,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA57BDE02B2D31C50096CDAC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDeCuentaView.swift; sourceTree = "<group>"; };
+		FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarServicioView.swift; sourceTree = "<group>"; };
+		FA5ADD8F2B33333500504EB0 /* BancaInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancaInternetView.swift; sourceTree = "<group>"; };
+		FA66A5442B32AE38000B27E6 /* TransferenciaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferenciaView.swift; sourceTree = "<group>"; };
+		FA66A5462B32AE45000B27E6 /* PagosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagosView.swift; sourceTree = "<group>"; };
+		FA66A5482B32AE4F000B27E6 /* PrestamosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestamosView.swift; sourceTree = "<group>"; };
+		FA66A54A2B32AE5E000B27E6 /* ParaTiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParaTiView.swift; sourceTree = "<group>"; };
+		FA66A54D2B32AF04000B27E6 /* ConsultasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultasView.swift; sourceTree = "<group>"; };
+		FA66A54F2B32AF39000B27E6 /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
+		FA6A8DC12B3116AA002F76B0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		FA6A8DC42B31180E002F76B0 /* ModalOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalOptionView.swift; sourceTree = "<group>"; };
+		FA6A8DC92B31224D002F76B0 /* DocumentNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentNumberView.swift; sourceTree = "<group>"; };
+		FA6A8DD52B313170002F76B0 /* Colores.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colores.xcassets; sourceTree = "<group>"; };
+		FA6A8DD92B313345002F76B0 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Light.ttf"; sourceTree = "<group>"; };
+		FA6A8DDA2B313345002F76B0 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Bold.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Bold.ttf"; sourceTree = "<group>"; };
+		FA6A8DDB2B313345002F76B0 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Medium.ttf"; sourceTree = "<group>"; };
+		FA6A8DDC2B313345002F76B0 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		FA6A8DDD2B313345002F76B0 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Black.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Black.ttf"; sourceTree = "<group>"; };
+		FA6A8DDE2B313345002F76B0 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Regular.ttf"; sourceTree = "<group>"; };
+		FA6A8DDF2B313345002F76B0 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Thin.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Thin.ttf"; sourceTree = "<group>"; };
+		FA6A8DE02B313345002F76B0 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-ExtraBold.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FA6A8DE12B313345002F76B0 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-ExtraLight.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FA6A8DED2B3133D9002F76B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		FA6A8DEF2B31399F002F76B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		FA6DFA6A2B33C8590023295F /* UserResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserResponse.json; sourceTree = "<group>"; };
+		FA6DFA6E2B33CDD60023295F /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		FA6DFA6F2B33CDD60023295F /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FA6DFA702B33CDD60023295F /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		FA6DFA712B33CDD60023295F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		FA9BDBE22B30A8320037392B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		FACED4892B2CB44A00B6BBC3 /* BankAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppSwiftUIApp.swift; sourceTree = "<group>"; };
-		FACED48E2B2CB44A00B6BBC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FACED4902B2CB44B00B6BBC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagenes.xcassets; sourceTree = "<group>"; };
 		FACED4932B2CB44B00B6BBC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FACED4952B2CB44B00B6BBC3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FACED4982B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BankAppSwiftUI.xcdatamodel; sourceTree = "<group>"; };
 		FACED49E2B2CB44B00B6BBC3 /* BankAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACED4A22B2CB44B00B6BBC3 /* BankAppSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppSwiftUITests.swift; sourceTree = "<group>"; };
@@ -76,10 +135,293 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA57BDDB2B2D2C830096CDAC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A8DCF2B312513002F76B0 /* CoreData */,
+				FA6A8DCE2B31250C002F76B0 /* Memoria */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FA57BDDC2B2D2C8A0096CDAC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A8DD22B312558002F76B0 /* Repository */,
+				FA6A8DD12B312553002F76B0 /* Modelo */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FA57BDDD2B2D2C960096CDAC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FA5ADD8E2B33330B00504EB0 /* BancaInternet */,
+				FA5ADD8B2B3332D300504EB0 /* PagarServicio */,
+				FA5ADD882B3331D800504EB0 /* DetalleDeCuenta */,
+				FA66A53F2B32ADFB000B27E6 /* ParaTi */,
+				FA66A53E2B32ADF0000B27E6 /* Prestamos */,
+				FA66A53D2B32ADC1000B27E6 /* Pagos */,
+				FA66A53C2B32ADB9000B27E6 /* Transferencia */,
+				FA66A54C2B32AEF6000B27E6 /* Consultas */,
+				FA6A8DCB2B31243A002F76B0 /* Principal */,
+				FA6A8DC62B3121EC002F76B0 /* DocumentNumber */,
+				FA9BDBDF2B30A7BE0037392B /* Register */,
+				FA6A8DC32B3117D0002F76B0 /* ModalOption */,
+				FA6A8DC02B311695002F76B0 /* Welcome */,
+				FA57BDDF2B2D2CE50096CDAC /* Splash */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FA57BDDE2B2D2C9E0096CDAC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FA57BDDF2B2D2CE50096CDAC /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				FA57BDE02B2D31C50096CDAC /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		FA5ADD882B3331D800504EB0 /* DetalleDeCuenta */ = {
+			isa = PBXGroup;
+			children = (
+				FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */,
+			);
+			path = DetalleDeCuenta;
+			sourceTree = "<group>";
+		};
+		FA5ADD8B2B3332D300504EB0 /* PagarServicio */ = {
+			isa = PBXGroup;
+			children = (
+				FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */,
+			);
+			path = PagarServicio;
+			sourceTree = "<group>";
+		};
+		FA5ADD8E2B33330B00504EB0 /* BancaInternet */ = {
+			isa = PBXGroup;
+			children = (
+				FA5ADD8F2B33333500504EB0 /* BancaInternetView.swift */,
+			);
+			path = BancaInternet;
+			sourceTree = "<group>";
+		};
+		FA5ADD912B33418B00504EB0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA5ADD922B33419900504EB0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FA66A53C2B32ADB9000B27E6 /* Transferencia */ = {
+			isa = PBXGroup;
+			children = (
+				FA66A5442B32AE38000B27E6 /* TransferenciaView.swift */,
+			);
+			path = Transferencia;
+			sourceTree = "<group>";
+		};
+		FA66A53D2B32ADC1000B27E6 /* Pagos */ = {
+			isa = PBXGroup;
+			children = (
+				FA66A5462B32AE45000B27E6 /* PagosView.swift */,
+			);
+			path = Pagos;
+			sourceTree = "<group>";
+		};
+		FA66A53E2B32ADF0000B27E6 /* Prestamos */ = {
+			isa = PBXGroup;
+			children = (
+				FA66A5482B32AE4F000B27E6 /* PrestamosView.swift */,
+			);
+			path = Prestamos;
+			sourceTree = "<group>";
+		};
+		FA66A53F2B32ADFB000B27E6 /* ParaTi */ = {
+			isa = PBXGroup;
+			children = (
+				FA66A54A2B32AE5E000B27E6 /* ParaTiView.swift */,
+			);
+			path = ParaTi;
+			sourceTree = "<group>";
+		};
+		FA66A54C2B32AEF6000B27E6 /* Consultas */ = {
+			isa = PBXGroup;
+			children = (
+				FA66A54D2B32AF04000B27E6 /* ConsultasView.swift */,
+			);
+			path = Consultas;
+			sourceTree = "<group>";
+		};
+		FA6A8DC02B311695002F76B0 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				FA5ADD922B33419900504EB0 /* Cells */,
+				FA5ADD912B33418B00504EB0 /* Components */,
+				FA6A8DC12B3116AA002F76B0 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		FA6A8DC32B3117D0002F76B0 /* ModalOption */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A8DC42B31180E002F76B0 /* ModalOptionView.swift */,
+			);
+			path = ModalOption;
+			sourceTree = "<group>";
+		};
+		FA6A8DC62B3121EC002F76B0 /* DocumentNumber */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A8DC92B31224D002F76B0 /* DocumentNumberView.swift */,
+			);
+			path = DocumentNumber;
+			sourceTree = "<group>";
+		};
+		FA6A8DCB2B31243A002F76B0 /* Principal */ = {
+			isa = PBXGroup;
+			children = (
+				FA66A54F2B32AF39000B27E6 /* PrincipalView.swift */,
+			);
+			path = Principal;
+			sourceTree = "<group>";
+		};
+		FA6A8DCE2B31250C002F76B0 /* Memoria */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A8DD02B312538002F76B0 /* Modelos */,
+			);
+			path = Memoria;
+			sourceTree = "<group>";
+		};
+		FA6A8DCF2B312513002F76B0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FACED4972B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FA6A8DD02B312538002F76B0 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		FA6A8DD12B312553002F76B0 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		FA6A8DD22B312558002F76B0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FA6A8DD32B312583002F76B0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FA6A8DD42B312FE7002F76B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA6DFA692B33C8240023295F /* JSON */,
+				FA6A8DEB2B31335A002F76B0 /* en.lproj */,
+				FA6A8DD82B3132E3002F76B0 /* Fonts */,
+				FA6A8DD72B3132DA002F76B0 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA6A8DD72B3132DA002F76B0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A8DD52B313170002F76B0 /* Colores.xcassets */,
+				FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FA6A8DD82B3132E3002F76B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A8DDD2B313345002F76B0 /* Inter-Black.ttf */,
+				FA6A8DDA2B313345002F76B0 /* Inter-Bold.ttf */,
+				FA6A8DE02B313345002F76B0 /* Inter-ExtraBold.ttf */,
+				FA6A8DE12B313345002F76B0 /* Inter-ExtraLight.ttf */,
+				FA6A8DD92B313345002F76B0 /* Inter-Light.ttf */,
+				FA6A8DDB2B313345002F76B0 /* Inter-Medium.ttf */,
+				FA6A8DDE2B313345002F76B0 /* Inter-Regular.ttf */,
+				FA6A8DDC2B313345002F76B0 /* Inter-SemiBold.ttf */,
+				FA6A8DDF2B313345002F76B0 /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA6A8DEB2B31335A002F76B0 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A8DEC2B3133D9002F76B0 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		FA6DFA692B33C8240023295F /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FA6DFA6A2B33C8590023295F /* UserResponse.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		FA6DFA6D2B33CD990023295F /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				FA6DFA6E2B33CDD60023295F /* Assets.swift */,
+				FA6DFA6F2B33CDD60023295F /* Fonts.swift */,
+				FA6DFA702B33CDD60023295F /* JSON.swift */,
+				FA6DFA712B33CDD60023295F /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		FA9BDBDF2B30A7BE0037392B /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FA9BDBE22B30A8320037392B /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		FACED4802B2CB44A00B6BBC3 = {
 			isa = PBXGroup;
 			children = (
 				FACED4BC2B2CBE7200B6BBC3 /* .gitignore */,
+				FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */,
 				FACED48B2B2CB44A00B6BBC3 /* BankAppSwiftUI */,
 				FACED4A12B2CB44B00B6BBC3 /* BankAppSwiftUITests */,
 				FACED4AB2B2CB44B00B6BBC3 /* BankAppSwiftUIUITests */,
@@ -100,11 +442,14 @@
 		FACED48B2B2CB44A00B6BBC3 /* BankAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */,
-				FACED48E2B2CB44A00B6BBC3 /* ContentView.swift */,
-				FACED4902B2CB44B00B6BBC3 /* Assets.xcassets */,
-				FACED4952B2CB44B00B6BBC3 /* Persistence.swift */,
-				FACED4972B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld */,
+				FA6DFA6D2B33CD990023295F /* Generated */,
+				FA6A8DEF2B31399F002F76B0 /* Info.plist */,
+				FA6A8DD42B312FE7002F76B0 /* Resources */,
+				FA57BDDE2B2D2C9E0096CDAC /* App */,
+				FA6A8DD32B312583002F76B0 /* Core */,
+				FA57BDDD2B2D2C960096CDAC /* Presentation */,
+				FA57BDDC2B2D2C8A0096CDAC /* Domain */,
+				FA57BDDB2B2D2C830096CDAC /* Data */,
 				FACED4922B2CB44B00B6BBC3 /* Preview Content */,
 			);
 			path = BankAppSwiftUI;
@@ -145,12 +490,15 @@
 				FACED4852B2CB44A00B6BBC3 /* Sources */,
 				FACED4862B2CB44A00B6BBC3 /* Frameworks */,
 				FACED4872B2CB44A00B6BBC3 /* Resources */,
+				FA6DFA6C2B33CC8B0023295F /* SwiftGen */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BankAppSwiftUI;
+			packageProductDependencies = (
+			);
 			productName = BankAppSwiftUI;
 			productReference = FACED4892B2CB44A00B6BBC3 /* BankAppSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +571,8 @@
 				Base,
 			);
 			mainGroup = FACED4802B2CB44A00B6BBC3;
+			packageReferences = (
+			);
 			productRefGroup = FACED48A2B2CB44A00B6BBC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,8 +589,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6A8DD62B313170002F76B0 /* Colores.xcassets in Resources */,
+				FA6A8DF42B313D2E002F76B0 /* swiftgen.yml in Resources */,
+				FA6A8DE92B313345002F76B0 /* Inter-ExtraBold.ttf in Resources */,
+				FA6A8DE72B313345002F76B0 /* Inter-Regular.ttf in Resources */,
+				FA6A8DE32B313345002F76B0 /* Inter-Bold.ttf in Resources */,
+				FA6A8DE42B313345002F76B0 /* Inter-Medium.ttf in Resources */,
 				FACED4942B2CB44B00B6BBC3 /* Preview Assets.xcassets in Resources */,
-				FACED4912B2CB44B00B6BBC3 /* Assets.xcassets in Resources */,
+				FA6A8DE22B313345002F76B0 /* Inter-Light.ttf in Resources */,
+				FA6A8DEA2B313345002F76B0 /* Inter-ExtraLight.ttf in Resources */,
+				FACED4912B2CB44B00B6BBC3 /* Imagenes.xcassets in Resources */,
+				FA6A8DEE2B3133D9002F76B0 /* Localizable.strings in Resources */,
+				FA6DFA6B2B33C8590023295F /* UserResponse.json in Resources */,
+				FA6A8DE52B313345002F76B0 /* Inter-SemiBold.ttf in Resources */,
+				FA6A8DE82B313345002F76B0 /* Inter-Thin.ttf in Resources */,
+				FA6A8DE62B313345002F76B0 /* Inter-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,15 +623,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FA6DFA6C2B33CC8B0023295F /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n\"${PROJECT_DIR}/swiftgen-6.6.2/bin/swiftgen\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FACED4852B2CB44A00B6BBC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACED4962B2CB44B00B6BBC3 /* Persistence.swift in Sources */,
-				FACED48F2B2CB44A00B6BBC3 /* ContentView.swift in Sources */,
+				FA66A5502B32AF39000B27E6 /* PrincipalView.swift in Sources */,
+				FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */,
+				FA6DFA752B33CDD60023295F /* Strings.swift in Sources */,
+				FA6A8DC22B3116AA002F76B0 /* WelcomeView.swift in Sources */,
+				FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */,
+				FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */,
+				FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */,
+				FA6DFA722B33CDD60023295F /* Assets.swift in Sources */,
+				FA9BDBE32B30A8320037392B /* RegisterView.swift in Sources */,
+				FA6DFA742B33CDD60023295F /* JSON.swift in Sources */,
+				FA66A5492B32AE4F000B27E6 /* PrestamosView.swift in Sources */,
+				FA66A54E2B32AF04000B27E6 /* ConsultasView.swift in Sources */,
+				FA66A54B2B32AE5E000B27E6 /* ParaTiView.swift in Sources */,
 				FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */,
+				FA5ADD902B33333500504EB0 /* BancaInternetView.swift in Sources */,
+				FA6A8DC52B31180E002F76B0 /* ModalOptionView.swift in Sources */,
 				FACED4992B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld in Sources */,
+				FA66A5472B32AE45000B27E6 /* PagosView.swift in Sources */,
+				FA6DFA732B33CDD60023295F /* Fonts.swift in Sources */,
+				FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +703,17 @@
 			targetProxy = FACED4A92B2CB44B00B6BBC3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA6A8DEC2B3133D9002F76B0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6A8DED2B3133D9002F76B0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FACED4B02B2CB44B00B6BBC3 /* Debug */ = {
@@ -434,7 +845,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BankAppSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BankAppSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,7 +876,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BankAppSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BankAppSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

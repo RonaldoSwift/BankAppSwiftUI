@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  BankAppSwiftUI
+
+  Created by Ronaldo Andre on 18/12/23.
+  
+*/
+
+//Textos en ingles
+"login.title.text" = "Hello title Login😆!!!";
+"login.button.text" = "Sign In!!!";
