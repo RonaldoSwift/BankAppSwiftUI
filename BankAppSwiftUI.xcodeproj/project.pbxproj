@@ -22,15 +22,6 @@
 		FA6A8DC52B31180E002F76B0 /* ModalOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8DC42B31180E002F76B0 /* ModalOptionView.swift */; };
 		FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8DC92B31224D002F76B0 /* DocumentNumberView.swift */; };
 		FA6A8DD62B313170002F76B0 /* Colores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DD52B313170002F76B0 /* Colores.xcassets */; };
-		FA6A8DE22B313345002F76B0 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DD92B313345002F76B0 /* Inter-Light.ttf */; };
-		FA6A8DE32B313345002F76B0 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDA2B313345002F76B0 /* Inter-Bold.ttf */; };
-		FA6A8DE42B313345002F76B0 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDB2B313345002F76B0 /* Inter-Medium.ttf */; };
-		FA6A8DE52B313345002F76B0 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDC2B313345002F76B0 /* Inter-SemiBold.ttf */; };
-		FA6A8DE62B313345002F76B0 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDD2B313345002F76B0 /* Inter-Black.ttf */; };
-		FA6A8DE72B313345002F76B0 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDE2B313345002F76B0 /* Inter-Regular.ttf */; };
-		FA6A8DE82B313345002F76B0 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DDF2B313345002F76B0 /* Inter-Thin.ttf */; };
-		FA6A8DE92B313345002F76B0 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DE02B313345002F76B0 /* Inter-ExtraBold.ttf */; };
-		FA6A8DEA2B313345002F76B0 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DE12B313345002F76B0 /* Inter-ExtraLight.ttf */; };
 		FA6A8DEE2B3133D9002F76B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DEC2B3133D9002F76B0 /* Localizable.strings */; };
 		FA6A8DF42B313D2E002F76B0 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */; };
 		FA6DFA6B2B33C8590023295F /* UserResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6DFA6A2B33C8590023295F /* UserResponse.json */; };
@@ -39,6 +30,21 @@
 		FA6DFA742B33CDD60023295F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA702B33CDD60023295F /* JSON.swift */; };
 		FA6DFA752B33CDD60023295F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA712B33CDD60023295F /* Strings.swift */; };
 		FA6FC17B2B351E590088A87F /* TomaFotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FC17A2B351E590088A87F /* TomaFotoView.swift */; };
+		FA6F02C22B352F95005CA79E /* pruebaUno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C12B352F95005CA79E /* pruebaUno.swift */; };
+		FA6F02C42B352F9E005CA79E /* prueba2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C32B352F9E005CA79E /* prueba2.swift */; };
+		FA6F02C62B352FAD005CA79E /* prueba3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C52B352FAD005CA79E /* prueba3.swift */; };
+		FA6F02CA2B35304E005CA79E /* prueba4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C92B35304E005CA79E /* prueba4.swift */; };
+		FA6F02CD2B35312F005CA79E /* prueba5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02CC2B35312F005CA79E /* prueba5.swift */; };
+		FA6F02CF2B353136005CA79E /* prueba6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02CE2B353136005CA79E /* prueba6.swift */; };
+		FA6FC19A2B35270B0088A87F /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1912B35270B0088A87F /* Inter-Medium.ttf */; };
+		FA6FC19B2B35270B0088A87F /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1922B35270B0088A87F /* Inter-Regular.ttf */; };
+		FA6FC19C2B35270B0088A87F /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1932B35270B0088A87F /* Inter-SemiBold.ttf */; };
+		FA6FC19D2B35270B0088A87F /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1942B35270B0088A87F /* Inter-ExtraLight.ttf */; };
+		FA6FC19E2B35270B0088A87F /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1952B35270B0088A87F /* Inter-Black.ttf */; };
+		FA6FC19F2B35270B0088A87F /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1962B35270B0088A87F /* Inter-ExtraBold.ttf */; };
+		FA6FC1A02B35270B0088A87F /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1972B35270B0088A87F /* Inter-Thin.ttf */; };
+		FA6FC1A12B35270B0088A87F /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1982B35270B0088A87F /* Inter-Light.ttf */; };
+		FA6FC1A22B35270B0088A87F /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1992B35270B0088A87F /* Inter-Bold.ttf */; };
 		FA9BDBE32B30A8320037392B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BDBE22B30A8320037392B /* RegisterView.swift */; };
 		FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */; };
 		FACED4912B2CB44B00B6BBC3 /* Imagenes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */; };
@@ -82,15 +88,6 @@
 		FA6A8DC42B31180E002F76B0 /* ModalOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalOptionView.swift; sourceTree = "<group>"; };
 		FA6A8DC92B31224D002F76B0 /* DocumentNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentNumberView.swift; sourceTree = "<group>"; };
 		FA6A8DD52B313170002F76B0 /* Colores.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colores.xcassets; sourceTree = "<group>"; };
-		FA6A8DD92B313345002F76B0 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Light.ttf"; sourceTree = "<group>"; };
-		FA6A8DDA2B313345002F76B0 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Bold.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Bold.ttf"; sourceTree = "<group>"; };
-		FA6A8DDB2B313345002F76B0 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Medium.ttf"; sourceTree = "<group>"; };
-		FA6A8DDC2B313345002F76B0 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
-		FA6A8DDD2B313345002F76B0 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Black.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Black.ttf"; sourceTree = "<group>"; };
-		FA6A8DDE2B313345002F76B0 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Regular.ttf"; sourceTree = "<group>"; };
-		FA6A8DDF2B313345002F76B0 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Thin.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-Thin.ttf"; sourceTree = "<group>"; };
-		FA6A8DE02B313345002F76B0 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-ExtraBold.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
-		FA6A8DE12B313345002F76B0 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-ExtraLight.ttf"; path = "../../../../../../Downloads/Inter/static/Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
 		FA6A8DED2B3133D9002F76B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		FA6A8DEF2B31399F002F76B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
@@ -100,6 +97,21 @@
 		FA6DFA702B33CDD60023295F /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		FA6DFA712B33CDD60023295F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		FA6FC17A2B351E590088A87F /* TomaFotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomaFotoView.swift; sourceTree = "<group>"; };
+		FA6F02C12B352F95005CA79E /* pruebaUno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaUno.swift; sourceTree = "<group>"; };
+		FA6F02C32B352F9E005CA79E /* prueba2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba2.swift; sourceTree = "<group>"; };
+		FA6F02C52B352FAD005CA79E /* prueba3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba3.swift; sourceTree = "<group>"; };
+		FA6F02C92B35304E005CA79E /* prueba4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba4.swift; sourceTree = "<group>"; };
+		FA6F02CC2B35312F005CA79E /* prueba5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba5.swift; sourceTree = "<group>"; };
+		FA6F02CE2B353136005CA79E /* prueba6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba6.swift; sourceTree = "<group>"; };
+		FA6FC1912B35270B0088A87F /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		FA6FC1922B35270B0088A87F /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		FA6FC1932B35270B0088A87F /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		FA6FC1942B35270B0088A87F /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FA6FC1952B35270B0088A87F /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		FA6FC1962B35270B0088A87F /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FA6FC1972B35270B0088A87F /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		FA6FC1982B35270B0088A87F /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		FA6FC1992B35270B0088A87F /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		FA9BDBE22B30A8320037392B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		FACED4892B2CB44A00B6BBC3 /* BankAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -229,6 +241,7 @@
 		FA5ADD922B33419900504EB0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02CE2B353136005CA79E /* prueba6.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -276,8 +289,8 @@
 		FA6A8DC02B311695002F76B0 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02CB2B35310B005CA79E /* Components */,
 				FA5ADD922B33419900504EB0 /* Cells */,
-				FA5ADD912B33418B00504EB0 /* Components */,
 				FA6A8DC12B3116AA002F76B0 /* WelcomeView.swift */,
 			);
 			path = Welcome;
@@ -326,6 +339,7 @@
 		FA6A8DD02B312538002F76B0 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02C52B352FAD005CA79E /* prueba3.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -333,6 +347,7 @@
 		FA6A8DD12B312553002F76B0 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02C32B352F9E005CA79E /* prueba2.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -340,6 +355,7 @@
 		FA6A8DD22B312558002F76B0 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02C12B352F95005CA79E /* pruebaUno.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -347,6 +363,7 @@
 		FA6A8DD32B312583002F76B0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02C92B35304E005CA79E /* prueba4.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -354,9 +371,9 @@
 		FA6A8DD42B312FE7002F76B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FA6FC17C2B3526050088A87F /* Fonts */,
 				FA6DFA692B33C8240023295F /* JSON */,
 				FA6A8DEB2B31335A002F76B0 /* en.lproj */,
-				FA6A8DD82B3132E3002F76B0 /* Fonts */,
 				FA6A8DD72B3132DA002F76B0 /* Assets */,
 			);
 			path = Resources;
@@ -369,22 +386,6 @@
 				FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		FA6A8DD82B3132E3002F76B0 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				FA6A8DDD2B313345002F76B0 /* Inter-Black.ttf */,
-				FA6A8DDA2B313345002F76B0 /* Inter-Bold.ttf */,
-				FA6A8DE02B313345002F76B0 /* Inter-ExtraBold.ttf */,
-				FA6A8DE12B313345002F76B0 /* Inter-ExtraLight.ttf */,
-				FA6A8DD92B313345002F76B0 /* Inter-Light.ttf */,
-				FA6A8DDB2B313345002F76B0 /* Inter-Medium.ttf */,
-				FA6A8DDE2B313345002F76B0 /* Inter-Regular.ttf */,
-				FA6A8DDC2B313345002F76B0 /* Inter-SemiBold.ttf */,
-				FA6A8DDF2B313345002F76B0 /* Inter-Thin.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		FA6A8DEB2B31335A002F76B0 /* en.lproj */ = {
@@ -422,11 +423,20 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		FA6FC1792B34F6790088A87F /* Cells */ = {
+		FA6FC17C2B3526050088A87F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				FA6FC1952B35270B0088A87F /* Inter-Black.ttf */,
+				FA6FC1992B35270B0088A87F /* Inter-Bold.ttf */,
+				FA6FC1962B35270B0088A87F /* Inter-ExtraBold.ttf */,
+				FA6FC1942B35270B0088A87F /* Inter-ExtraLight.ttf */,
+				FA6FC1982B35270B0088A87F /* Inter-Light.ttf */,
+				FA6FC1912B35270B0088A87F /* Inter-Medium.ttf */,
+				FA6FC1922B35270B0088A87F /* Inter-Regular.ttf */,
+				FA6FC1932B35270B0088A87F /* Inter-SemiBold.ttf */,
+				FA6FC1972B35270B0088A87F /* Inter-Thin.ttf */,
 			);
-			path = Cells;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		FA9BDBDF2B30A7BE0037392B /* Register */ = {
@@ -612,20 +622,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6A8DD62B313170002F76B0 /* Colores.xcassets in Resources */,
+				FA6FC1A12B35270B0088A87F /* Inter-Light.ttf in Resources */,
 				FA6A8DF42B313D2E002F76B0 /* swiftgen.yml in Resources */,
-				FA6A8DE92B313345002F76B0 /* Inter-ExtraBold.ttf in Resources */,
-				FA6A8DE72B313345002F76B0 /* Inter-Regular.ttf in Resources */,
-				FA6A8DE32B313345002F76B0 /* Inter-Bold.ttf in Resources */,
-				FA6A8DE42B313345002F76B0 /* Inter-Medium.ttf in Resources */,
 				FACED4942B2CB44B00B6BBC3 /* Preview Assets.xcassets in Resources */,
-				FA6A8DE22B313345002F76B0 /* Inter-Light.ttf in Resources */,
-				FA6A8DEA2B313345002F76B0 /* Inter-ExtraLight.ttf in Resources */,
 				FACED4912B2CB44B00B6BBC3 /* Imagenes.xcassets in Resources */,
+				FA6FC19E2B35270B0088A87F /* Inter-Black.ttf in Resources */,
+				FA6FC19D2B35270B0088A87F /* Inter-ExtraLight.ttf in Resources */,
+				FA6FC19C2B35270B0088A87F /* Inter-SemiBold.ttf in Resources */,
+				FA6FC19A2B35270B0088A87F /* Inter-Medium.ttf in Resources */,
+				FA6FC1A02B35270B0088A87F /* Inter-Thin.ttf in Resources */,
+				FA6FC1A22B35270B0088A87F /* Inter-Bold.ttf in Resources */,
 				FA6A8DEE2B3133D9002F76B0 /* Localizable.strings in Resources */,
+				FA6FC19F2B35270B0088A87F /* Inter-ExtraBold.ttf in Resources */,
+				FA6FC19B2B35270B0088A87F /* Inter-Regular.ttf in Resources */,
 				FA6DFA6B2B33C8590023295F /* UserResponse.json in Resources */,
-				FA6A8DE52B313345002F76B0 /* Inter-SemiBold.ttf in Resources */,
-				FA6A8DE82B313345002F76B0 /* Inter-Thin.ttf in Resources */,
-				FA6A8DE62B313345002F76B0 /* Inter-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,14 +686,18 @@
 				FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */,
 				FA6DFA752B33CDD60023295F /* Strings.swift in Sources */,
 				FA64FDBD2B348F1E00E6F2B2 /* NextButtton.swift in Sources */,
+				FA6F02CA2B35304E005CA79E /* prueba4.swift in Sources */,
 				FA6A8DC22B3116AA002F76B0 /* WelcomeView.swift in Sources */,
+				FA6F02CF2B353136005CA79E /* prueba6.swift in Sources */,
 				FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */,
 				FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */,
 				FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */,
 				FA6DFA722B33CDD60023295F /* Assets.swift in Sources */,
+				FA6F02C62B352FAD005CA79E /* prueba3.swift in Sources */,
 				FA9BDBE32B30A8320037392B /* RegisterView.swift in Sources */,
 				FA6DFA742B33CDD60023295F /* JSON.swift in Sources */,
 				FA66A5492B32AE4F000B27E6 /* PrestamosView.swift in Sources */,
+				FA6F02CD2B35312F005CA79E /* prueba5.swift in Sources */,
 				FA66A54E2B32AF04000B27E6 /* ConsultasView.swift in Sources */,
 				FA66A54B2B32AE5E000B27E6 /* ParaTiView.swift in Sources */,
 				FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */,
@@ -692,7 +706,9 @@
 				FACED4992B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld in Sources */,
 				FA66A5472B32AE45000B27E6 /* PagosView.swift in Sources */,
 				FA6DFA732B33CDD60023295F /* Fonts.swift in Sources */,
+				FA6F02C42B352F9E005CA79E /* prueba2.swift in Sources */,
 				FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */,
+				FA6F02C22B352F95005CA79E /* pruebaUno.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
