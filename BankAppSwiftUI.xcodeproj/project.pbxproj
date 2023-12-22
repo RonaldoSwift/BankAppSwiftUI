@@ -28,6 +28,10 @@
 		FA6DFA732B33CDD60023295F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA6F2B33CDD60023295F /* Fonts.swift */; };
 		FA6DFA742B33CDD60023295F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA702B33CDD60023295F /* JSON.swift */; };
 		FA6DFA752B33CDD60023295F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA712B33CDD60023295F /* Strings.swift */; };
+		FA6F02C22B352F95005CA79E /* pruebaUno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C12B352F95005CA79E /* pruebaUno.swift */; };
+		FA6F02C42B352F9E005CA79E /* prueba2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C32B352F9E005CA79E /* prueba2.swift */; };
+		FA6F02C62B352FAD005CA79E /* prueba3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C52B352FAD005CA79E /* prueba3.swift */; };
+		FA6F02C82B352FBF005CA79E /* comnentevacioprueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C72B352FBF005CA79E /* comnentevacioprueba.swift */; };
 		FA6FC19A2B35270B0088A87F /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1912B35270B0088A87F /* Inter-Medium.ttf */; };
 		FA6FC19B2B35270B0088A87F /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1922B35270B0088A87F /* Inter-Regular.ttf */; };
 		FA6FC19C2B35270B0088A87F /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1932B35270B0088A87F /* Inter-SemiBold.ttf */; };
@@ -87,6 +91,10 @@
 		FA6DFA6F2B33CDD60023295F /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FA6DFA702B33CDD60023295F /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		FA6DFA712B33CDD60023295F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		FA6F02C12B352F95005CA79E /* pruebaUno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaUno.swift; sourceTree = "<group>"; };
+		FA6F02C32B352F9E005CA79E /* prueba2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba2.swift; sourceTree = "<group>"; };
+		FA6F02C52B352FAD005CA79E /* prueba3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba3.swift; sourceTree = "<group>"; };
+		FA6F02C72B352FBF005CA79E /* comnentevacioprueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = comnentevacioprueba.swift; path = BankAppSwiftUI/Data/Memoria/Modelos/comnentevacioprueba.swift; sourceTree = SOURCE_ROOT; };
 		FA6FC1912B35270B0088A87F /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		FA6FC1922B35270B0088A87F /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		FA6FC1932B35270B0088A87F /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -217,6 +225,7 @@
 		FA5ADD912B33418B00504EB0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02C72B352FBF005CA79E /* comnentevacioprueba.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -321,6 +330,7 @@
 		FA6A8DD02B312538002F76B0 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02C52B352FAD005CA79E /* prueba3.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -328,6 +338,7 @@
 		FA6A8DD12B312553002F76B0 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02C32B352F9E005CA79E /* prueba2.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -335,6 +346,7 @@
 		FA6A8DD22B312558002F76B0 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02C12B352F95005CA79E /* pruebaUno.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -657,18 +669,22 @@
 				FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */,
 				FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */,
 				FA6DFA722B33CDD60023295F /* Assets.swift in Sources */,
+				FA6F02C62B352FAD005CA79E /* prueba3.swift in Sources */,
 				FA9BDBE32B30A8320037392B /* RegisterView.swift in Sources */,
 				FA6DFA742B33CDD60023295F /* JSON.swift in Sources */,
 				FA66A5492B32AE4F000B27E6 /* PrestamosView.swift in Sources */,
 				FA66A54E2B32AF04000B27E6 /* ConsultasView.swift in Sources */,
 				FA66A54B2B32AE5E000B27E6 /* ParaTiView.swift in Sources */,
+				FA6F02C82B352FBF005CA79E /* comnentevacioprueba.swift in Sources */,
 				FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */,
 				FA5ADD902B33333500504EB0 /* BancaInternetView.swift in Sources */,
 				FA6A8DC52B31180E002F76B0 /* ModalOptionView.swift in Sources */,
 				FACED4992B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld in Sources */,
 				FA66A5472B32AE45000B27E6 /* PagosView.swift in Sources */,
 				FA6DFA732B33CDD60023295F /* Fonts.swift in Sources */,
+				FA6F02C42B352F9E005CA79E /* prueba2.swift in Sources */,
 				FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */,
+				FA6F02C22B352F95005CA79E /* pruebaUno.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
