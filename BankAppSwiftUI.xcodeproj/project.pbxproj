@@ -32,6 +32,7 @@
 		FA6F02C42B352F9E005CA79E /* prueba2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C32B352F9E005CA79E /* prueba2.swift */; };
 		FA6F02C62B352FAD005CA79E /* prueba3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C52B352FAD005CA79E /* prueba3.swift */; };
 		FA6F02C82B352FBF005CA79E /* comnentevacioprueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C72B352FBF005CA79E /* comnentevacioprueba.swift */; };
+		FA6F02CA2B35304E005CA79E /* prueba4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C92B35304E005CA79E /* prueba4.swift */; };
 		FA6FC19A2B35270B0088A87F /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1912B35270B0088A87F /* Inter-Medium.ttf */; };
 		FA6FC19B2B35270B0088A87F /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1922B35270B0088A87F /* Inter-Regular.ttf */; };
 		FA6FC19C2B35270B0088A87F /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1932B35270B0088A87F /* Inter-SemiBold.ttf */; };
@@ -95,6 +96,7 @@
 		FA6F02C32B352F9E005CA79E /* prueba2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba2.swift; sourceTree = "<group>"; };
 		FA6F02C52B352FAD005CA79E /* prueba3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba3.swift; sourceTree = "<group>"; };
 		FA6F02C72B352FBF005CA79E /* comnentevacioprueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = comnentevacioprueba.swift; path = BankAppSwiftUI/Data/Memoria/Modelos/comnentevacioprueba.swift; sourceTree = SOURCE_ROOT; };
+		FA6F02C92B35304E005CA79E /* prueba4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba4.swift; sourceTree = "<group>"; };
 		FA6FC1912B35270B0088A87F /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		FA6FC1922B35270B0088A87F /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		FA6FC1932B35270B0088A87F /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 		FA6A8DD32B312583002F76B0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F02C92B35304E005CA79E /* prueba4.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -664,6 +667,7 @@
 				FA66A5502B32AF39000B27E6 /* PrincipalView.swift in Sources */,
 				FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */,
 				FA6DFA752B33CDD60023295F /* Strings.swift in Sources */,
+				FA6F02CA2B35304E005CA79E /* prueba4.swift in Sources */,
 				FA6A8DC22B3116AA002F76B0 /* WelcomeView.swift in Sources */,
 				FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */,
 				FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */,
