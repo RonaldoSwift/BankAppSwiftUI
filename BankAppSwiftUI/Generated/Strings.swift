@@ -12,15 +12,19 @@ import Foundation
 internal enum L10n {
   internal enum Login {
     internal enum Button {
-      /// Sign In!!!
-      internal static let text = L10n.tr("Localizable", "login.button.text", fallback: "Sign In!!!")
+      /// Login Here
+      internal static let text = L10n.tr("Localizable", "login.button.text", fallback: "Login Here")
     }
     internal enum Title {
       /// Localizable.strings
       ///   BankAppSwiftUI
       /// 
       ///   Created by Ronaldo Andre on 18/12/23.
-      internal static let text = L10n.tr("Localizable", "login.title.text", fallback: "Hello title Login😆!!!")
+      internal static let text = L10n.tr("Localizable", "login.title.text", fallback: "First time login?")
+    }
+    internal enum Title2 {
+      /// Already registered?
+      internal static let text = L10n.tr("Localizable", "login.title2.text", fallback: "Already registered?")
     }
   }
 }

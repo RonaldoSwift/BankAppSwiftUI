@@ -7,5 +7,7 @@
 */
 
 //Textos en ingles
-"login.title.text" = "Hello title Login😆!!!";
-"login.button.text" = "Sign In!!!";
+"login.title.text" = "First time login?";
+"login.button.text" = "Register here";
+"login.title2.text" = "Already registered?";
+"login.button.text" = "Login Here";

@@ -14,90 +14,26 @@ struct WelcomeView: View {
             VStack(spacing: 35){
                 Asset.Imagenes.logoWelcom.swiftUIImage
                 
-                Text("¿Primera vez que ingresas?")
-                    .font(.custom("Inter-ExtraBold", size: 18))
-                
-                NavigationLink(destination: ModalOptionView()){
-                    HStack{
-                        Image(systemName: "iphone.gen1")
-                        Text("Registrate aqui")
-                            .font(.custom("Inter-ExtraBold", size: 15))
-                        Image(systemName: "arrowtriangle.right.fill")
-                    }
-                    .padding()
-                    .foregroundColor(Color.white)
-                    .background(Color.orange)
-                    .cornerRadius(20)
-                }
-                
-                            
-                Text("¿Ya te has registrado?")
-                    .font(.custom("Inter-ExtraBold", size: 18))
-                
-                NavigationLink(destination: ModalOptionView()){
-                    HStack{
-                        Text("Ingresa Aqui")
-                            .font(.custom("Inter-ExtraBold", size: 15))
-                        Image(systemName: "arrowtriangle.right.fill")
-                        
-                    }
-                    .padding()
-                    .foregroundColor(Color("Greenbutton"))
-                    .overlay(
-                        Capsule().stroke(lineWidth: 2)
-                            .foregroundColor(Color("Greenbutton"))
-                    )
-                }
+                nextButtton()
+                nextButtton2()
                 
                 HStack(spacing: 113){
-                    HStack{
-                        Button(action: {}, label: {
-                            Image(systemName: "mappin")
-                            Text("Ubicanos")
-                            Image(systemName: "arrowtriangle.right.fill")
-                            
-                        })
-                        .font(.custom("Inter-ExtraBold", size: 15))
-                        .foregroundColor(Color("Metallic"))
-                    }
-                    HStack{
-                        Button(action: {}, label: {
-                            Image(systemName: "phone")
-                            Text("Llamanos")
-                            Image(systemName: "arrowtriangle.right.fill")
-                            
-                        })
-                        .font(.custom("Inter-ExtraBold", size: 15))
-                        .foregroundColor(Color("Metallic"))
-                    }
+                    nextServicio(
+                        imageTab: "mappin",
+                        texto: "Ubicanos",
+                        imageNext: "arrowtriangle.right.fill"
+                    )
+                    
+                    nextServicio(
+                        imageTab: "phone",
+                        texto: "Llamanos",
+                        imageNext: "arrowtriangle.right.fill"
+                    )
                 }
                 .padding()
             }
-            
         }
     }
-    
-    
-    private func butonNext(titulo:String) -> some View{
-        VStack{
-            Text("¿Primera vez que ingresas?")
-                .font(.custom("Inter-ExtraBold", size: 18))
-            
-            NavigationLink(destination: ModalOptionView()){
-                HStack{
-                    Image(systemName: "iphone.gen1")
-                    Text("Registrate aqui")
-                        .font(.custom("Inter-ExtraBold", size: 15))
-                    Image(systemName: "arrowtriangle.right.fill")
-                }
-                .padding()
-                .foregroundColor(Color.white)
-                .background(Color.orange)
-                .cornerRadius(20)
-            }
-        }
-    }
-    
 }
 
 #Preview {
