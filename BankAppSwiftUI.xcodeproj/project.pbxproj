@@ -32,8 +32,9 @@
 		FA6F02C42B352F9E005CA79E /* prueba2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C32B352F9E005CA79E /* prueba2.swift */; };
 		FA6F02C62B352FAD005CA79E /* prueba3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C52B352FAD005CA79E /* prueba3.swift */; };
 		FA6F02CA2B35304E005CA79E /* prueba4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C92B35304E005CA79E /* prueba4.swift */; };
-		FA6F02CD2B35312F005CA79E /* prueba5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02CC2B35312F005CA79E /* prueba5.swift */; };
 		FA6F02CF2B353136005CA79E /* prueba6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02CE2B353136005CA79E /* prueba6.swift */; };
+		FA6F02DF2B353706005CA79E /* NextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02DE2B353706005CA79E /* NextButtonView.swift */; };
+		FA6FC17B2B351E590088A87F /* TomaFotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FC17A2B351E590088A87F /* TomaFotoView.swift */; };
 		FA6FC19A2B35270B0088A87F /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1912B35270B0088A87F /* Inter-Medium.ttf */; };
 		FA6FC19B2B35270B0088A87F /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1922B35270B0088A87F /* Inter-Regular.ttf */; };
 		FA6FC19C2B35270B0088A87F /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1932B35270B0088A87F /* Inter-SemiBold.ttf */; };
@@ -97,8 +98,9 @@
 		FA6F02C32B352F9E005CA79E /* prueba2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba2.swift; sourceTree = "<group>"; };
 		FA6F02C52B352FAD005CA79E /* prueba3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba3.swift; sourceTree = "<group>"; };
 		FA6F02C92B35304E005CA79E /* prueba4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba4.swift; sourceTree = "<group>"; };
-		FA6F02CC2B35312F005CA79E /* prueba5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba5.swift; sourceTree = "<group>"; };
 		FA6F02CE2B353136005CA79E /* prueba6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba6.swift; sourceTree = "<group>"; };
+		FA6F02DE2B353706005CA79E /* NextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonView.swift; sourceTree = "<group>"; };
+		FA6FC17A2B351E590088A87F /* TomaFotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomaFotoView.swift; sourceTree = "<group>"; };
 		FA6FC1912B35270B0088A87F /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		FA6FC1922B35270B0088A87F /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		FA6FC1932B35270B0088A87F /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -277,7 +279,7 @@
 		FA6A8DC02B311695002F76B0 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				FA6F02CB2B35310B005CA79E /* Components */,
+				FA6F02D52B3533CF005CA79E /* Components */,
 				FA5ADD922B33419900504EB0 /* Cells */,
 				FA6A8DC12B3116AA002F76B0 /* WelcomeView.swift */,
 			);
@@ -403,10 +405,25 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
-		FA6F02CB2B35310B005CA79E /* Components */ = {
+		FA6F02D12B35331A005CA79E /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				FA6F02CC2B35312F005CA79E /* prueba5.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		FA6F02D52B3533CF005CA79E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F02DE2B353706005CA79E /* NextButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA6FC1782B34F66D0088A87F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FC17A2B351E590088A87F /* TomaFotoView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -430,6 +447,7 @@
 		FA9BDBDF2B30A7BE0037392B /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				FA6FC1782B34F66D0088A87F /* Components */,
 				FA9BDBE22B30A8320037392B /* RegisterView.swift */,
 			);
 			path = Register;
@@ -444,6 +462,7 @@
 				FACED4A12B2CB44B00B6BBC3 /* BankAppSwiftUITests */,
 				FACED4AB2B2CB44B00B6BBC3 /* BankAppSwiftUIUITests */,
 				FACED48A2B2CB44A00B6BBC3 /* Products */,
+				FA6F02D12B35331A005CA79E /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -508,7 +527,6 @@
 				FACED4852B2CB44A00B6BBC3 /* Sources */,
 				FACED4862B2CB44A00B6BBC3 /* Frameworks */,
 				FACED4872B2CB44A00B6BBC3 /* Resources */,
-				FA6DFA6C2B33CC8B0023295F /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -641,33 +659,13 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		FA6DFA6C2B33CC8B0023295F /* SwiftGen */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftGen;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n\"${PROJECT_DIR}/swiftgen-6.6.2/bin/swiftgen\"\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		FACED4852B2CB44A00B6BBC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FA66A5502B32AF39000B27E6 /* PrincipalView.swift in Sources */,
+				FA6FC17B2B351E590088A87F /* TomaFotoView.swift in Sources */,
 				FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */,
 				FA6DFA752B33CDD60023295F /* Strings.swift in Sources */,
 				FA6F02CA2B35304E005CA79E /* prueba4.swift in Sources */,
@@ -681,7 +679,7 @@
 				FA9BDBE32B30A8320037392B /* RegisterView.swift in Sources */,
 				FA6DFA742B33CDD60023295F /* JSON.swift in Sources */,
 				FA66A5492B32AE4F000B27E6 /* PrestamosView.swift in Sources */,
-				FA6F02CD2B35312F005CA79E /* prueba5.swift in Sources */,
+				FA6F02DF2B353706005CA79E /* NextButtonView.swift in Sources */,
 				FA66A54E2B32AF04000B27E6 /* ConsultasView.swift in Sources */,
 				FA66A54B2B32AE5E000B27E6 /* ParaTiView.swift in Sources */,
 				FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */,
@@ -867,7 +865,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BankAppSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = H9JXH336V5;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -898,7 +896,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BankAppSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = H9JXH336V5;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
