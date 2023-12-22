@@ -17,7 +17,7 @@ internal func nextButtton() -> some View{
             HStack{
                 Image(systemName: "iphone.gen1")
                 Text("Registrate aqui")
-                    .font(.custom("Inter-ExtraBold", size: 15))
+                    .font(Fonts.Inter.extraBold.swiftUIFont(size: 32))
                 Image(systemName: "arrowtriangle.right.fill")
             }
             .padding()
@@ -41,7 +41,7 @@ internal func nextButtton2() -> some View{
                 
             }
             .padding()
-            .foregroundColor(Color("Greenbutton"))
+            .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
             .overlay(
                 Capsule().stroke(lineWidth: 2)
                     .foregroundColor(Color("Greenbutton"))
