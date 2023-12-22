@@ -1,5 +1,5 @@
 //
-//  NextButtton.swift
+//  NextButtonView.swift
 //  BankAppSwiftUI
 //
 //  Created by Ronaldo Andre on 21/12/23.
@@ -63,3 +63,4 @@ internal func nextServicio(imageTab: String, texto:String, imageNext: String) ->
         .foregroundColor(Color("Metallic"))
     }
 }
+
