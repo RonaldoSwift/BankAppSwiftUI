@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24D2A76C2B35F10000EDF389 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24D2A76E2B35F10000EDF389 /* Localizable.strings */; };
 		FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57BDE02B2D31C50096CDAC /* SplashView.swift */; };
 		FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */; };
 		FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */; };
@@ -21,7 +22,6 @@
 		FA6A8DC52B31180E002F76B0 /* ModalOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8DC42B31180E002F76B0 /* ModalOptionView.swift */; };
 		FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8DC92B31224D002F76B0 /* DocumentNumberView.swift */; };
 		FA6A8DD62B313170002F76B0 /* Colores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DD52B313170002F76B0 /* Colores.xcassets */; };
-		FA6A8DEE2B3133D9002F76B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DEC2B3133D9002F76B0 /* Localizable.strings */; };
 		FA6A8DF42B313D2E002F76B0 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */; };
 		FA6DFA6B2B33C8590023295F /* UserResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6DFA6A2B33C8590023295F /* UserResponse.json */; };
 		FA6DFA722B33CDD60023295F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA6E2B33CDD60023295F /* Assets.swift */; };
@@ -72,6 +72,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24D2A76D2B35F10000EDF389 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		24D2A76F2B35F10400EDF389 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		24D2A7702B35F75D00EDF389 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		24D2A7732B37920500EDF389 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		FA57BDE02B2D31C50096CDAC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDeCuentaView.swift; sourceTree = "<group>"; };
 		FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarServicioView.swift; sourceTree = "<group>"; };
@@ -86,7 +90,6 @@
 		FA6A8DC42B31180E002F76B0 /* ModalOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalOptionView.swift; sourceTree = "<group>"; };
 		FA6A8DC92B31224D002F76B0 /* DocumentNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentNumberView.swift; sourceTree = "<group>"; };
 		FA6A8DD52B313170002F76B0 /* Colores.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colores.xcassets; sourceTree = "<group>"; };
-		FA6A8DED2B3133D9002F76B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		FA6A8DEF2B31399F002F76B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FA6DFA6A2B33C8590023295F /* UserResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserResponse.json; sourceTree = "<group>"; };
@@ -363,8 +366,8 @@
 			children = (
 				FA6FC17C2B3526050088A87F /* Fonts */,
 				FA6DFA692B33C8240023295F /* JSON */,
-				FA6A8DEB2B31335A002F76B0 /* en.lproj */,
 				FA6A8DD72B3132DA002F76B0 /* Assets */,
+				24D2A76E2B35F10000EDF389 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -376,14 +379,6 @@
 				FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		FA6A8DEB2B31335A002F76B0 /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				FA6A8DEC2B3133D9002F76B0 /* Localizable.strings */,
-			);
-			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		FA6DFA692B33C8240023295F /* JSON */ = {
@@ -456,6 +451,8 @@
 		FACED4802B2CB44A00B6BBC3 = {
 			isa = PBXGroup;
 			children = (
+				24D2A7732B37920500EDF389 /* .swiftlint.yml */,
+				24D2A7702B35F75D00EDF389 /* README.md */,
 				FACED4BC2B2CBE7200B6BBC3 /* .gitignore */,
 				FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */,
 				FACED48B2B2CB44A00B6BBC3 /* BankAppSwiftUI */,
@@ -527,6 +524,8 @@
 				FACED4852B2CB44A00B6BBC3 /* Sources */,
 				FACED4862B2CB44A00B6BBC3 /* Frameworks */,
 				FACED4872B2CB44A00B6BBC3 /* Resources */,
+				24D2A7712B35F82700EDF389 /* SwiftGen Run Script */,
+				24D2A7722B3790E600EDF389 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -605,6 +604,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = FACED4802B2CB44A00B6BBC3;
 			packageReferences = (
@@ -635,8 +635,8 @@
 				FA6FC19C2B35270B0088A87F /* Inter-SemiBold.ttf in Resources */,
 				FA6FC19A2B35270B0088A87F /* Inter-Medium.ttf in Resources */,
 				FA6FC1A02B35270B0088A87F /* Inter-Thin.ttf in Resources */,
+				24D2A76C2B35F10000EDF389 /* Localizable.strings in Resources */,
 				FA6FC1A22B35270B0088A87F /* Inter-Bold.ttf in Resources */,
-				FA6A8DEE2B3133D9002F76B0 /* Localizable.strings in Resources */,
 				FA6FC19F2B35270B0088A87F /* Inter-ExtraBold.ttf in Resources */,
 				FA6FC19B2B35270B0088A87F /* Inter-Regular.ttf in Resources */,
 				FA6DFA6B2B33C8590023295F /* UserResponse.json in Resources */,
@@ -658,6 +658,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24D2A7712B35F82700EDF389 /* SwiftGen Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen\n";
+		};
+		24D2A7722B3790E600EDF389 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FACED4852B2CB44A00B6BBC3 /* Sources */ = {
@@ -727,10 +766,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA6A8DEC2B3133D9002F76B0 /* Localizable.strings */ = {
+		24D2A76E2B35F10000EDF389 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA6A8DED2B3133D9002F76B0 /* en */,
+				24D2A76D2B35F10000EDF389 /* en */,
+				24D2A76F2B35F10400EDF389 /* es-419 */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -743,6 +783,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -806,6 +847,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

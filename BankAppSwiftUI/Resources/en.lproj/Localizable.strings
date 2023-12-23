@@ -11,3 +11,7 @@
 "login.button.text" = "Register here";
 "login.title2.text" = "Already registered?";
 "login.button.text" = "Login Here";
+
+// Modal de Registro
+"register.modal.dni.text" = "Register with DNI and selfie";
+"register.modal.debit.text" = "Register with debit card";

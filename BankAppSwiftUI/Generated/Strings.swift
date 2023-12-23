@@ -27,6 +27,18 @@ internal enum L10n {
       internal static let text = L10n.tr("Localizable", "login.title2.text", fallback: "Already registered?")
     }
   }
+  internal enum Register {
+    internal enum Modal {
+      internal enum Debit {
+        /// Register with debit card
+        internal static let text = L10n.tr("Localizable", "register.modal.debit.text", fallback: "Register with debit card")
+      }
+      internal enum Dni {
+        /// Register with DNI and selfie
+        internal static let text = L10n.tr("Localizable", "register.modal.dni.text", fallback: "Register with DNI and selfie")
+      }
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces
