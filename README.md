@@ -1,7 +1,7 @@
 #  Aplicacion de Banco
 
 
-# Prerequisites
+## Prerequisites
 
 1. Instala Homebrew.
 2. Instala SwiftGen
@@ -30,3 +30,20 @@ brew install swiftlint
 swiftlint --version
 0.53.0
 ```
+
+6. Instala Sourcery
+
+```sh
+brew install sourcery
+2.1.2
+```
+
+
+## Libraries
+
+* SwiftGen
+* SwiftLint 
+* netfox
+* Sourcery
+* ShowTime
+
