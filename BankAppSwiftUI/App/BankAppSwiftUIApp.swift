@@ -12,9 +12,23 @@ import ShowTime
 @main
 struct BankAppSwiftUIApp: App {
 
+    @StateObject private var appRootManager = AppRootManager()
+    
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            Group {
+                switch appRootManager.currentRoot {
+                case .splash:
+                    SplashRootView()
+                    
+                case .authentication:
+                    AuthenticationRootView()
+                    
+                case .home:
+                    HomeRootView()
+                }
+            }
+            .environmentObject(appRootManager)
         }
     }
     

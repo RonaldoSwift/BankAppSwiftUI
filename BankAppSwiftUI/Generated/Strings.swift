@@ -30,12 +30,12 @@ internal enum L10n {
   internal enum Register {
     internal enum Modal {
       internal enum Debit {
-        /// Register with debit card
-        internal static let text = L10n.tr("Localizable", "register.modal.debit.text", fallback: "Register with debit card")
+        /// Register with my debit card
+        internal static let text = L10n.tr("Localizable", "register.modal.debit.text", fallback: "Register with my debit card")
       }
       internal enum Dni {
-        /// Register with DNI and selfie
-        internal static let text = L10n.tr("Localizable", "register.modal.dni.text", fallback: "Register with DNI and selfie")
+        /// Register with my DNI and selfie
+        internal static let text = L10n.tr("Localizable", "register.modal.dni.text", fallback: "Register with my DNI and selfie")
       }
     }
   }
