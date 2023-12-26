@@ -10,9 +10,10 @@ import SwiftUI
 struct RegisterView: View {
     
     @State private var numeroDeDni : String = ""
+    @EnvironmentObject var appRootManager: AppRootManager
     
     var body: some View {
-        VStack(spacing: 15){
+        VStack(spacing: 15) {
             Text("¡Hola!")
                 .foregroundColor(Color.green)
                 .font(Fonts.Inter.extraBold.swiftUIFont(size: 21))
@@ -61,14 +62,16 @@ struct RegisterView: View {
                 primerIcono: "camera"
             )
             
-            NavigationLink(destination: PrincipalView()){
+            Button(action: {
+                appRootManager.currentRoot = .home
+            }, label: {
                 Text("Siguiente")
                     .padding(.horizontal, 150) // Agrega un padding horizontal mayor
                     .padding(.vertical, 10)
                     .foregroundColor(Color.white)
                     .background(Color.orange)
                     .cornerRadius(10)
-            }
+            })
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {

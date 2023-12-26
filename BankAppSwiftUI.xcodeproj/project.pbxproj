@@ -791,7 +791,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# swiftgen\n";
 		};
 		24D2A7722B3790E600EDF389 /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -827,7 +827,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/bash\nif [ \"${CONFIGURATION}\" != \"Release\" ]; then\n    sourcery --config \"${PROJECT_DIR}/Meta/Configuration/Sourcery.yml\" --prune\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/bash\n#if [ \"${CONFIGURATION}\" != \"Release\" ]; then\n #   sourcery --config \"${PROJECT_DIR}/Meta/Configuration/Sourcery.yml\" --prune\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -865,7 +865,6 @@
 				FACED4992B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld in Sources */,
 				FA66A5472B32AE45000B27E6 /* PagosView.swift in Sources */,
 				241D98462B3A0BED007BD97D /* HomeRootView.swift in Sources */,
-				FA6DFA732B33CDD60023295F /* Fonts.swift in Sources */,
 				FA6F02C42B352F9E005CA79E /* User.swift in Sources */,
 				246313ED2B3963B7004F2D28 /* LoginView.swift in Sources */,
 				FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */,

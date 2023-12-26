@@ -10,12 +10,12 @@ import SwiftUI
 struct ModalOptionView: View {
     
     var body: some View {
-        VStack{
-            NavigationLink(destination: RegisterView()){
+        VStack {
+            NavigationLink(destination: RegisterView()) {
                 Text(" Este es Modal --Registrarme con DNI")
             }
             
-            NavigationLink(destination: DocumentNumberView()){
+            NavigationLink(destination: DocumentNumberView()) {
                 Text("Registrarme con Targeta de credito")
                 
             }

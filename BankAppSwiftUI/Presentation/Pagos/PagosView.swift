@@ -9,14 +9,14 @@ import SwiftUI
 
 struct PagosView: View {
     var body: some View {
-        VStack{
+        VStack {
             Text("Pantalla Pagos View")
             
-            NavigationLink(destination: BancaInternetView()){
+            NavigationLink(destination: BancaInternetView()) {
                 Text("Ir a pantalla Banca por internet")
             }
             
-            NavigationLink(destination: PagarServicioView()){
+            NavigationLink(destination: PagarServicioView()) {
                 Text("Ir Pantalla Pagos de servicio")
             }
         }

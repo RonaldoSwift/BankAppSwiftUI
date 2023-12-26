@@ -13,14 +13,14 @@ struct SplashView: View {
     @EnvironmentObject var router: AuthenticationRouter
     
     var body: some View {
-        ZStack{
+        ZStack {
             Color.green.edgesIgnoringSafeArea(.all)
             Image("LogoPrincipal")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 100,height: 100)
         }
-        .onAppear{
+        .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 withAnimation(.spring) {
                     appRootManager.currentRoot = .authentication

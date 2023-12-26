@@ -8,11 +8,13 @@
 import Foundation
 import SwiftUI
 
-internal func tomaFoto(titulo: String, subtitulo:String, primerIcono: String) -> some View{
-    Button(action: {
-        // Acción al presionar el botón (tarjeta)
-        print("Botón presionado")
-    }) {
+internal func tomaFoto(titulo: String, subtitulo:String, primerIcono: String) -> some View {
+    Button(
+        action: {
+            // Acción al presionar el botón (tarjeta)
+            print("Botón presionado")
+        }
+    ) {
         ZStack {
             // Gradiente como fondo del botón (tarjeta)
             LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -21,12 +23,12 @@ internal func tomaFoto(titulo: String, subtitulo:String, primerIcono: String) ->
                 .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
             
             HStack(alignment: .center) {
-                VStack(alignment: .leading){
+                VStack(alignment: .leading) {
                     Text(titulo)
                     Text(subtitulo)
                 }
                 Spacer()
-                HStack(spacing: 20){
+                HStack(spacing: 20) {
                     Image(systemName: primerIcono)
                     Image(systemName: "play.fill")
                 }
