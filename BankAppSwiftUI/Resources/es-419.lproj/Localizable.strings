@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  BankAppSwiftUI
+
+  Created by Carlos Leonardo Camilo Vargas Huaman on 22/12/23.
+  
+*/
+
+// Modal de Registro
+"register.modal.dni.text" = "Registrarme con mi DNI y selfie";
+"register.modal.debit.text" = "Registrarme con tarjeta de débito";

@@ -8,13 +8,16 @@
 import Foundation
 import SwiftUI
 
-internal func nextButtton() -> some View{
-    VStack{
+internal func nextButtton(onClick: @escaping () -> Void) -> some View {
+    
+    VStack {
         Text("¿Primera vez que ingresas?")
-            .font(Fonts.Inter.extraBold.swiftUIFont(size: 18))
-
-        NavigationLink(destination: ModalOptionView()){
-            HStack{
+            .font(.custom("Inter-ExtraBold", size: 18))
+        
+        Button(action: {
+            onClick()
+        }, label: {
+            HStack {
                 Image(systemName: "iphone.gen1")
                 Text("Registrate aqui")
                     .font(Fonts.Inter.bold.swiftUIFont(size: 15))
@@ -24,28 +27,30 @@ internal func nextButtton() -> some View{
             .foregroundColor(Color.white)
             .background(Color.orange)
             .cornerRadius(20)
-        }
+        })
     }
 }
 
-internal func nextButtton2() -> some View{
+internal func nextButtton2(onLoginClick: @escaping () -> Void) -> some View{
     VStack{
         Text("¿Ya te has registrado?")
-            .font(Fonts.Inter.extraBold.swiftUIFont(size: 18))
-
-        NavigationLink(destination: ModalOptionView()){
-            HStack{
-                Text("Ingresa Aqui")
-                    .font(Fonts.Inter.bold.swiftUIFont(size: 15))
-                Image(systemName: "arrowtriangle.right.fill")
-                
-            }
-            .padding()
-            .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
-            .overlay(
-                Capsule().stroke(lineWidth: 2)
-                    .foregroundColor(Color("Greenbutton"))
-            )
+            .font(.custom("Inter-ExtraBold", size: 18))
+        
+        
+        HStack{
+            Text("Ingresa Aqui")
+                .font(.custom("Inter-ExtraBold", size: 15))
+            Image(systemName: "arrowtriangle.right.fill")
+            
+        }
+        .padding()
+        .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
+        .overlay(
+            Capsule().stroke(lineWidth: 2)
+                .foregroundColor(Color("Greenbutton"))
+        )
+        .onTapGesture {
+            onLoginClick()
         }
     }
 }

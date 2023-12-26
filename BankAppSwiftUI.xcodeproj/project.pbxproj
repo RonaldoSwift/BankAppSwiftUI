@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241D98442B3A05A5007BD97D /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98432B3A05A5007BD97D /* AppRootManager.swift */; };
+		241D98462B3A0BED007BD97D /* HomeRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98452B3A0BED007BD97D /* HomeRootView.swift */; };
+		241D98492B3A0C56007BD97D /* SplashRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98482B3A0C56007BD97D /* SplashRootView.swift */; };
+		246313DF2B38D601004F2D28 /* RegisterSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246313DE2B38D601004F2D28 /* RegisterSheetView.swift */; };
+		246313E12B38EB19004F2D28 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246313E02B38EB19004F2D28 /* AuthenticationRootView.swift */; };
+		246313ED2B3963B7004F2D28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246313EC2B3963B7004F2D28 /* LoginView.swift */; };
+		246313EF2B39F8FF004F2D28 /* AuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246313EE2B39F8FF004F2D28 /* AuthenticationRouter.swift */; };
+		24D2A76C2B35F10000EDF389 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24D2A76E2B35F10000EDF389 /* Localizable.strings */; };
+		24D2A7782B37A92800EDF389 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 24D2A7772B37A92800EDF389 /* netfox */; };
+		24D2A77B2B37ACBA00EDF389 /* ShowTime in Frameworks */ = {isa = PBXBuildFile; productRef = 24D2A77A2B37ACBA00EDF389 /* ShowTime */; };
+		24D2A7882B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2A7872B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift */; };
 		FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57BDE02B2D31C50096CDAC /* SplashView.swift */; };
 		FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */; };
 		FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */; };
@@ -21,14 +32,13 @@
 		FA6A8DC52B31180E002F76B0 /* ModalOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8DC42B31180E002F76B0 /* ModalOptionView.swift */; };
 		FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8DC92B31224D002F76B0 /* DocumentNumberView.swift */; };
 		FA6A8DD62B313170002F76B0 /* Colores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DD52B313170002F76B0 /* Colores.xcassets */; };
-		FA6A8DEE2B3133D9002F76B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DEC2B3133D9002F76B0 /* Localizable.strings */; };
 		FA6A8DF42B313D2E002F76B0 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */; };
 		FA6DFA6B2B33C8590023295F /* UserResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6DFA6A2B33C8590023295F /* UserResponse.json */; };
 		FA6DFA722B33CDD60023295F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA6E2B33CDD60023295F /* Assets.swift */; };
 		FA6DFA742B33CDD60023295F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA702B33CDD60023295F /* JSON.swift */; };
 		FA6DFA752B33CDD60023295F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA712B33CDD60023295F /* Strings.swift */; };
 		FA6F02C22B352F95005CA79E /* pruebaUno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C12B352F95005CA79E /* pruebaUno.swift */; };
-		FA6F02C42B352F9E005CA79E /* prueba2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C32B352F9E005CA79E /* prueba2.swift */; };
+		FA6F02C42B352F9E005CA79E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C32B352F9E005CA79E /* User.swift */; };
 		FA6F02C62B352FAD005CA79E /* prueba3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C52B352FAD005CA79E /* prueba3.swift */; };
 		FA6F02CA2B35304E005CA79E /* prueba4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C92B35304E005CA79E /* prueba4.swift */; };
 		FA6F02CF2B353136005CA79E /* prueba6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02CE2B353136005CA79E /* prueba6.swift */; };
@@ -72,6 +82,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		241D98432B3A05A5007BD97D /* AppRootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootManager.swift; sourceTree = "<group>"; };
+		241D98452B3A0BED007BD97D /* HomeRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRootView.swift; sourceTree = "<group>"; };
+		241D98482B3A0C56007BD97D /* SplashRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRootView.swift; sourceTree = "<group>"; };
+		246313DE2B38D601004F2D28 /* RegisterSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSheetView.swift; sourceTree = "<group>"; };
+		246313E02B38EB19004F2D28 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
+		246313EC2B3963B7004F2D28 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		246313EE2B39F8FF004F2D28 /* AuthenticationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouter.swift; sourceTree = "<group>"; };
+		24D2A76D2B35F10000EDF389 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		24D2A76F2B35F10400EDF389 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		24D2A7702B35F75D00EDF389 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		24D2A7732B37920500EDF389 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		24D2A77F2B37AF1600EDF389 /* Sourcery.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = Sourcery.yml; sourceTree = "<group>"; };
+		24D2A7832B37B07000EDF389 /* ModelsMock.swifttemplate */ = {isa = PBXFileReference; lastKnownFileType = text; path = ModelsMock.swifttemplate; sourceTree = "<group>"; };
+		24D2A7842B37B0CA00EDF389 /* Core.meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.meta.swift; sourceTree = "<group>"; };
+		24D2A7852B37B18900EDF389 /* MockParameter.meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockParameter.meta.swift; sourceTree = "<group>"; };
+		24D2A7862B37B1EB00EDF389 /* ModelsMock.meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsMock.meta.swift; sourceTree = "<group>"; };
+		24D2A7872B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BankAppSwiftUIModels+mock.swift"; sourceTree = "<group>"; };
 		FA57BDE02B2D31C50096CDAC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDeCuentaView.swift; sourceTree = "<group>"; };
 		FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarServicioView.swift; sourceTree = "<group>"; };
@@ -86,7 +113,6 @@
 		FA6A8DC42B31180E002F76B0 /* ModalOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalOptionView.swift; sourceTree = "<group>"; };
 		FA6A8DC92B31224D002F76B0 /* DocumentNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentNumberView.swift; sourceTree = "<group>"; };
 		FA6A8DD52B313170002F76B0 /* Colores.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colores.xcassets; sourceTree = "<group>"; };
-		FA6A8DED2B3133D9002F76B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		FA6A8DEF2B31399F002F76B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FA6DFA6A2B33C8590023295F /* UserResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserResponse.json; sourceTree = "<group>"; };
@@ -94,7 +120,7 @@
 		FA6DFA702B33CDD60023295F /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		FA6DFA712B33CDD60023295F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		FA6F02C12B352F95005CA79E /* pruebaUno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaUno.swift; sourceTree = "<group>"; };
-		FA6F02C32B352F9E005CA79E /* prueba2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba2.swift; sourceTree = "<group>"; };
+		FA6F02C32B352F9E005CA79E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA6F02C52B352FAD005CA79E /* prueba3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba3.swift; sourceTree = "<group>"; };
 		FA6F02C92B35304E005CA79E /* prueba4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba4.swift; sourceTree = "<group>"; };
 		FA6F02CE2B353136005CA79E /* prueba6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba6.swift; sourceTree = "<group>"; };
@@ -129,6 +155,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D2A77B2B37ACBA00EDF389 /* ShowTime in Frameworks */,
+				24D2A7782B37A92800EDF389 /* netfox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +177,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		241D98472B3A0C26007BD97D /* RootViews */ = {
+			isa = PBXGroup;
+			children = (
+				241D98482B3A0C56007BD97D /* SplashRootView.swift */,
+				241D984B2B3A0DF2007BD97D /* Authentication */,
+				241D98452B3A0BED007BD97D /* HomeRootView.swift */,
+			);
+			path = RootViews;
+			sourceTree = "<group>";
+		};
+		241D984A2B3A0CA3007BD97D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				241D98432B3A05A5007BD97D /* AppRootManager.swift */,
+				241D98472B3A0C26007BD97D /* RootViews */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		241D984B2B3A0DF2007BD97D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				246313E02B38EB19004F2D28 /* AuthenticationRootView.swift */,
+				246313EE2B39F8FF004F2D28 /* AuthenticationRouter.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		246313E92B39639C004F2D28 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				246313EC2B3963B7004F2D28 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		24D2A77D2B37AEFE00EDF389 /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				24D2A7802B37AF4B00EDF389 /* Templates */,
+				24D2A77E2B37AF0400EDF389 /* Configuration */,
+			);
+			path = Meta;
+			sourceTree = "<group>";
+		};
+		24D2A77E2B37AF0400EDF389 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				24D2A77F2B37AF1600EDF389 /* Sourcery.yml */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		24D2A7802B37AF4B00EDF389 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				24D2A7822B37AF5E00EDF389 /* Core */,
+				24D2A7812B37AF5100EDF389 /* ModelsMock */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		24D2A7812B37AF5100EDF389 /* ModelsMock */ = {
+			isa = PBXGroup;
+			children = (
+				24D2A7832B37B07000EDF389 /* ModelsMock.swifttemplate */,
+				24D2A7862B37B1EB00EDF389 /* ModelsMock.meta.swift */,
+			);
+			path = ModelsMock;
+			sourceTree = "<group>";
+		};
+		24D2A7822B37AF5E00EDF389 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				24D2A7842B37B0CA00EDF389 /* Core.meta.swift */,
+				24D2A7852B37B18900EDF389 /* MockParameter.meta.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		FA57BDDB2B2D2C830096CDAC /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +278,7 @@
 		FA57BDDD2B2D2C960096CDAC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				246313E92B39639C004F2D28 /* Login */,
 				FA5ADD8E2B33330B00504EB0 /* BancaInternet */,
 				FA5ADD8B2B3332D300504EB0 /* PagarServicio */,
 				FA5ADD882B3331D800504EB0 /* DetalleDeCuenta */,
@@ -191,6 +300,7 @@
 		FA57BDDE2B2D2C9E0096CDAC /* App */ = {
 			isa = PBXGroup;
 			children = (
+				241D984A2B3A0CA3007BD97D /* Root */,
 				FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */,
 			);
 			path = App;
@@ -337,7 +447,7 @@
 		FA6A8DD12B312553002F76B0 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
-				FA6F02C32B352F9E005CA79E /* prueba2.swift */,
+				FA6F02C32B352F9E005CA79E /* User.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -363,8 +473,8 @@
 			children = (
 				FA6FC17C2B3526050088A87F /* Fonts */,
 				FA6DFA692B33C8240023295F /* JSON */,
-				FA6A8DEB2B31335A002F76B0 /* en.lproj */,
 				FA6A8DD72B3132DA002F76B0 /* Assets */,
+				24D2A76E2B35F10000EDF389 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -376,14 +486,6 @@
 				FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		FA6A8DEB2B31335A002F76B0 /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				FA6A8DEC2B3133D9002F76B0 /* Localizable.strings */,
-			);
-			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		FA6DFA692B33C8240023295F /* JSON */ = {
@@ -416,6 +518,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6F02DE2B353706005CA79E /* NextButtonView.swift */,
+				246313DE2B38D601004F2D28 /* RegisterSheetView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -456,6 +559,9 @@
 		FACED4802B2CB44A00B6BBC3 = {
 			isa = PBXGroup;
 			children = (
+				24D2A77D2B37AEFE00EDF389 /* Meta */,
+				24D2A7732B37920500EDF389 /* .swiftlint.yml */,
+				24D2A7702B35F75D00EDF389 /* README.md */,
 				FACED4BC2B2CBE7200B6BBC3 /* .gitignore */,
 				FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */,
 				FACED48B2B2CB44A00B6BBC3 /* BankAppSwiftUI */,
@@ -503,6 +609,7 @@
 		FACED4A12B2CB44B00B6BBC3 /* BankAppSwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
+				24D2A7872B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift */,
 				FACED4A22B2CB44B00B6BBC3 /* BankAppSwiftUITests.swift */,
 			);
 			path = BankAppSwiftUITests;
@@ -527,6 +634,9 @@
 				FACED4852B2CB44A00B6BBC3 /* Sources */,
 				FACED4862B2CB44A00B6BBC3 /* Frameworks */,
 				FACED4872B2CB44A00B6BBC3 /* Resources */,
+				24D2A7712B35F82700EDF389 /* SwiftGen Run Script */,
+				24D2A7722B3790E600EDF389 /* Swift Lint */,
+				24D2A77C2B37AE7B00EDF389 /* Sourcery */,
 			);
 			buildRules = (
 			);
@@ -534,6 +644,8 @@
 			);
 			name = BankAppSwiftUI;
 			packageProductDependencies = (
+				24D2A7772B37A92800EDF389 /* netfox */,
+				24D2A77A2B37ACBA00EDF389 /* ShowTime */,
 			);
 			productName = BankAppSwiftUI;
 			productReference = FACED4892B2CB44A00B6BBC3 /* BankAppSwiftUI.app */;
@@ -605,10 +717,12 @@
 			knownRegions = (
 				en,
 				Base,
-				es,
+				"es-419",
 			);
 			mainGroup = FACED4802B2CB44A00B6BBC3;
 			packageReferences = (
+				24D2A7762B37A92800EDF389 /* XCRemoteSwiftPackageReference "netfox" */,
+				24D2A7792B37ACBA00EDF389 /* XCRemoteSwiftPackageReference "ShowTime" */,
 			);
 			productRefGroup = FACED48A2B2CB44A00B6BBC3 /* Products */;
 			projectDirPath = "";
@@ -636,8 +750,8 @@
 				FA6FC19C2B35270B0088A87F /* Inter-SemiBold.ttf in Resources */,
 				FA6FC19A2B35270B0088A87F /* Inter-Medium.ttf in Resources */,
 				FA6FC1A02B35270B0088A87F /* Inter-Thin.ttf in Resources */,
+				24D2A76C2B35F10000EDF389 /* Localizable.strings in Resources */,
 				FA6FC1A22B35270B0088A87F /* Inter-Bold.ttf in Resources */,
-				FA6A8DEE2B3133D9002F76B0 /* Localizable.strings in Resources */,
 				FA6FC19F2B35270B0088A87F /* Inter-ExtraBold.ttf in Resources */,
 				FA6FC19B2B35270B0088A87F /* Inter-Regular.ttf in Resources */,
 				FA6DFA6B2B33C8590023295F /* UserResponse.json in Resources */,
@@ -660,6 +774,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24D2A7712B35F82700EDF389 /* SwiftGen Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen\n";
+		};
+		24D2A7722B3790E600EDF389 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		24D2A77C2B37AE7B00EDF389 /* Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Sourcery;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/bash\nif [ \"${CONFIGURATION}\" != \"Release\" ]; then\n    sourcery --config \"${PROJECT_DIR}/Meta/Configuration/Sourcery.yml\" --prune\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FACED4852B2CB44A00B6BBC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -668,15 +839,20 @@
 				FA66A5502B32AF39000B27E6 /* PrincipalView.swift in Sources */,
 				FA6FC17B2B351E590088A87F /* TomaFotoView.swift in Sources */,
 				FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */,
+				246313DF2B38D601004F2D28 /* RegisterSheetView.swift in Sources */,
+				246313E12B38EB19004F2D28 /* AuthenticationRootView.swift in Sources */,
 				FA6DFA752B33CDD60023295F /* Strings.swift in Sources */,
 				FA6F02CA2B35304E005CA79E /* prueba4.swift in Sources */,
 				FA6A8DC22B3116AA002F76B0 /* WelcomeView.swift in Sources */,
 				FA6F02CF2B353136005CA79E /* prueba6.swift in Sources */,
+				246313EF2B39F8FF004F2D28 /* AuthenticationRouter.swift in Sources */,
 				FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */,
+				241D98492B3A0C56007BD97D /* SplashRootView.swift in Sources */,
 				FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */,
 				FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */,
 				FA6DFA722B33CDD60023295F /* Assets.swift in Sources */,
 				FA6F02C62B352FAD005CA79E /* prueba3.swift in Sources */,
+				241D98442B3A05A5007BD97D /* AppRootManager.swift in Sources */,
 				FA9BDBE32B30A8320037392B /* RegisterView.swift in Sources */,
 				FA6DFA742B33CDD60023295F /* JSON.swift in Sources */,
 				FA66A5492B32AE4F000B27E6 /* PrestamosView.swift in Sources */,
@@ -688,7 +864,10 @@
 				FA6A8DC52B31180E002F76B0 /* ModalOptionView.swift in Sources */,
 				FACED4992B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld in Sources */,
 				FA66A5472B32AE45000B27E6 /* PagosView.swift in Sources */,
-				FA6F02C42B352F9E005CA79E /* prueba2.swift in Sources */,
+				241D98462B3A0BED007BD97D /* HomeRootView.swift in Sources */,
+				FA6DFA732B33CDD60023295F /* Fonts.swift in Sources */,
+				FA6F02C42B352F9E005CA79E /* User.swift in Sources */,
+				246313ED2B3963B7004F2D28 /* LoginView.swift in Sources */,
 				FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */,
 				FABC4F762B35411C00AB0B13 /* Fonts.swift in Sources */,
 				FA6F02C22B352F95005CA79E /* pruebaUno.swift in Sources */,
@@ -700,6 +879,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACED4A32B2CB44B00B6BBC3 /* BankAppSwiftUITests.swift in Sources */,
+				24D2A7882B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,10 +908,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA6A8DEC2B3133D9002F76B0 /* Localizable.strings */ = {
+		24D2A76E2B35F10000EDF389 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA6A8DED2B3133D9002F76B0 /* en */,
+				24D2A76D2B35F10000EDF389 /* en */,
+				24D2A76F2B35F10400EDF389 /* es-419 */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -744,6 +925,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -807,6 +989,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1036,6 +1219,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24D2A7762B37A92800EDF389 /* XCRemoteSwiftPackageReference "netfox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kasketis/netfox";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.21.0;
+			};
+		};
+		24D2A7792B37ACBA00EDF389 /* XCRemoteSwiftPackageReference "ShowTime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KaneCheshire/ShowTime";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24D2A7772B37A92800EDF389 /* netfox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24D2A7762B37A92800EDF389 /* XCRemoteSwiftPackageReference "netfox" */;
+			productName = netfox;
+		};
+		24D2A77A2B37ACBA00EDF389 /* ShowTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24D2A7792B37ACBA00EDF389 /* XCRemoteSwiftPackageReference "ShowTime" */;
+			productName = ShowTime;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FACED4972B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld */ = {

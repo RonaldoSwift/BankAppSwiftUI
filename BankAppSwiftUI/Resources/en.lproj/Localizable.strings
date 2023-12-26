@@ -7,7 +7,11 @@
 */
 
 //Textos en ingles
-"welcome.title.text" = "First time login?";
-"welcome.button.text" = "Register here";
-"welcome.title2.text" = "Already registered?";
-"welcome.button.text" = "Login Here";
+"login.title.text" = "First time login?";
+"login.button.text" = "Register here";
+"login.title2.text" = "Already registered?";
+"login.button.text" = "Login Here";
+
+// Modal de Registro
+"register.modal.dni.text" = "Register with my DNI and selfie";
+"register.modal.debit.text" = "Register with my debit card";

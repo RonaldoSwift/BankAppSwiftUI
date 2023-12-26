@@ -1,0 +1,15 @@
+sources:
+    include:
+        - ../../BankAppSwiftUI/Domain/Modelo
+    exclude:
+        - ../../BankAppSwiftUITests
+
+templates:
+    - ../Templates/ModelsMock/ModelsMock.swifttemplate
+
+output:
+    ../../BankAppSwiftUITests
+
+args:
+    projectName: ${PROJECT_NAME}
+    hardCodedExample: Swift
