@@ -20,7 +20,7 @@ internal func nextButtton(onClick: @escaping () -> Void) -> some View {
             HStack {
                 Image(systemName: "iphone.gen1")
                 Text("Registrate aqui")
-                    .font(Fonts.Inter.extraBold.swiftUIFont(size: 32))
+                    .font(Fonts.Inter.bold.swiftUIFont(size: 15))
                 Image(systemName: "arrowtriangle.right.fill")
             }
             .padding()
@@ -31,13 +31,12 @@ internal func nextButtton(onClick: @escaping () -> Void) -> some View {
     }
 }
 
-internal func nextButtton2(onLoginClick: @escaping () -> Void) -> some View{
-    VStack{
+internal func nextButtton2(onLoginClick: @escaping () -> Void) -> some View {
+    VStack {
         Text("¿Ya te has registrado?")
             .font(.custom("Inter-ExtraBold", size: 18))
         
-        
-        HStack{
+        HStack {
             Text("Ingresa Aqui")
                 .font(.custom("Inter-ExtraBold", size: 15))
             Image(systemName: "arrowtriangle.right.fill")
@@ -55,17 +54,15 @@ internal func nextButtton2(onLoginClick: @escaping () -> Void) -> some View{
     }
 }
 
-
-internal func nextServicio(imageTab: String, texto:String, imageNext: String) -> some View{
-    HStack{
+internal func nextServicio(imageTab: String, texto:String, imageNext: String) -> some View {
+    HStack {
         Button(action: {}, label: {
             Image(systemName: imageTab)
             Text(texto)
             Image(systemName: imageNext)
             
         })
-        .font(.custom("Inter-ExtraBold", size: 15))
+        .font(Fonts.Inter.bold.swiftUIFont(size: 15))
         .foregroundColor(Color("Metallic"))
     }
 }
-

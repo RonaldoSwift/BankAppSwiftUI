@@ -22,6 +22,7 @@ json:
 strings:
   inputs:
     - Resources/en.lproj
+    - Resources/es.lproj
   outputs:
     - templateName: structured-swift5
       output: Strings.swift

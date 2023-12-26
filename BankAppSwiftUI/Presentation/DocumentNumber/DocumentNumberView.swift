@@ -10,7 +10,7 @@ import SwiftUI
 struct DocumentNumberView: View {
     var body: some View {
         
-        NavigationLink(destination: PrincipalView()){
+        NavigationLink(destination: PrincipalView()) {
             Text(" Este es pANTALLA Document nUmber!!!")
 
         }

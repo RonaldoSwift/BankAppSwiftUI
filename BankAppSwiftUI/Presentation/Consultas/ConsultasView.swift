@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ConsultasView: View {
     var body: some View {
-        VStack{
+        VStack {
             Text("Consulta!!!")
-            NavigationLink(destination: DetalleDeCuentaView()){
+            NavigationLink(destination: DetalleDeCuentaView()) {
                 Text("Ir a detalle Cuenta")
             }
         }

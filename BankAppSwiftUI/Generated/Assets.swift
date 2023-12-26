@@ -29,6 +29,7 @@ internal enum Asset {
     internal static let greenbutton = ColorAsset(name: "Greenbutton")
     internal static let metallic = ColorAsset(name: "Metallic")
     internal static let water = ColorAsset(name: "Water")
+    internal static let next = ColorAsset(name: "next")
   }
   internal enum Imagenes {
     internal static let creditCard = ImageAsset(name: "CreditCard")
