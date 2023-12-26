@@ -11,13 +11,13 @@ import SwiftUI
 internal func nextButtton() -> some View{
     VStack{
         Text("¿Primera vez que ingresas?")
-            .font(.custom("Inter-ExtraBold", size: 18))
-        
+            .font(Fonts.Inter.extraBold.swiftUIFont(size: 18))
+
         NavigationLink(destination: ModalOptionView()){
             HStack{
                 Image(systemName: "iphone.gen1")
                 Text("Registrate aqui")
-                    .font(Fonts.Inter.extraBold.swiftUIFont(size: 32))
+                    .font(Fonts.Inter.bold.swiftUIFont(size: 15))
                 Image(systemName: "arrowtriangle.right.fill")
             }
             .padding()
@@ -31,12 +31,12 @@ internal func nextButtton() -> some View{
 internal func nextButtton2() -> some View{
     VStack{
         Text("¿Ya te has registrado?")
-            .font(.custom("Inter-ExtraBold", size: 18))
-        
+            .font(Fonts.Inter.extraBold.swiftUIFont(size: 18))
+
         NavigationLink(destination: ModalOptionView()){
             HStack{
                 Text("Ingresa Aqui")
-                    .font(.custom("Inter-ExtraBold", size: 15))
+                    .font(Fonts.Inter.bold.swiftUIFont(size: 15))
                 Image(systemName: "arrowtriangle.right.fill")
                 
             }
@@ -50,7 +50,6 @@ internal func nextButtton2() -> some View{
     }
 }
 
-
 internal func nextServicio(imageTab: String, texto:String, imageNext: String) -> some View{
     HStack{
         Button(action: {}, label: {
@@ -59,7 +58,7 @@ internal func nextServicio(imageTab: String, texto:String, imageNext: String) ->
             Image(systemName: imageNext)
             
         })
-        .font(.custom("Inter-ExtraBold", size: 15))
+        .font(Fonts.Inter.bold.swiftUIFont(size: 15))
         .foregroundColor(Color("Metallic"))
     }
 }

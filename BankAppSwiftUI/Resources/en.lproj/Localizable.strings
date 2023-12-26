@@ -7,7 +7,7 @@
 */
 
 //Textos en ingles
-"login.title.text" = "First time login?";
-"login.button.text" = "Register here";
-"login.title2.text" = "Already registered?";
-"login.button.text" = "Login Here";
+"welcome.title.text" = "First time login?";
+"welcome.button.text" = "Register here";
+"welcome.title2.text" = "Already registered?";
+"welcome.button.text" = "Login Here";

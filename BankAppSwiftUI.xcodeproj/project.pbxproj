@@ -25,7 +25,6 @@
 		FA6A8DF42B313D2E002F76B0 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */; };
 		FA6DFA6B2B33C8590023295F /* UserResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6DFA6A2B33C8590023295F /* UserResponse.json */; };
 		FA6DFA722B33CDD60023295F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA6E2B33CDD60023295F /* Assets.swift */; };
-		FA6DFA732B33CDD60023295F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA6F2B33CDD60023295F /* Fonts.swift */; };
 		FA6DFA742B33CDD60023295F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA702B33CDD60023295F /* JSON.swift */; };
 		FA6DFA752B33CDD60023295F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DFA712B33CDD60023295F /* Strings.swift */; };
 		FA6F02C22B352F95005CA79E /* pruebaUno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F02C12B352F95005CA79E /* pruebaUno.swift */; };
@@ -45,6 +44,7 @@
 		FA6FC1A12B35270B0088A87F /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1982B35270B0088A87F /* Inter-Light.ttf */; };
 		FA6FC1A22B35270B0088A87F /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1992B35270B0088A87F /* Inter-Bold.ttf */; };
 		FA9BDBE32B30A8320037392B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BDBE22B30A8320037392B /* RegisterView.swift */; };
+		FABC4F762B35411C00AB0B13 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC4F752B35411C00AB0B13 /* Fonts.swift */; };
 		FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */; };
 		FACED4912B2CB44B00B6BBC3 /* Imagenes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */; };
 		FACED4942B2CB44B00B6BBC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACED4932B2CB44B00B6BBC3 /* Preview Assets.xcassets */; };
@@ -91,7 +91,6 @@
 		FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FA6DFA6A2B33C8590023295F /* UserResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserResponse.json; sourceTree = "<group>"; };
 		FA6DFA6E2B33CDD60023295F /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
-		FA6DFA6F2B33CDD60023295F /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FA6DFA702B33CDD60023295F /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		FA6DFA712B33CDD60023295F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		FA6F02C12B352F95005CA79E /* pruebaUno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaUno.swift; sourceTree = "<group>"; };
@@ -111,6 +110,7 @@
 		FA6FC1982B35270B0088A87F /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
 		FA6FC1992B35270B0088A87F /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		FA9BDBE22B30A8320037392B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		FABC4F752B35411C00AB0B13 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FACED4892B2CB44A00B6BBC3 /* BankAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagenes.xcassets; sourceTree = "<group>"; };
@@ -397,8 +397,8 @@
 		FA6DFA6D2B33CD990023295F /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				FABC4F752B35411C00AB0B13 /* Fonts.swift */,
 				FA6DFA6E2B33CDD60023295F /* Assets.swift */,
-				FA6DFA6F2B33CDD60023295F /* Fonts.swift */,
 				FA6DFA702B33CDD60023295F /* JSON.swift */,
 				FA6DFA712B33CDD60023295F /* Strings.swift */,
 			);
@@ -605,6 +605,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = FACED4802B2CB44A00B6BBC3;
 			packageReferences = (
@@ -687,9 +688,9 @@
 				FA6A8DC52B31180E002F76B0 /* ModalOptionView.swift in Sources */,
 				FACED4992B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld in Sources */,
 				FA66A5472B32AE45000B27E6 /* PagosView.swift in Sources */,
-				FA6DFA732B33CDD60023295F /* Fonts.swift in Sources */,
 				FA6F02C42B352F9E005CA79E /* prueba2.swift in Sources */,
 				FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */,
+				FABC4F762B35411C00AB0B13 /* Fonts.swift in Sources */,
 				FA6F02C22B352F95005CA79E /* pruebaUno.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
