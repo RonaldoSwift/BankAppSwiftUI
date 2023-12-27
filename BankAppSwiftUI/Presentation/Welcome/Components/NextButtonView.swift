@@ -53,16 +53,3 @@ internal func nextButtton2(onLoginClick: @escaping () -> Void) -> some View {
         }
     }
 }
-
-internal func nextServicio(imageTab: String, texto:String, imageNext: String) -> some View {
-    HStack {
-        Button(action: {}, label: {
-            Image(systemName: imageTab)
-            Text(texto)
-            Image(systemName: imageNext)
-            
-        })
-        .font(Fonts.Inter.bold.swiftUIFont(size: 15))
-        .foregroundColor(Color("Metallic"))
-    }
-}

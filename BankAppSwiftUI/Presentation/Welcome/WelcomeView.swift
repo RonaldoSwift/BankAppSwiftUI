@@ -28,13 +28,13 @@ struct WelcomeView: View {
             )
             
             HStack(spacing: 113) {
-                nextServicio(
+                ubicanosYLlamanos(
                     imageTab: "mappin",
                     texto: "Ubicanos",
                     imageNext: "arrowtriangle.right.fill"
                 )
                 
-                nextServicio(
+                ubicanosYLlamanos(
                     imageTab: "phone",
                     texto: "Llamanos",
                     imageNext: "arrowtriangle.right.fill"
