@@ -9,7 +9,10 @@ server.use(middlewares);
 server.use(jsonServer.bodyParser);
 
 server.get("/login", (req, res) => {
-    res.jsonp(data);
+    const delay = 2000 // In milliseconds
+    setTimeout(() => {
+        res.jsonp(data);
+    }, delay)
 });
 
 server.use(router);
