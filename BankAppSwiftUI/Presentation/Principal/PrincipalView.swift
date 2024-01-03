@@ -8,12 +8,27 @@
 import SwiftUI
 
 struct PrincipalView: View {
+    
+    @ObservedObject var consultasRouter: ConsultasRouter = ConsultasRouter()
+    
     var body: some View {
         TabView {
-            ConsultasView()
-                .tabItem {
-                    Label("Consultas", systemImage: "magnifyingglass")
-                }
+            
+            NavigationStack(path: $consultasRouter.navPath) {
+                ZStack(content: {
+                    ConsultasView()
+                        .tabItem {
+                            Label("Consultas", systemImage: "magnifyingglass")
+                        }        
+                        .navigationDestination(for: ConsultasRouter.Destination.self, destination: { destination in
+                            switch (destination) {
+                            case .detalleCuenta:
+                                DetalleCuentaView()
+                            }
+                        })
+                })
+            }
+            .environmentObject(consultasRouter)
             
             TransferenciaView()
                 .tabItem {
