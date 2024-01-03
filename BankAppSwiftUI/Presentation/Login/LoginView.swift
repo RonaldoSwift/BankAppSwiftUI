@@ -97,14 +97,9 @@ struct LoginView: View {
                 appRootManager.currentRoot = .home
             }, label: {
                 Text("Ir a la pantalla principal")
-                    .padding(.horizontal, 50) // Agrega un padding horizontal mayor
-                    .padding(.vertical, 15)
-                    .foregroundColor(Color.white)
-                    .background( Asset.Colores.greenbutton.swiftUIColor)
-                    .cornerRadius(30)
                     .frame(maxWidth: .infinity)
-                
             })
+            .buttonStyle(PrimaryButtonStyle())
             
             VStack {
                 Text("Pimera vez que ingresas o cambiaste de tarjeta")

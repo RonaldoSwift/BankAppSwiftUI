@@ -1,37 +1,49 @@
 #  Aplicacion de Banco
 
 
-## Prerequisites
+## Running the server
 
-1. Instala Homebrew.
-2. Instala SwiftGen
+1. Install node
+2. Move to the `server` folder 
+3. To install libraries, run `npm install`
+3. To start the server just run: `node index.js`
+4. To stop the server just type: `control + c`
+
+
+## Running the app
+
+### Prerequisites
+
+1. Go back to the root folder.
+2. Instala Homebrew.
+3. Instala SwiftGen
 
 ```sh
 brew update
 brew install swiftgen
 ```
 
-3. Verifica que tienes instalado swiftgen
+4. Verifica que tienes instalado swiftgen
 
 ```sh
 switfgen --version
 SwiftGen v6.6.2 (Stencil v0.15.1, StencilSwiftKit v2.10.1, SwiftGenKit v6.6.2)
 ```
 
-4. Instala SwiftLint
+5. Instala SwiftLint
 
 ```sh
 brew install swiftlint
 ```
 
-5. Verifica que tienes swiftlint instalado
+6. Verifica que tienes swiftlint instalado
 
 ```sh
 swiftlint --version
 0.53.0
 ```
 
-6. Instala Sourcery
+7. Instala Sourcery
 
 ```sh
 brew install sourcery
