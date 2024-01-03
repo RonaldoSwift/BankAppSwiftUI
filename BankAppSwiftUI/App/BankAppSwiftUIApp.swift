@@ -25,7 +25,7 @@ struct BankAppSwiftUIApp: App {
                     AuthenticationRootView()
                     
                 case .home:
-                    HomeRootView()
+                    PrincipalRootView()
                 }
             }
             .environmentObject(appRootManager)

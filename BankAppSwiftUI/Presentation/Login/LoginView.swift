@@ -12,6 +12,9 @@ struct LoginView: View {
     @EnvironmentObject private var appRootManager: AppRootManager
     @State private var documentNumber: String = ""
     @State private var internetPassword: String = ""
+    @State private var estadoDeButton: LoginButtonState = LoginButtonState.inicial
+    
+    let loginViewModel = LoginViewModel(loginRepository: LoginRepository(memoriaLogin: MemoriaLogin()))
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -53,7 +56,7 @@ struct LoginView: View {
                     .foregroundColor( Asset.Colores.interrogation.swiftUIColor)
             }
             .frame(maxHeight: 50)
-
+            
             HStack {
                 Text("Clave de internet")
                     .font(Fonts.Inter.bold.swiftUIFont(size: 15))
@@ -93,18 +96,35 @@ struct LoginView: View {
                     .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
             }
             
-            Button(action: {
-                appRootManager.currentRoot = .home
-            }, label: {
-                Text("Ir a la pantalla principal")
-                    .padding(.horizontal, 50) // Agrega un padding horizontal mayor
-                    .padding(.vertical, 15)
-                    .foregroundColor(Color.white)
-                    .background( Asset.Colores.greenbutton.swiftUIColor)
-                    .cornerRadius(30)
-                    .frame(maxWidth: .infinity)
+            if(estadoDeButton == LoginButtonState.inicial) {
+                loginButton(
+                    clickbutton: {
+                        loginViewModel.getLoginFromMemory(
+                            documentNumber: documentNumber,
+                            internetPassword: internetPassword
+                        )
+                    },
+                    titulo: "Ingresar",
+                    colorButton: Asset.Colores.greenbutton.swiftUIColor,
+                    mostrarLoading: false)
                 
-            })
+            } else if(estadoDeButton == LoginButtonState.cargando) {
+                loginButton(
+                    clickbutton: {
+                    },
+                    titulo: "",
+                    colorButton: Asset.Colores.metallic.swiftUIColor,
+                    mostrarLoading: true)
+                
+            } else if(estadoDeButton == LoginButtonState.final) {
+                loginButton(
+                    clickbutton: {
+                        appRootManager.currentRoot = .home
+                    },
+                    titulo: "Final",
+                    colorButton: Asset.Colores.greenbutton.swiftUIColor,
+                    mostrarLoading: false)
+            }
             
             VStack {
                 Text("Pimera vez que ingresas o cambiaste de tarjeta")
@@ -125,7 +145,7 @@ struct LoginView: View {
                 })
             }
             .frame(maxWidth: .infinity)
-
+            
             Spacer()
             
             HStack(spacing: 90) {
@@ -144,6 +164,9 @@ struct LoginView: View {
             .padding()
         }
         .padding()
+        .onReceive(loginViewModel.$estadoDeButtonLogin, perform: { estadoButtonPublicador in
+            estadoDeButton = estadoButtonPublicador
+        })
     }
 }
 

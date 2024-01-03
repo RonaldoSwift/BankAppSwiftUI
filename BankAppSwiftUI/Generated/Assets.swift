@@ -28,6 +28,7 @@ internal enum Asset {
     internal static let bgLogin = ColorAsset(name: "Bg_Login")
     internal static let greenbutton = ColorAsset(name: "Greenbutton")
     internal static let metallic = ColorAsset(name: "Metallic")
+    internal static let mostaza = ColorAsset(name: "Mostaza")
     internal static let water = ColorAsset(name: "Water")
     internal static let interrogation = ColorAsset(name: "interrogation")
     internal static let next = ColorAsset(name: "next")
@@ -38,6 +39,7 @@ internal enum Asset {
     internal static let logoPrincipal = ImageAsset(name: "LogoPrincipal")
     internal static let logoWelcom = ImageAsset(name: "LogoWelcom")
     internal static let rightArrow = ImageAsset(name: "RightArrow")
+    internal static let sugerencia = ImageAsset(name: "Sugerencia")
     internal static let icBack = ImageAsset(name: "ic_back")
   }
 }

@@ -9,10 +9,10 @@ import SwiftUI
 
 struct AuthenticationRootView: View {
     
-    @ObservedObject var router: AuthenticationRouter = AuthenticationRouter()
+    @ObservedObject var authenticationRouter: AuthenticationRouter = AuthenticationRouter()
     
     var body: some View {
-        NavigationStack(path: $router.navPath) {
+        NavigationStack(path: $authenticationRouter.navPath) {
             ZStack(content: {
                 WelcomeView()
                     .navigationDestination(for: AuthenticationRouter.Destination.self, destination: { destination in
@@ -25,7 +25,7 @@ struct AuthenticationRootView: View {
                     })
             })
         }
-        .environmentObject(router)
+        .environmentObject(authenticationRouter)
     }
 }
 
