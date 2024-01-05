@@ -8,10 +8,38 @@ import Combine
 class BankApi {
 
     /**
-    * Example: https://api.spoonacular.com/recipes/782585/information?apiKey=faea268df94a44d4b75e8a46ee06f2fc
+    * Example: http://localhost:8000/login
     */
-    func fetShoom(id: Int)-> AnyPublisher<DetalleResponse,Error>{
-        guard var urlComponents = URLComponents(string: "https://api.spoonacular.com/recipes/\(id)/information") else{
+    func fetchLogin(documentNumber: String, internetPassword: String) -> AnyPublisher<LoginResponse, Error> {
+        guard var urlComponents = URLComponents(string: "http://localhost:8000/login") else {
+            return Fail(error: RonaldoError.errorURL)
+                .eraseToAnyPublisher()
+        }
+        
+        guard let validUrl = urlComponents.url else {
+            return Fail(error: RonaldoError.errorDesconocido)
+                .eraseToAnyPublisher()
+        }
+        
+        var urlRequest = URLRequest(
+            url: validUrl
+        )
+        
+        urlRequest.httpMethod = "GET"
+        
+        return URLSession.shared.dataTaskPublisher(for: urlRequest)
+            .map { (data: Data, _: URLResponse) in
+                data
+            }
+            .decode(type: LoginResponse.self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
+    
+    /**
+    * Example: http://localhost:8000/user
+    */
+    func fetchUser(id: Int) -> AnyPublisher<GetUserResponse, Error> {
+        guard var urlComponents = URLComponents(string: "http://localhost:8000/login") else {
             return Fail(error: RonaldoError.errorURL)
                 .eraseToAnyPublisher()
         }
@@ -29,16 +57,21 @@ class BankApi {
         )
         
         urlRequest.httpMethod = "GET"
-        
+                
         return URLSession.shared.dataTaskPublisher(for: urlRequest)
-            .map{ (data: Data, response: URLResponse) in
-                data
+            .tryMap { (data: Data, _: URLResponse) in
+                do {
+                    let decoder = JSONDecoder()
+                    let getUserResponse = try decoder.decode(GetUserResponse.self, from: data)
+                    return getUserResponse
+                } catch {
+                    throw RonaldoError.errorDesconocido
+                }
             }
-            .decode(type: DetalleResponse.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
     
-    enum RonaldoError: Error{
+    enum RonaldoError: Error {
         case errorURL
         case urlInvalido
         case errorDesconocido

@@ -10,22 +10,33 @@ import Combine
 
 class LoginRepository {
     
-    let memoriaLogin : MemoriaLogin
+    private let memoriaLogin : MemoriaLogin
+    private let bankApi: BankApi
     
     var cancelLables = Set<AnyCancellable>()
     
-    init(memoriaLogin: MemoriaLogin) {
+    init(memoriaLogin: MemoriaLogin, bankApi: BankApi) {
         self.memoriaLogin = memoriaLogin
+        self.bankApi = bankApi
     }
     
-    func getLoginFromMemoria() -> Array<Login> {
-        return memoriaLogin.logins.map { (loginData:LoginData) in
-            let login = Login(
-                id: loginData.id,
-                numeroDeDocumento: loginData.numeroDeDocumento,
-                claveDeInternet: loginData.claveDeInternet
-            )
-            return login
-        }
+    // MARK: CRUD Login
+    
+    func saveLoginToken(jwtToken: String) {
+        memoriaLogin.setTokenDeUsuario(jwtToken: jwtToken)
+    }
+    
+    func getLoginFromMemoria() -> String {
+        return memoriaLogin.obtenerTokenDeUsuario()
+    }
+    
+    func getLoginFromWebService(documentNumber: String, internetPassword: String) -> AnyPublisher<Authentication, Error> {
+        return bankApi
+            .fetchLogin(documentNumber: documentNumber, internetPassword: internetPassword)
+            .map { (loginResponse: LoginResponse) in
+                Authentication(
+                    jwt: loginResponse.data.token
+                )
+            }.eraseToAnyPublisher()
     }
 }

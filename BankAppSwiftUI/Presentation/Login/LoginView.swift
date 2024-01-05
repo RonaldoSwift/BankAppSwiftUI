@@ -6,15 +6,20 @@
 //
 
 import SwiftUI
+import netfox
 
 struct LoginView: View {
     
     @EnvironmentObject private var appRootManager: AppRootManager
-    @State private var documentNumber: String = ""
     @State private var internetPassword: String = ""
     @State private var estadoDeButton: LoginButtonState = LoginButtonState.inicial
     
-    let loginViewModel = LoginViewModel(loginRepository: LoginRepository(memoriaLogin: MemoriaLogin()))
+    @StateObject private var loginViewModel = LoginViewModel(
+        loginRepository: LoginRepository(
+            memoriaLogin: MemoriaLogin(),
+            bankApi: BankApi()
+        )
+    )
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -38,7 +43,7 @@ struct LoginView: View {
                 Image(systemName: "person.text.rectangle")
                     .resizable()
                     .frame(width: 17, height: 19)
-                TextField("", text: $documentNumber)
+                TextField("", text: $loginViewModel.documentNumber)
             }
             .padding()
             .foregroundColor(Color.gray)
@@ -99,10 +104,7 @@ struct LoginView: View {
             if(estadoDeButton == LoginButtonState.inicial) {
                 loginButton(
                     clickbutton: {
-                        loginViewModel.getLoginFromMemory(
-                            documentNumber: documentNumber,
-                            internetPassword: internetPassword
-                        )
+                        loginViewModel.startLogin()
                     },
                     titulo: "Ingresar",
                     colorButton: Asset.Colores.greenbutton.swiftUIColor,
@@ -116,14 +118,6 @@ struct LoginView: View {
                     colorButton: Asset.Colores.metallic.swiftUIColor,
                     mostrarLoading: true)
                 
-            } else if(estadoDeButton == LoginButtonState.final) {
-                loginButton(
-                    clickbutton: {
-                        appRootManager.currentRoot = .home
-                    },
-                    titulo: "Final",
-                    colorButton: Asset.Colores.greenbutton.swiftUIColor,
-                    mostrarLoading: false)
             }
             
             VStack {
@@ -164,8 +158,15 @@ struct LoginView: View {
             .padding()
         }
         .padding()
-        .onReceive(loginViewModel.$estadoDeButtonLogin, perform: { estadoButtonPublicador in
-            estadoDeButton = estadoButtonPublicador
+        .onReceive(loginViewModel.$loginState, perform: { loginState in
+            switch loginState {
+            case .cargando:
+                estadoDeButton = .cargando
+            case .inicial:
+                estadoDeButton = .inicial
+            case .final:
+                appRootManager.currentRoot = .home
+            }
         })
     }
 }

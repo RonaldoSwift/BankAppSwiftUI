@@ -1,0 +1,12 @@
+{
+    "status": "success",
+    "data": {
+        "current_user": {
+            "userId": 10,
+            "name": "Carlos",
+            "lastName": "Vargas",
+            "birthDay": "12/07/1999"
+        }
+    },
+    "message": null
+}

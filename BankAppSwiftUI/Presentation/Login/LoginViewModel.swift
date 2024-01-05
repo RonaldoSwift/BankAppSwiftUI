@@ -9,11 +9,20 @@ import Foundation
 import Combine
 import Dispatch
 
+@MainActor
 final class LoginViewModel: ObservableObject {
     
     let loginRepository : LoginRepository
     
-    @Published private(set) var estadoDeButtonLogin = LoginButtonState.inicial
+    // MARK: Input
+    @Published var documentNumber: String = ""
+    @Published var internetPassword: String = ""
+    
+    // MARK: Output
+    @Published var usernameMessage: String = ""
+    @Published var isValid: Bool = false
+    
+    @Published private(set) var loginState = LoginButtonState.inicial
     
     var cancellables = Set<AnyCancellable>()
     
@@ -21,21 +30,32 @@ final class LoginViewModel: ObservableObject {
         self.loginRepository = loginRepository
     }
     
-    //Esta funcion se llama cuando al persona le a click al button login
-    func getLoginFromMemory(documentNumber: String, internetPassword: String) {
+    // Esta funcion se llama cuando al persona le a click al button login
+    func startLogin() {
         
-        estadoDeButtonLogin = LoginButtonState.cargando
+        loginState = LoginButtonState.cargando
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            let loginDeMemoria = self.loginRepository.getLoginFromMemoria()
-            let numeroDeDocumentoDeMemoria = loginDeMemoria.first?.numeroDeDocumento
-            let claveDeInternetDeMemoria = loginDeMemoria.first?.claveDeInternet
-            
-            if(documentNumber == numeroDeDocumentoDeMemoria && internetPassword == claveDeInternetDeMemoria) {
-                self.estadoDeButtonLogin = LoginButtonState.final
-            } else {
-                self.estadoDeButtonLogin = LoginButtonState.inicial
-            }
+        if (loginRepository.getLoginFromMemoria().isEmpty) { // 1. El usuario no tiene token?
+            loginRepository.getLoginFromWebService(documentNumber: documentNumber, internetPassword: "123") // 2. Traer Login de Web Service
+                .receive(on: DispatchQueue.main)
+                .sink(receiveCompletion: { completion in
+                    switch (completion) {
+                    case .finished:
+                        break
+                    case .failure(let error):
+                        print("\(error)")
+                        self.loginState = LoginButtonState.inicial
+                    }
+                }, receiveValue: { (authentication: Authentication) in
+                    
+                    self.loginRepository.saveLoginToken(jwtToken: authentication.jwt) // 3. Grabar el token en memoria
+                    
+                    self.loginState = LoginButtonState.final
+                    print(authentication)
+                })
+                .store(in: &cancellables)
+        } else { // 4. El usuario tiene token?
+            self.loginState = LoginButtonState.final
         }
     }
 }

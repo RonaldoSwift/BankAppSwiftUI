@@ -8,11 +8,14 @@
 import Foundation
 
 class MemoriaLogin {
-     var logins: Array<LoginData> = [
-        LoginData(
-            id: 0,
-            numeroDeDocumento: "111111",
-            claveDeInternet: "222222"
-        )
-    ]
+    
+    private let userTokenKey = "USER_TOKEN_KEY"
+    
+    func setTokenDeUsuario(jwtToken: String) {
+        UserDefaults.standard.set(jwtToken, forKey: userTokenKey)
+    }
+    
+    func obtenerTokenDeUsuario() -> String {
+        return UserDefaults.standard.string(forKey: userTokenKey) ?? ""
+    }
 }
