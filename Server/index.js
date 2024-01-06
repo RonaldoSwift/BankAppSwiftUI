@@ -11,14 +11,15 @@ server.use(jsonServer.bodyParser);
 
 // LOGIN ENDPOINTS
 
-server.get("/login", (req, res) => {
+server.post("/login", (req, res) => {
     const delay = 2000; // In milliseconds
     setTimeout(() => {
+
+        console.log("request: " + JSON.stringify(req.body));
+
         let filteredUsers = dbjson.users.filter(
             (user) => user.documentNumber == req.body.documentNumber
         );
-
-        console.log("username" + filteredUsers.length);
 
         if (filteredUsers.length === 0) {
             res.status(404).jsonp({
@@ -54,11 +55,12 @@ server.use((req, res, next) => {
 server.get("/users/:userId", (req, res) => {
     const delay = 3000; // In milliseconds
     setTimeout(() => {
+
+        console.log("request: " + JSON.stringify(req.params));
+
         let filteredUsers = dbjson.users.filter(
             (user) => user.id == req.params.userId
         );
-
-        let token = req.query.apiKey.toString;
 
         if (filteredUsers.length === 0) {
             res.status(404).jsonp({

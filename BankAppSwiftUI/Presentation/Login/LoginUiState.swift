@@ -7,10 +7,11 @@
 
 import Foundation
 
-enum LoginButtonState {
+enum LoginUiState {
     
     case inicial 
     case cargando
-    case final
+    case error(String)
+    case success
     
 }

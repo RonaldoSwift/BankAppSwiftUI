@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum WelcomeUiState {
+enum PrincipalUiState {
     
     case userSuccess
     case userLoading

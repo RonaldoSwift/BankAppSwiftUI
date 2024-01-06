@@ -30,9 +30,15 @@ class LoginRepository {
         return memoriaLogin.obtenerTokenDeUsuario()
     }
     
-    func getLoginFromWebService(documentNumber: String, internetPassword: String) -> AnyPublisher<Authentication, Error> {
+    func getLoginFromWebService(documentNumber: Int, internetPassword: Int) -> AnyPublisher<Authentication, Error> {
+        
+        let loginRequest = LoginRequest(
+            documentNumber: documentNumber,
+            password: internetPassword
+        )
+        
         return bankApi
-            .fetchLogin(documentNumber: documentNumber, internetPassword: internetPassword)
+            .fetchLogin(loginRequest: loginRequest)
             .map { (loginResponse: LoginResponse) in
                 Authentication(
                     jwt: loginResponse.data.accessToken
@@ -44,9 +50,15 @@ class LoginRepository {
     // MARK: CRUD User
     func getUserFromWebService(apiToken: String, userId: Int) -> AnyPublisher<User, Error> {
         return bankApi
-            .fetchUser(apiToken: apiToken, id: userId)
+            .fetchUser(apiToken: apiToken, userId: userId)
             .map { (getUserResponse: GetUserResponse) in
-                User(street: "", city: "", state: "", homeNumber: 1, postalCode: "")
+                User(
+                    street: getUserResponse.data.currentUser.lastName,
+                    city: "",
+                    state: "",
+                    homeNumber: 1,
+                    postalCode: getUserResponse.data.currentUser.name
+                )
             }
             .eraseToAnyPublisher()
     }

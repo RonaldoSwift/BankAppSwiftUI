@@ -8,9 +8,10 @@
 import Foundation
 
 struct LoginResponse: Decodable {
-    let status: String
-    let data: LoginDataResponse
-    let message: String?
+
+    var status: String
+    var data: LoginDataResponse
+    var message: String?
     
     private enum CodingKeys: String, CodingKey {
         case status
@@ -23,8 +24,8 @@ struct LoginDataResponse: Decodable {
     let accessToken: String
     let expires: Int
     
-    private enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case accessToken = "access_token"
-        case expires 
+        case expires
     }
 }

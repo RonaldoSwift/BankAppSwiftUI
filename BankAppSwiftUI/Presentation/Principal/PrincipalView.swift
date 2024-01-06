@@ -13,6 +13,13 @@ struct PrincipalView: View {
     @ObservedObject var transferenciaAOtraCuentaRouter: TransferenciaAOtraCuentaRouter = TransferenciaAOtraCuentaRouter()
     @ObservedObject var prestamosRouter: PrestamosRouter = PrestamosRouter()
     
+    @StateObject private var principalViewModel = PrincipalViewModel(
+        loginRepository: LoginRepository(
+            memoriaLogin: MemoriaLogin(),
+            bankApi: BankApi()
+        )
+    )
+    
     var body: some View {
         TabView {
             //1

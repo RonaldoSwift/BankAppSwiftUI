@@ -9,13 +9,28 @@ import Foundation
 
 struct GetUserResponse: Decodable {
     let status: String
-    let data: GetUserDataResponse
+    let data: CurrentUserDataResponse
     let message: String?
+    
+    private enum CodingKeys: String, CodingKey {
+        case status
+        case data
+        case message
+    }
 }
 
-struct GetUserDataResponse: Decodable {
-    let userId: Int
-    let expiration: String
+struct CurrentUserDataResponse: Decodable {
+    let currentUser: UserDataResponse
+    
+    private enum CodingKeys : String, CodingKey {
+        case currentUser = "current_user"
+    }
+}
+
+struct UserDataResponse: Decodable {
+    let id: Int
+    let name: String
     let lastName: String
+    let documentNumber: Int
     let birthDay: String
 }

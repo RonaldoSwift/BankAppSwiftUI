@@ -12,7 +12,7 @@ struct LoginView: View {
     
     @EnvironmentObject private var appRootManager: AppRootManager
     @State private var internetPassword: String = ""
-    @State private var estadoDeButton: LoginButtonState = LoginButtonState.inicial
+    @State private var isButtonLoading: Bool = false
     
     @StateObject private var loginViewModel = LoginViewModel(
         loginRepository: LoginRepository(
@@ -76,7 +76,7 @@ struct LoginView: View {
                 Image(systemName: "lock.fill")
                     .resizable()
                     .frame(width: 15, height: 20)
-                SecureField("", text: $internetPassword)
+                SecureField("", text: $loginViewModel.internetPassword)
                 Image(systemName: "x.circle.fill")
                     .resizable()
                     .frame(width: 20, height: 20)
@@ -101,7 +101,14 @@ struct LoginView: View {
                     .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
             }
             
-            if(estadoDeButton == LoginButtonState.inicial) {
+            if(isButtonLoading) {
+                loginButton(
+                    clickbutton: {
+                    },
+                    titulo: "",
+                    colorButton: Asset.Colores.metallic.swiftUIColor,
+                    mostrarLoading: true)
+            } else {
                 loginButton(
                     clickbutton: {
                         loginViewModel.startLogin()
@@ -109,15 +116,6 @@ struct LoginView: View {
                     titulo: "Ingresar",
                     colorButton: Asset.Colores.greenbutton.swiftUIColor,
                     mostrarLoading: false)
-                
-            } else if(estadoDeButton == LoginButtonState.cargando) {
-                loginButton(
-                    clickbutton: {
-                    },
-                    titulo: "",
-                    colorButton: Asset.Colores.metallic.swiftUIColor,
-                    mostrarLoading: true)
-                
             }
             
             VStack {
@@ -161,10 +159,14 @@ struct LoginView: View {
         .onReceive(loginViewModel.$loginState, perform: { loginState in
             switch loginState {
             case .cargando:
-                estadoDeButton = .cargando
+                isButtonLoading = true
             case .inicial:
-                estadoDeButton = .inicial
-            case .final:
+                break
+            case .error(let error):
+                print("Hay un error \(error)")
+                isButtonLoading = false
+            case .success:
+                isButtonLoading = false
                 appRootManager.currentRoot = .home
             }
         })

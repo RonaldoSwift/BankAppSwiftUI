@@ -14,13 +14,6 @@ struct WelcomeView: View {
     
     @State var showSheet = false
     
-    @StateObject private var welcomeViewModel = WelcomeViewModel(
-        loginRepository: LoginRepository(
-            memoriaLogin: MemoriaLogin(),
-            bankApi: BankApi()
-        )
-    )
-    
     var body: some View {
         VStack(spacing: 35) {
             Asset.Imagenes.logoWelcom.swiftUIImage
@@ -60,9 +53,6 @@ struct WelcomeView: View {
             )
             .presentationDetents([.height(200), .large])
         })
-        .onAppear {
-            welcomeViewModel.getUser()
-        }
     }
 }
 

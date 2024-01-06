@@ -22,7 +22,7 @@ final class LoginViewModel: ObservableObject {
     @Published var usernameMessage: String = ""
     @Published var isValid: Bool = false
     
-    @Published private(set) var loginState = LoginButtonState.inicial
+    @Published private(set) var loginState = LoginUiState.inicial
     
     var cancellables = Set<AnyCancellable>()
     
@@ -33,29 +33,34 @@ final class LoginViewModel: ObservableObject {
     // Esta funcion se llama cuando al persona le a click al button login
     func startLogin() {
         
-        loginState = LoginButtonState.cargando
-        
-        if (loginRepository.getTokenFromMemoria().isEmpty) { // 1. El usuario no tiene token?
-            loginRepository.getLoginFromWebService(documentNumber: documentNumber, internetPassword: "123") // 2. Traer Login de Web Service
-                .receive(on: DispatchQueue.main)
-                .sink(receiveCompletion: { completion in
-                    switch (completion) {
-                    case .finished:
-                        break
-                    case .failure(let error):
-                        print("\(error)")
-                        self.loginState = LoginButtonState.inicial
-                    }
-                }, receiveValue: { (authentication: Authentication) in
-                    
-                    self.loginRepository.saveTokenInMemory(jwtToken: authentication.jwt) // 3. Grabar el token en memoria
-                    
-                    self.loginState = LoginButtonState.final
-                    print(authentication)
-                })
-                .store(in: &cancellables)
-        } else { // 4. El usuario tiene token?
-            self.loginState = LoginButtonState.final
+        guard let documentNumber = Int(documentNumber) else {
+            loginState = LoginUiState.error("Document Number invalid")
+            return
         }
+        
+        guard let internetPassword = Int(internetPassword) else {
+            loginState = LoginUiState.error("Internet Password invalid")
+            return
+        }
+        
+        loginState = LoginUiState.cargando
+        
+        loginRepository.getLoginFromWebService(documentNumber: documentNumber, internetPassword: internetPassword) // 2. Traer Login de Web Service
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch (completion) {
+                case .finished:
+                    break
+                case .failure(let error):
+                    self.loginState = LoginUiState.error("Error web service \(error)")
+                }
+            }, receiveValue: { (authentication: Authentication) in
+                
+                self.loginRepository.saveTokenInMemory(jwtToken: authentication.jwt) // 3. Grabar el token en memoria
+                
+                self.loginState = LoginUiState.success
+                print(authentication)
+            })
+            .store(in: &cancellables)
     }
 }
