@@ -22,11 +22,11 @@ class LoginRepository {
     
     // MARK: CRUD Login
     
-    func saveLoginToken(jwtToken: String) {
+    func saveTokenInMemory(jwtToken: String) {
         memoriaLogin.setTokenDeUsuario(jwtToken: jwtToken)
     }
     
-    func getLoginFromMemoria() -> String {
+    func getTokenFromMemoria() -> String {
         return memoriaLogin.obtenerTokenDeUsuario()
     }
     
@@ -37,6 +37,17 @@ class LoginRepository {
                 Authentication(
                     jwt: loginResponse.data.token
                 )
-            }.eraseToAnyPublisher()
+            }
+            .eraseToAnyPublisher()
+    }
+    
+    // MARK: CRUD User
+    func getUserFromWebService(apiToken: String, userId: Int) -> AnyPublisher<User, Error> {
+        return bankApi
+            .fetchUser(apiToken: apiToken, id: userId)
+            .map { (getUserResponse: GetUserResponse) in
+                User(street: "", city: "", state: "", homeNumber: 1, postalCode: "")
+            }
+            .eraseToAnyPublisher()
     }
 }

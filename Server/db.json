@@ -1,1 +1,11 @@
-{}
+{
+  "users": [
+    {
+      "id": 10,
+      "name": "Carlos",
+      "lastName": "Vargas",
+      "documentNumber": 70887766,
+      "birthDay": "12/07/1999"
+    }
+  ]
+}

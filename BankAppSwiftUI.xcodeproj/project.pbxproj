@@ -29,6 +29,8 @@
 		24D2A77B2B37ACBA00EDF389 /* ShowTime in Frameworks */ = {isa = PBXBuildFile; productRef = 24D2A77A2B37ACBA00EDF389 /* ShowTime */; };
 		24D2A7882B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2A7872B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift */; };
 		24E82C3E2B4771BD0052EE51 /* GetUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E82C3D2B4771BD0052EE51 /* GetUserResponse.swift */; };
+		24E82C402B47BE2E0052EE51 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E82C3F2B47BE2E0052EE51 /* WelcomeViewModel.swift */; };
+		24E82C422B47C1670052EE51 /* WelcomeUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E82C412B47C1670052EE51 /* WelcomeUiState.swift */; };
 		FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57BDE02B2D31C50096CDAC /* SplashView.swift */; };
 		FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */; };
 		FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */; };
@@ -139,6 +141,8 @@
 		24D2A7862B37B1EB00EDF389 /* ModelsMock.meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsMock.meta.swift; sourceTree = "<group>"; };
 		24D2A7872B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BankAppSwiftUIModels+mock.swift"; sourceTree = "<group>"; };
 		24E82C3D2B4771BD0052EE51 /* GetUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserResponse.swift; sourceTree = "<group>"; };
+		24E82C3F2B47BE2E0052EE51 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		24E82C412B47C1670052EE51 /* WelcomeUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUiState.swift; sourceTree = "<group>"; };
 		FA57BDE02B2D31C50096CDAC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDeCuentaView.swift; sourceTree = "<group>"; };
 		FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarServicioView.swift; sourceTree = "<group>"; };
@@ -523,6 +527,8 @@
 			children = (
 				FA6F02D52B3533CF005CA79E /* Components */,
 				FA6A8DC12B3116AA002F76B0 /* WelcomeView.swift */,
+				24E82C3F2B47BE2E0052EE51 /* WelcomeViewModel.swift */,
+				24E82C412B47C1670052EE51 /* WelcomeUiState.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -1002,6 +1008,7 @@
 				24AA47822B41EA6E005852D2 /* RenderIfModifier.swift in Sources */,
 				FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */,
 				FA6BF1972B3D01CE00C286FE /* LoginRepository.swift in Sources */,
+				24E82C422B47C1670052EE51 /* WelcomeUiState.swift in Sources */,
 				FA6A97192B3FDE990004918D /* TicketSinMovimiento.swift in Sources */,
 				246313DF2B38D601004F2D28 /* RegisterSheetView.swift in Sources */,
 				2492B3F52B471500007AAA4E /* LoginResponse.swift in Sources */,
@@ -1014,6 +1021,7 @@
 				FA6A97142B3F82190004918D /* TicketCuentaYInterbancaria.swift in Sources */,
 				FA7BB2D72B40A770005B1375 /* ConsultaSheetView.swift in Sources */,
 				246313EF2B39F8FF004F2D28 /* AuthenticationRouter.swift in Sources */,
+				24E82C402B47BE2E0052EE51 /* WelcomeViewModel.swift in Sources */,
 				FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */,
 				FA6BF19B2B3D160400C286FE /* LoginButtonState.swift in Sources */,
 				24AA47752B41428B005852D2 /* CircularProgressView.swift in Sources */,

@@ -38,13 +38,13 @@ class BankApi {
     /**
     * Example: http://localhost:8000/user
     */
-    func fetchUser(id: Int) -> AnyPublisher<GetUserResponse, Error> {
-        guard var urlComponents = URLComponents(string: "http://localhost:8000/login") else {
+    func fetchUser(apiToken: String, id: Int) -> AnyPublisher<GetUserResponse, Error> {
+        guard var urlComponents = URLComponents(string: "http://localhost:8000/user") else {
             return Fail(error: RonaldoError.errorURL)
                 .eraseToAnyPublisher()
         }
         urlComponents.queryItems = [
-            URLQueryItem(name: "apiKey", value: "3b1513fc749947bda8c22aed3955dd9f")
+            URLQueryItem(name: "apiKey", value: apiToken)
         ]
         
         guard let validUrl = urlComponents.url else {
@@ -71,7 +71,7 @@ class BankApi {
             .eraseToAnyPublisher()
     }
     
-    enum RonaldoError: Error {
+    enum RonaldoError: Error, Equatable {
         case errorURL
         case urlInvalido
         case errorDesconocido

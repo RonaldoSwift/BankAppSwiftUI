@@ -1,8 +1,14 @@
 {
     "status": "success",
     "data": {
-        "token": "Azsadfasfasfgdsfgdsfgdsfgasdfasd",
-        "expiration": 10000
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOiIxNDE2OTI5MDYxIiwianRpIjoiODAyMDU3ZmY5YjViNGViN2ZiYjg4NTZiNmViMmNjNWIiLCJzY29wZXMiOnsidXNlcnMiOnsiYWN0aW9ucyI6WyJyZWFkIiwiY3JlYXRlIl19LCJ1c2Vyc19hcHBfbWV0YWRhdGEiOnsiYWN0aW9ucyI6WyJyZWFkIiwiY3JlYXRlIl19fX0.gll8YBKPLq6ZLkCPLoghaBZG_ojFLREyLQYx0l2BG3E",
+        "token_type": "Bearer",
+        "expires_in": 3600,
+        "refresh_token": "eyRljhbFCciOiJIUzI1NiIsInRCI6IkpXVVG9.eyyUSXQiOiIxNDE2OTI5MDYxIiwianRpIjoiODAyMDU3ZmY5YjViNGViN2ZiYjg4NTZiNmViMmNjNWIiLCJzY29wZXMiOnsidXNlcnMiOnsiYWN0aW9ucyI6WyJyZWFkIiwiY3JlYXRlIl19LCJ1c2Vyc19hcHBfbWV0YWRhdGEiOnsiYWN0aW9ucyI6WyJyZWFkIiwiY3JlYXRlIl19fX0.gll8YBKPLq6ZLkCPLoghaBZG_ojFLFFLQYx0l2BG3E",
+        "client_id": 5,
+        "userName": "Carlos",
+        "issued": 80000,
+        "expires": 80000
     },
     "message": null    
 }

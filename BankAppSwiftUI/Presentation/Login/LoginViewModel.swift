@@ -35,7 +35,7 @@ final class LoginViewModel: ObservableObject {
         
         loginState = LoginButtonState.cargando
         
-        if (loginRepository.getLoginFromMemoria().isEmpty) { // 1. El usuario no tiene token?
+        if (loginRepository.getTokenFromMemoria().isEmpty) { // 1. El usuario no tiene token?
             loginRepository.getLoginFromWebService(documentNumber: documentNumber, internetPassword: "123") // 2. Traer Login de Web Service
                 .receive(on: DispatchQueue.main)
                 .sink(receiveCompletion: { completion in
@@ -48,7 +48,7 @@ final class LoginViewModel: ObservableObject {
                     }
                 }, receiveValue: { (authentication: Authentication) in
                     
-                    self.loginRepository.saveLoginToken(jwtToken: authentication.jwt) // 3. Grabar el token en memoria
+                    self.loginRepository.saveTokenInMemory(jwtToken: authentication.jwt) // 3. Grabar el token en memoria
                     
                     self.loginState = LoginButtonState.final
                     print(authentication)
