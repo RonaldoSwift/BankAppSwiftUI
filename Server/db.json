@@ -1,1 +1,33 @@
-{}
+{
+  "users": [
+    {
+      "id": 10,
+      "name": "Carlos",
+      "lastName": "Vargas",
+      "documentNumber": 70887766,
+      "birthDay": "12/07/1999"
+    }
+  ],
+  "services": [
+    {
+      "id": 100,
+      "name": "Empresa" 
+    }, 
+    {
+      "id": 101,
+      "name": "Luz" 
+    }, 
+    {
+      "id": 102,
+      "name": "Retail" 
+    }, 
+    {
+      "id": 103,
+      "name": "Telecomunicaciones" 
+    }, 
+    {
+      "id": 104,
+      "name": "Telefono" 
+    }
+  ]
+}

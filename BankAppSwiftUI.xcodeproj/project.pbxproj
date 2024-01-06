@@ -14,6 +14,9 @@
 		246313E12B38EB19004F2D28 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246313E02B38EB19004F2D28 /* AuthenticationRootView.swift */; };
 		246313ED2B3963B7004F2D28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246313EC2B3963B7004F2D28 /* LoginView.swift */; };
 		246313EF2B39F8FF004F2D28 /* AuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246313EE2B39F8FF004F2D28 /* AuthenticationRouter.swift */; };
+		2492B3F22B47148D007AAA4E /* BankApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492B3F12B47148D007AAA4E /* BankApi.swift */; };
+		2492B3F52B471500007AAA4E /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492B3F42B471500007AAA4E /* LoginResponse.swift */; };
+		2492B3F72B471653007AAA4E /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492B3F62B471653007AAA4E /* Authentication.swift */; };
 		24AA47722B4132B7005852D2 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA47712B4132B7005852D2 /* PrimaryButtonStyle.swift */; };
 		24AA47752B41428B005852D2 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA47742B41428B005852D2 /* CircularProgressView.swift */; };
 		24AA47772B41B2F2005852D2 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA47762B41B2F2005852D2 /* SectionView.swift */; };
@@ -24,6 +27,9 @@
 		24D2A7782B37A92800EDF389 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 24D2A7772B37A92800EDF389 /* netfox */; };
 		24D2A77B2B37ACBA00EDF389 /* ShowTime in Frameworks */ = {isa = PBXBuildFile; productRef = 24D2A77A2B37ACBA00EDF389 /* ShowTime */; };
 		24D2A7882B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2A7872B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift */; };
+		24E82C3E2B4771BD0052EE51 /* GetUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E82C3D2B4771BD0052EE51 /* GetUserResponse.swift */; };
+		24E82C402B47BE2E0052EE51 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E82C3F2B47BE2E0052EE51 /* WelcomeViewModel.swift */; };
+		24E82C422B47C1670052EE51 /* WelcomeUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E82C412B47C1670052EE51 /* WelcomeUiState.swift */; };
 		FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57BDE02B2D31C50096CDAC /* SplashView.swift */; };
 		FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */; };
 		FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */; };
@@ -106,6 +112,9 @@
 		246313E02B38EB19004F2D28 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
 		246313EC2B3963B7004F2D28 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		246313EE2B39F8FF004F2D28 /* AuthenticationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouter.swift; sourceTree = "<group>"; };
+		2492B3F12B47148D007AAA4E /* BankApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankApi.swift; sourceTree = "<group>"; };
+		2492B3F42B471500007AAA4E /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		2492B3F62B471653007AAA4E /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		24AA47712B4132B7005852D2 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		24AA47742B41428B005852D2 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		24AA47762B41B2F2005852D2 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
@@ -113,7 +122,6 @@
 		24AA477E2B41E8A7005852D2 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		24AA47812B41EA6E005852D2 /* RenderIfModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderIfModifier.swift; sourceTree = "<group>"; };
 		24AA47862B426A82005852D2 /* login_response_200_OK.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = login_response_200_OK.json; sourceTree = "<group>"; };
-		24AA47872B426A82005852D2 /* login_response_400_error.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = login_response_400_error.json; sourceTree = "<group>"; };
 		24AA47882B426A82005852D2 /* db.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = db.json; sourceTree = "<group>"; };
 		24AA50182B426A87005852D2 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		24AA50192B426A87005852D2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -129,6 +137,9 @@
 		24D2A7852B37B18900EDF389 /* MockParameter.meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockParameter.meta.swift; sourceTree = "<group>"; };
 		24D2A7862B37B1EB00EDF389 /* ModelsMock.meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsMock.meta.swift; sourceTree = "<group>"; };
 		24D2A7872B37B7A800EDF389 /* BankAppSwiftUIModels+mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BankAppSwiftUIModels+mock.swift"; sourceTree = "<group>"; };
+		24E82C3D2B4771BD0052EE51 /* GetUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserResponse.swift; sourceTree = "<group>"; };
+		24E82C3F2B47BE2E0052EE51 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		24E82C412B47C1670052EE51 /* WelcomeUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUiState.swift; sourceTree = "<group>"; };
 		FA57BDE02B2D31C50096CDAC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDeCuentaView.swift; sourceTree = "<group>"; };
 		FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarServicioView.swift; sourceTree = "<group>"; };
@@ -257,6 +268,24 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		2492B3F02B47148D007AAA4E /* BankWebService */ = {
+			isa = PBXGroup;
+			children = (
+				2492B3F32B4714ED007AAA4E /* Response */,
+				2492B3F12B47148D007AAA4E /* BankApi.swift */,
+			);
+			path = BankWebService;
+			sourceTree = "<group>";
+		};
+		2492B3F32B4714ED007AAA4E /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				2492B3F42B471500007AAA4E /* LoginResponse.swift */,
+				24E82C3D2B4771BD0052EE51 /* GetUserResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		24AA47702B41329B005852D2 /* ButtonStyle */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,7 +345,6 @@
 			isa = PBXGroup;
 			children = (
 				24AA47862B426A82005852D2 /* login_response_200_OK.json */,
-				24AA47872B426A82005852D2 /* login_response_400_error.json */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -368,6 +396,7 @@
 		FA57BDDB2B2D2C830096CDAC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2492B3F02B47148D007AAA4E /* BankWebService */,
 				FA6A8DCF2B312513002F76B0 /* CoreData */,
 				FA6A8DCE2B31250C002F76B0 /* Memoria */,
 			);
@@ -493,6 +522,8 @@
 			children = (
 				FA6F02D52B3533CF005CA79E /* Components */,
 				FA6A8DC12B3116AA002F76B0 /* WelcomeView.swift */,
+				24E82C3F2B47BE2E0052EE51 /* WelcomeViewModel.swift */,
+				24E82C412B47C1670052EE51 /* WelcomeUiState.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -543,6 +574,7 @@
 			children = (
 				FA6F02C32B352F9E005CA79E /* User.swift */,
 				FA6BF1942B3D015000C286FE /* Login.swift */,
+				2492B3F62B471653007AAA4E /* Authentication.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -970,8 +1002,10 @@
 				24AA47822B41EA6E005852D2 /* RenderIfModifier.swift in Sources */,
 				FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */,
 				FA6BF1972B3D01CE00C286FE /* LoginRepository.swift in Sources */,
+				24E82C422B47C1670052EE51 /* WelcomeUiState.swift in Sources */,
 				FA6A97192B3FDE990004918D /* TicketSinMovimiento.swift in Sources */,
 				246313DF2B38D601004F2D28 /* RegisterSheetView.swift in Sources */,
+				2492B3F52B471500007AAA4E /* LoginResponse.swift in Sources */,
 				24AA47772B41B2F2005852D2 /* SectionView.swift in Sources */,
 				246313E12B38EB19004F2D28 /* AuthenticationRootView.swift in Sources */,
 				FA6DFA752B33CDD60023295F /* Strings.swift in Sources */,
@@ -981,12 +1015,15 @@
 				FA6A97142B3F82190004918D /* TicketCuentaYInterbancaria.swift in Sources */,
 				FA7BB2D72B40A770005B1375 /* ConsultaSheetView.swift in Sources */,
 				246313EF2B39F8FF004F2D28 /* AuthenticationRouter.swift in Sources */,
+				24E82C402B47BE2E0052EE51 /* WelcomeViewModel.swift in Sources */,
 				FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */,
 				FA6BF19B2B3D160400C286FE /* LoginButtonState.swift in Sources */,
 				24AA47752B41428B005852D2 /* CircularProgressView.swift in Sources */,
 				FA5EFD2F2B3C6D3900258AF4 /* UbicanosYLlamanosComponent.swift in Sources */,
 				FA6FE0A82B3E409D00DB1A02 /* TicketMonto.swift in Sources */,
 				241D98492B3A0C56007BD97D /* SplashRootView.swift in Sources */,
+				2492B3F22B47148D007AAA4E /* BankApi.swift in Sources */,
+				24E82C3E2B4771BD0052EE51 /* GetUserResponse.swift in Sources */,
 				FA640EF32B3E7F95008428BF /* DetalleCuentaView.swift in Sources */,
 				FA88238A2B3F1CBC00E1FABD /* TicketAhorro.swift in Sources */,
 				FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */,
@@ -998,6 +1035,7 @@
 				241D98442B3A05A5007BD97D /* AppRootManager.swift in Sources */,
 				FA9BDBE32B30A8320037392B /* RegisterView.swift in Sources */,
 				FA6DFA742B33CDD60023295F /* JSON.swift in Sources */,
+				2492B3F72B471653007AAA4E /* Authentication.swift in Sources */,
 				FA66A5492B32AE4F000B27E6 /* PrestamosView.swift in Sources */,
 				FA6F02DF2B353706005CA79E /* NextButtonView.swift in Sources */,
 				FA6BF1932B3CFB8400C286FE /* MemoriaLogin.swift in Sources */,
