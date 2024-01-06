@@ -17,7 +17,6 @@
 		2492B3F22B47148D007AAA4E /* BankApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492B3F12B47148D007AAA4E /* BankApi.swift */; };
 		2492B3F52B471500007AAA4E /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492B3F42B471500007AAA4E /* LoginResponse.swift */; };
 		2492B3F72B471653007AAA4E /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492B3F62B471653007AAA4E /* Authentication.swift */; };
-		2492B3F92B471750007AAA4E /* get_user_response_200_OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 2492B3F82B471750007AAA4E /* get_user_response_200_OK.json */; };
 		24AA47722B4132B7005852D2 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA47712B4132B7005852D2 /* PrimaryButtonStyle.swift */; };
 		24AA47752B41428B005852D2 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA47742B41428B005852D2 /* CircularProgressView.swift */; };
 		24AA47772B41B2F2005852D2 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA47762B41B2F2005852D2 /* SectionView.swift */; };
@@ -116,7 +115,6 @@
 		2492B3F12B47148D007AAA4E /* BankApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankApi.swift; sourceTree = "<group>"; };
 		2492B3F42B471500007AAA4E /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		2492B3F62B471653007AAA4E /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
-		2492B3F82B471750007AAA4E /* get_user_response_200_OK.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = get_user_response_200_OK.json; sourceTree = "<group>"; };
 		24AA47712B4132B7005852D2 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		24AA47742B41428B005852D2 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		24AA47762B41B2F2005852D2 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 		24AA477E2B41E8A7005852D2 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		24AA47812B41EA6E005852D2 /* RenderIfModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderIfModifier.swift; sourceTree = "<group>"; };
 		24AA47862B426A82005852D2 /* login_response_200_OK.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = login_response_200_OK.json; sourceTree = "<group>"; };
-		24AA47872B426A82005852D2 /* login_response_400_error.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = login_response_400_error.json; sourceTree = "<group>"; };
 		24AA47882B426A82005852D2 /* db.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = db.json; sourceTree = "<group>"; };
 		24AA50182B426A87005852D2 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		24AA50192B426A87005852D2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -348,8 +345,6 @@
 			isa = PBXGroup;
 			children = (
 				24AA47862B426A82005852D2 /* login_response_200_OK.json */,
-				24AA47872B426A82005852D2 /* login_response_400_error.json */,
-				2492B3F82B471750007AAA4E /* get_user_response_200_OK.json */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -910,7 +905,6 @@
 				FA6FC1A12B35270B0088A87F /* Inter-Light.ttf in Resources */,
 				FA6A8DF42B313D2E002F76B0 /* swiftgen.yml in Resources */,
 				FACED4942B2CB44B00B6BBC3 /* Preview Assets.xcassets in Resources */,
-				2492B3F92B471750007AAA4E /* get_user_response_200_OK.json in Resources */,
 				FACED4912B2CB44B00B6BBC3 /* Imagenes.xcassets in Resources */,
 				FA6FC19E2B35270B0088A87F /* Inter-Black.ttf in Resources */,
 				FA6FC19D2B35270B0088A87F /* Inter-ExtraLight.ttf in Resources */,

@@ -35,7 +35,7 @@ class LoginRepository {
             .fetchLogin(documentNumber: documentNumber, internetPassword: internetPassword)
             .map { (loginResponse: LoginResponse) in
                 Authentication(
-                    jwt: loginResponse.data.token
+                    jwt: loginResponse.data.accessToken
                 )
             }
             .eraseToAnyPublisher()
