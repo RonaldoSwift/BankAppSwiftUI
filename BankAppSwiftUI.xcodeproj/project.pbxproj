@@ -41,7 +41,7 @@
 		FA6A8DD62B313170002F76B0 /* Colores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DD52B313170002F76B0 /* Colores.xcassets */; };
 		FA6A8DF42B313D2E002F76B0 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */; };
 		FA6A97142B3F82190004918D /* TicketCuentaYInterbancaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A97132B3F82190004918D /* TicketCuentaYInterbancaria.swift */; };
-		FA6A97172B3F8C900004918D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A97162B3F8C900004918D /* HomeRouter.swift */; };
+		FA6A97172B3F8C900004918D /* ConsultasRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A97162B3F8C900004918D /* ConsultasRouter.swift */; };
 		FA6A97192B3FDE990004918D /* TicketSinMovimiento.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A97182B3FDE990004918D /* TicketSinMovimiento.swift */; };
 		FA6BF1912B3CFAE100C286FE /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6BF1902B3CFAE100C286FE /* LoginData.swift */; };
 		FA6BF1932B3CFB8400C286FE /* MemoriaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6BF1922B3CFB8400C286FE /* MemoriaLogin.swift */; };
@@ -68,8 +68,14 @@
 		FA6FC1A12B35270B0088A87F /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1982B35270B0088A87F /* Inter-Light.ttf */; };
 		FA6FC1A22B35270B0088A87F /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1992B35270B0088A87F /* Inter-Bold.ttf */; };
 		FA6FE0A82B3E409D00DB1A02 /* TicketMonto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FE0A72B3E409D00DB1A02 /* TicketMonto.swift */; };
+		FA7734FE2B465A960032019B /* OtrasCuentasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7734FD2B465A960032019B /* OtrasCuentasView.swift */; };
+		FA7B07522B47BE8300DFDD96 /* agenciaSercanaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B07512B47BE8300DFDD96 /* agenciaSercanaView.swift */; };
+		FA7B07542B47BE9100DFDD96 /* tipoDePrestamoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B07532B47BE9100DFDD96 /* tipoDePrestamoView.swift */; };
+		FA7B07582B47C63800DFDD96 /* PrestamosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B07572B47C63800DFDD96 /* PrestamosRouter.swift */; };
 		FA7BB2D72B40A770005B1375 /* ConsultaSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BB2D62B40A770005B1375 /* ConsultaSheetView.swift */; };
 		FA88238A2B3F1CBC00E1FABD /* TicketAhorro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8823892B3F1CBC00E1FABD /* TicketAhorro.swift */; };
+		FA920DA92B46FFD10066FA03 /* AlertAceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA920DA82B46FFD10066FA03 /* AlertAceptView.swift */; };
+		FA920DAF2B4711370066FA03 /* TransferenciaAOtraCuentaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA920DAE2B4711370066FA03 /* TransferenciaAOtraCuentaRouter.swift */; };
 		FA9BDBE32B30A8320037392B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BDBE22B30A8320037392B /* RegisterView.swift */; };
 		FABC4F762B35411C00AB0B13 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC4F752B35411C00AB0B13 /* Fonts.swift */; };
 		FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */; };
@@ -147,7 +153,7 @@
 		FA6A8DEF2B31399F002F76B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FA6A8DF32B313D2E002F76B0 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FA6A97132B3F82190004918D /* TicketCuentaYInterbancaria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCuentaYInterbancaria.swift; sourceTree = "<group>"; };
-		FA6A97162B3F8C900004918D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		FA6A97162B3F8C900004918D /* ConsultasRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultasRouter.swift; sourceTree = "<group>"; };
 		FA6A97182B3FDE990004918D /* TicketSinMovimiento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSinMovimiento.swift; sourceTree = "<group>"; };
 		FA6BF1902B3CFAE100C286FE /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		FA6BF1922B3CFB8400C286FE /* MemoriaLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaLogin.swift; sourceTree = "<group>"; };
@@ -174,8 +180,14 @@
 		FA6FC1982B35270B0088A87F /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
 		FA6FC1992B35270B0088A87F /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		FA6FE0A72B3E409D00DB1A02 /* TicketMonto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketMonto.swift; sourceTree = "<group>"; };
+		FA7734FD2B465A960032019B /* OtrasCuentasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtrasCuentasView.swift; sourceTree = "<group>"; };
+		FA7B07512B47BE8300DFDD96 /* agenciaSercanaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agenciaSercanaView.swift; sourceTree = "<group>"; };
+		FA7B07532B47BE9100DFDD96 /* tipoDePrestamoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipoDePrestamoView.swift; sourceTree = "<group>"; };
+		FA7B07572B47C63800DFDD96 /* PrestamosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestamosRouter.swift; sourceTree = "<group>"; };
 		FA7BB2D62B40A770005B1375 /* ConsultaSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultaSheetView.swift; sourceTree = "<group>"; };
 		FA8823892B3F1CBC00E1FABD /* TicketAhorro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketAhorro.swift; sourceTree = "<group>"; };
+		FA920DA82B46FFD10066FA03 /* AlertAceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAceptView.swift; sourceTree = "<group>"; };
+		FA920DAE2B4711370066FA03 /* TransferenciaAOtraCuentaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferenciaAOtraCuentaRouter.swift; sourceTree = "<group>"; };
 		FA9BDBE22B30A8320037392B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		FABC4F752B35411C00AB0B13 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FACED4892B2CB44A00B6BBC3 /* BankAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -448,7 +460,10 @@
 		FA66A53C2B32ADB9000B27E6 /* Transferencia */ = {
 			isa = PBXGroup;
 			children = (
+				FA920DA72B46FE420066FA03 /* Components */,
 				FA66A5442B32AE38000B27E6 /* TransferenciaView.swift */,
+				FA7734FD2B465A960032019B /* OtrasCuentasView.swift */,
+				FA920DAE2B4711370066FA03 /* TransferenciaAOtraCuentaRouter.swift */,
 			);
 			path = Transferencia;
 			sourceTree = "<group>";
@@ -464,7 +479,9 @@
 		FA66A53E2B32ADF0000B27E6 /* Prestamos */ = {
 			isa = PBXGroup;
 			children = (
+				FA7B07502B47BE5F00DFDD96 /* Components */,
 				FA66A5482B32AE4F000B27E6 /* PrestamosView.swift */,
+				FA7B07572B47C63800DFDD96 /* PrestamosRouter.swift */,
 			);
 			path = Prestamos;
 			sourceTree = "<group>";
@@ -481,7 +498,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6FE0A62B3E407400DB1A02 /* Components */,
-				FA6A97162B3F8C900004918D /* HomeRouter.swift */,
+				FA6A97162B3F8C900004918D /* ConsultasRouter.swift */,
 				FA66A54D2B32AF04000B27E6 /* ConsultasView.swift */,
 				FA640EF22B3E7F95008428BF /* DetalleCuentaView.swift */,
 			);
@@ -671,6 +688,23 @@
 				FA6A97132B3F82190004918D /* TicketCuentaYInterbancaria.swift */,
 				FA6A97182B3FDE990004918D /* TicketSinMovimiento.swift */,
 				FA7BB2D62B40A770005B1375 /* ConsultaSheetView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA7B07502B47BE5F00DFDD96 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA7B07512B47BE8300DFDD96 /* agenciaSercanaView.swift */,
+				FA7B07532B47BE9100DFDD96 /* tipoDePrestamoView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA920DA72B46FE420066FA03 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA920DA82B46FFD10066FA03 /* AlertAceptView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -968,11 +1002,13 @@
 				FA66A5502B32AF39000B27E6 /* PrincipalView.swift in Sources */,
 				FA6FC17B2B351E590088A87F /* TomaFotoView.swift in Sources */,
 				24AA47822B41EA6E005852D2 /* RenderIfModifier.swift in Sources */,
+				FA7B07522B47BE8300DFDD96 /* agenciaSercanaView.swift in Sources */,
 				FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */,
 				FA6BF1972B3D01CE00C286FE /* LoginRepository.swift in Sources */,
 				FA6A97192B3FDE990004918D /* TicketSinMovimiento.swift in Sources */,
 				246313DF2B38D601004F2D28 /* RegisterSheetView.swift in Sources */,
 				24AA47772B41B2F2005852D2 /* SectionView.swift in Sources */,
+				FA7734FE2B465A960032019B /* OtrasCuentasView.swift in Sources */,
 				246313E12B38EB19004F2D28 /* AuthenticationRootView.swift in Sources */,
 				FA6DFA752B33CDD60023295F /* Strings.swift in Sources */,
 				24AA47792B41BBB3005852D2 /* SpinnerViewModifier.swift in Sources */,
@@ -992,7 +1028,9 @@
 				FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */,
 				FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */,
 				FA6DFA722B33CDD60023295F /* Assets.swift in Sources */,
-				FA6A97172B3F8C900004918D /* HomeRouter.swift in Sources */,
+				FA6A97172B3F8C900004918D /* ConsultasRouter.swift in Sources */,
+				FA7B07582B47C63800DFDD96 /* PrestamosRouter.swift in Sources */,
+				FA7B07542B47BE9100DFDD96 /* tipoDePrestamoView.swift in Sources */,
 				FA6BF1952B3D015000C286FE /* Login.swift in Sources */,
 				FA6BF1912B3CFAE100C286FE /* LoginData.swift in Sources */,
 				241D98442B3A05A5007BD97D /* AppRootManager.swift in Sources */,
@@ -1002,6 +1040,7 @@
 				FA6F02DF2B353706005CA79E /* NextButtonView.swift in Sources */,
 				FA6BF1932B3CFB8400C286FE /* MemoriaLogin.swift in Sources */,
 				FA6BF19E2B3D175000C286FE /* LoginButton.swift in Sources */,
+				FA920DAF2B4711370066FA03 /* TransferenciaAOtraCuentaRouter.swift in Sources */,
 				24AA47722B4132B7005852D2 /* PrimaryButtonStyle.swift in Sources */,
 				FA66A54E2B32AF04000B27E6 /* ConsultasView.swift in Sources */,
 				FA66A54B2B32AE5E000B27E6 /* ParaTiView.swift in Sources */,
@@ -1010,6 +1049,7 @@
 				FA6BF1992B3D063000C286FE /* LoginViewModel.swift in Sources */,
 				FACED4992B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld in Sources */,
 				24AA477F2B41E8A7005852D2 /* View.swift in Sources */,
+				FA920DA92B46FFD10066FA03 /* AlertAceptView.swift in Sources */,
 				FA66A5472B32AE45000B27E6 /* PagosView.swift in Sources */,
 				241D98462B3A0BED007BD97D /* PrincipalRootView.swift in Sources */,
 				FA6F02C42B352F9E005CA79E /* User.swift in Sources */,
