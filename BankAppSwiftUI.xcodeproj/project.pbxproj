@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2418BC592B4B3D600004F40A /* ImageToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC582B4B3D600004F40A /* ImageToolbarContent.swift */; };
 		2418BC5B2B4B45500004F40A /* TextToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC5A2B4B45500004F40A /* TextToolbarContent.swift */; };
+		2418BC5E2B4B5B740004F40A /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 2418BC5D2B4B5B740004F40A /* GRDB */; };
 		241D98442B3A05A5007BD97D /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98432B3A05A5007BD97D /* AppRootManager.swift */; };
 		241D98462B3A0BED007BD97D /* PrincipalRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98452B3A0BED007BD97D /* PrincipalRootView.swift */; };
 		241D98492B3A0C56007BD97D /* SplashRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98482B3A0C56007BD97D /* SplashRootView.swift */; };
@@ -227,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2418BC5E2B4B5B740004F40A /* GRDB in Frameworks */,
 				24D2A77B2B37ACBA00EDF389 /* ShowTime in Frameworks */,
 				24D2A7782B37A92800EDF389 /* netfox in Frameworks */,
 			);
@@ -869,6 +871,7 @@
 			packageProductDependencies = (
 				24D2A7772B37A92800EDF389 /* netfox */,
 				24D2A77A2B37ACBA00EDF389 /* ShowTime */,
+				2418BC5D2B4B5B740004F40A /* GRDB */,
 			);
 			productName = BankAppSwiftUI;
 			productReference = FACED4892B2CB44A00B6BBC3 /* BankAppSwiftUI.app */;
@@ -946,6 +949,7 @@
 			packageReferences = (
 				24D2A7762B37A92800EDF389 /* XCRemoteSwiftPackageReference "netfox" */,
 				24D2A7792B37ACBA00EDF389 /* XCRemoteSwiftPackageReference "ShowTime" */,
+				2418BC5C2B4B5B740004F40A /* XCRemoteSwiftPackageReference "GRDB" */,
 			);
 			productRefGroup = FACED48A2B2CB44A00B6BBC3 /* Products */;
 			projectDirPath = "";
@@ -1476,6 +1480,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2418BC5C2B4B5B740004F40A /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		24D2A7762B37A92800EDF389 /* XCRemoteSwiftPackageReference "netfox" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kasketis/netfox";
@@ -1495,6 +1507,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2418BC5D2B4B5B740004F40A /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2418BC5C2B4B5B740004F40A /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
 		24D2A7772B37A92800EDF389 /* netfox */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 24D2A7762B37A92800EDF389 /* XCRemoteSwiftPackageReference "netfox" */;
