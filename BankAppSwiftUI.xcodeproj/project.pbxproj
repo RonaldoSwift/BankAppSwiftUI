@@ -10,6 +10,8 @@
 		2418BC592B4B3D600004F40A /* ImageToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC582B4B3D600004F40A /* ImageToolbarContent.swift */; };
 		2418BC5B2B4B45500004F40A /* TextToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC5A2B4B45500004F40A /* TextToolbarContent.swift */; };
 		2418BC5E2B4B5B740004F40A /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 2418BC5D2B4B5B740004F40A /* GRDB */; };
+		2418BC662B4B6E1C0004F40A /* RecetaEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC642B4B6E1C0004F40A /* RecetaEntity.swift */; };
+		2418BC672B4B6E1C0004F40A /* BankGRDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC652B4B6E1C0004F40A /* BankGRDB.swift */; };
 		241D98442B3A05A5007BD97D /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98432B3A05A5007BD97D /* AppRootManager.swift */; };
 		241D98462B3A0BED007BD97D /* PrincipalRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98452B3A0BED007BD97D /* PrincipalRootView.swift */; };
 		241D98492B3A0C56007BD97D /* SplashRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98482B3A0C56007BD97D /* SplashRootView.swift */; };
@@ -118,6 +120,8 @@
 /* Begin PBXFileReference section */
 		2418BC582B4B3D600004F40A /* ImageToolbarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToolbarContent.swift; sourceTree = "<group>"; };
 		2418BC5A2B4B45500004F40A /* TextToolbarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToolbarContent.swift; sourceTree = "<group>"; };
+		2418BC642B4B6E1C0004F40A /* RecetaEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecetaEntity.swift; sourceTree = "<group>"; };
+		2418BC652B4B6E1C0004F40A /* BankGRDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankGRDB.swift; sourceTree = "<group>"; };
 		241D98432B3A05A5007BD97D /* AppRootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootManager.swift; sourceTree = "<group>"; };
 		241D98452B3A0BED007BD97D /* PrincipalRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalRootView.swift; sourceTree = "<group>"; };
 		241D98482B3A0C56007BD97D /* SplashRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRootView.swift; sourceTree = "<group>"; };
@@ -258,6 +262,23 @@
 				2418BC5A2B4B45500004F40A /* TextToolbarContent.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		2418BC622B4B6E1C0004F40A /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				2418BC632B4B6E1C0004F40A /* Models */,
+				2418BC652B4B6E1C0004F40A /* BankGRDB.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		2418BC632B4B6E1C0004F40A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2418BC642B4B6E1C0004F40A /* RecetaEntity.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		241D98472B3A0C26007BD97D /* RootViews */ = {
@@ -437,6 +458,7 @@
 		FA57BDDB2B2D2C830096CDAC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2418BC622B4B6E1C0004F40A /* DataBase */,
 				2492B3F02B47148D007AAA4E /* BankWebService */,
 				FA6A8DCF2B312513002F76B0 /* CoreData */,
 				FA6A8DCE2B31250C002F76B0 /* Memoria */,
@@ -1064,6 +1086,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA66A5502B32AF39000B27E6 /* PrincipalView.swift in Sources */,
+				2418BC672B4B6E1C0004F40A /* BankGRDB.swift in Sources */,
 				FA6FC17B2B351E590088A87F /* TomaFotoView.swift in Sources */,
 				24AA47822B41EA6E005852D2 /* RenderIfModifier.swift in Sources */,
 				FA7B07522B47BE8300DFDD96 /* agenciaSercanaView.swift in Sources */,
@@ -1077,6 +1100,7 @@
 				FA7734FE2B465A960032019B /* OtrasCuentasView.swift in Sources */,
 				246313E12B38EB19004F2D28 /* AuthenticationRootView.swift in Sources */,
 				FA6DFA752B33CDD60023295F /* Strings.swift in Sources */,
+				2418BC662B4B6E1C0004F40A /* RecetaEntity.swift in Sources */,
 				24AA47792B41BBB3005852D2 /* SpinnerViewModifier.swift in Sources */,
 				24E82C452B49B2ED0052EE51 /* LoginRequest.swift in Sources */,
 				FA6F02CA2B35304E005CA79E /* prueba4.swift in Sources */,
