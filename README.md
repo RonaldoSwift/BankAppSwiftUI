@@ -1,5 +1,8 @@
 #  Aplicacion de Banco
 
+<p align="center">
+    <img src="screenshots/MainLogo.png" alt="icon" width="50%"/>
+</p>
 
 ## Running the server
 
