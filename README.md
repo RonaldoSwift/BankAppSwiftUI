@@ -7,9 +7,14 @@ Esta aplicación permite al usuario iniciar sesión, registrarse, verificar sald
     <img src="Screenshots/location.png" alt="icon" width="30%"/>
 </p>
 
-#  Arquitectura de la aplicación
+#  Arquitectura de la aplicación iOS
 <p align="center">
     <img src="Screenshots/MainLogo.png" alt="icon" width="80%"/>
+</p>
+
+#  Arquitectura de la aplicación Servidor
+<p align="center">
+    <img src="Screenshots/ServerLogo.png" alt="icon" width="80%"/>
 </p>
 
 ## Running the server
