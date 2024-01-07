@@ -1,7 +1,15 @@
 #  Aplicacion de Banco
+Esta aplicación permite al usuario iniciar sesión, registrarse, verificar saldo, cuentas, transferencias, etc. 
 
 <p align="center">
-    <img src="screenshots/MainLogo.png" alt="icon" width="50%"/>
+    <img src="Screenshots/home.png" alt="icon" width="30%"/>
+    <img src="Screenshots/detail.png" alt="icon" width="30%"/>
+    <img src="Screenshots/location.png" alt="icon" width="30%"/>
+</p>
+
+#  Arquitectura de la aplicación
+<p align="center">
+    <img src="Screenshots/MainLogo.png" alt="icon" width="50%"/>
 </p>
 
 ## Running the server
