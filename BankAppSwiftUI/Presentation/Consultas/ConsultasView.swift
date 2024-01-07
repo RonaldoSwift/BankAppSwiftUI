@@ -79,6 +79,10 @@ struct ConsultasView: View {
             
         }
         .padding()
+        .toolbar(content: {
+            ImageToolbarContent()
+        })
+        .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showSheet) {
             consultaSheetView(onClickEntendido: {
                 showSheet = false

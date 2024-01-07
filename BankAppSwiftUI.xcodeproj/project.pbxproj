@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2418BC592B4B3D600004F40A /* ImageToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC582B4B3D600004F40A /* ImageToolbarContent.swift */; };
+		2418BC5B2B4B45500004F40A /* TextToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC5A2B4B45500004F40A /* TextToolbarContent.swift */; };
 		241D98442B3A05A5007BD97D /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98432B3A05A5007BD97D /* AppRootManager.swift */; };
 		241D98462B3A0BED007BD97D /* PrincipalRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98452B3A0BED007BD97D /* PrincipalRootView.swift */; };
 		241D98492B3A0C56007BD97D /* SplashRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98482B3A0C56007BD97D /* SplashRootView.swift */; };
@@ -113,6 +115,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2418BC582B4B3D600004F40A /* ImageToolbarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToolbarContent.swift; sourceTree = "<group>"; };
+		2418BC5A2B4B45500004F40A /* TextToolbarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToolbarContent.swift; sourceTree = "<group>"; };
 		241D98432B3A05A5007BD97D /* AppRootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootManager.swift; sourceTree = "<group>"; };
 		241D98452B3A0BED007BD97D /* PrincipalRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalRootView.swift; sourceTree = "<group>"; };
 		241D98482B3A0C56007BD97D /* SplashRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRootView.swift; sourceTree = "<group>"; };
@@ -245,6 +249,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2418BC572B4B3D100004F40A /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				2418BC582B4B3D600004F40A /* ImageToolbarContent.swift */,
+				2418BC5A2B4B45500004F40A /* TextToolbarContent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		241D98472B3A0C26007BD97D /* RootViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -568,6 +581,7 @@
 		FA6A8DCB2B31243A002F76B0 /* Principal */ = {
 			isa = PBXGroup;
 			children = (
+				2418BC572B4B3D100004F40A /* Component */,
 				FA66A54F2B32AF39000B27E6 /* PrincipalView.swift */,
 				24E82C3F2B47BE2E0052EE51 /* PrincipalViewModel.swift */,
 				24E82C412B47C1670052EE51 /* PrincipalUiState.swift */,
@@ -1092,6 +1106,8 @@
 				2492B3F72B471653007AAA4E /* Authentication.swift in Sources */,
 				FA66A5492B32AE4F000B27E6 /* PrestamosView.swift in Sources */,
 				FA6F02DF2B353706005CA79E /* NextButtonView.swift in Sources */,
+				2418BC5B2B4B45500004F40A /* TextToolbarContent.swift in Sources */,
+				2418BC592B4B3D600004F40A /* ImageToolbarContent.swift in Sources */,
 				FA6BF1932B3CFB8400C286FE /* MemoriaLogin.swift in Sources */,
 				FA6BF19E2B3D175000C286FE /* LoginButton.swift in Sources */,
 				FA920DAF2B4711370066FA03 /* TransferenciaAOtraCuentaRouter.swift in Sources */,
