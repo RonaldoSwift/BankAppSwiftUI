@@ -9,7 +9,7 @@ Esta aplicación permite al usuario iniciar sesión, registrarse, verificar sald
 
 #  Arquitectura de la aplicación
 <p align="center">
-    <img src="Screenshots/MainLogo.png" alt="icon" width="50%"/>
+    <img src="Screenshots/MainLogo.png" alt="icon" width="80%"/>
 </p>
 
 ## Running the server
