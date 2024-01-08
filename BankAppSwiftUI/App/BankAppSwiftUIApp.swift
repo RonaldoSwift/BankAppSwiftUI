@@ -14,14 +14,14 @@ struct BankAppSwiftUIApp: App {
 
     @StateObject private var appRootManager = AppRootManager()
     
-    let recetasGRDBDataSource = RecetasGRDBDataSource()
+    let recetasGRDBDataSource = BankGRDB()
 
     var body: some Scene {
         WindowGroup {
             Group {
                 switch appRootManager.currentRoot {
                 case .splash:
-                    SplashRootView()
+                    PrincipalRootView()
                     
                 case .authentication:
                     AuthenticationRootView()
@@ -44,10 +44,10 @@ struct BankAppSwiftUIApp: App {
 extension BankAppSwiftUIApp {
 
     private func initGRDB() {
-        //llamas ala funcion iOS16 y iOS14
+        // llamas ala funcion iOS16 y iOS14
         if #available(iOS 16, *) {
             recetasGRDBDataSource.inicializadorBaseDeDatosiOS16()
-        } else{
+        } else {
             recetasGRDBDataSource.inicializadorBaseDeDatosiOS14()
         }
         recetasGRDBDataSource.crearTableDeReceta()

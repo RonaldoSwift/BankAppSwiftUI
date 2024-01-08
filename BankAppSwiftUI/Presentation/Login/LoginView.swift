@@ -17,7 +17,8 @@ struct LoginView: View {
     @StateObject private var loginViewModel = LoginViewModel(
         loginRepository: LoginRepository(
             memoriaLogin: MemoriaLogin(),
-            bankApi: BankApi()
+            bankApi: BankApi(),
+            bankGRDB: BankGRDB()
         )
     )
     

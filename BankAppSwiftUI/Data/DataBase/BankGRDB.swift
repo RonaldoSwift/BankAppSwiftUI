@@ -11,14 +11,14 @@ import Combine
 
 var dbQueue: DatabaseQueue!
 
-class RecetasGRDBDataSource{
+class BankGRDB {
     
-    static let insertadoPublicador = PassthroughSubject<String,Error>()
-    static let obtenerPublicador = PassthroughSubject<Array<RecetaEntity>, Error>()
+    let insertadoPublicador = PassthroughSubject<String,Error>()
+    let obtenerPublicador = PassthroughSubject<[RecetaEntity], Error>()
     
-    //iOS 16
+    // iOS 16
     @available(iOS 16, *)
-    func inicializadorBaseDeDatosiOS16(){
+    func inicializadorBaseDeDatosiOS16() {
         let fileManager = FileManager.default
         let dataBaseURL = try! fileManager
             .url(for: .applicationDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -29,8 +29,8 @@ class RecetasGRDBDataSource{
         dbQueue = try! DatabaseQueue(path: dataBasePath)
     }
     
-    //iOS 14
-    func inicializadorBaseDeDatosiOS14(){
+    // iOS 14
+    func inicializadorBaseDeDatosiOS14() {
         let fileManager = FileManager.default
         let documentsURL = fileManager
             .urls(
@@ -43,9 +43,8 @@ class RecetasGRDBDataSource{
         dbQueue = try! DatabaseQueue(path: dataBasePath)
     }
     
-    
-    func crearTableDeReceta(){
-        do{
+    func crearTableDeReceta() {
+        do {
             try dbQueue.write({ database in
                 try database.create(table: "RecetaEntity", body: { tableDefinition in
                     tableDefinition.primaryKey("id", .integer)
@@ -54,35 +53,35 @@ class RecetasGRDBDataSource{
                 })
             })
             
-        } catch let error{
+        } catch let error {
             print("*******ERROR EN LA CREACION DE TABLA*****")
             print(error)
         }
     }
     
     // MARK: Operaciones con la base de datos
-    func insertarRecetaEnLaTabla(idDeComida:Int, tituloDeComida:String, imagenDeComida: String){
+    func insertarRecetaEnLaTabla(idDeComida: Int, tituloDeComida:String, imagenDeComida: String) {
         let recetaEntity = RecetaEntity(
             id: idDeComida,
             title: tituloDeComida,
             image: imagenDeComida
         )
         
-        do{
+        do {
             try dbQueue.write({ database in
                 try recetaEntity.insert(database)
-                RecetasGRDBDataSource.insertadoPublicador.send("Se inserto Correctamente")
+                insertadoPublicador.send("Se inserto Correctamente")
             })
-        } catch let error{
-            RecetasGRDBDataSource.insertadoPublicador.send(completion: .failure(error))
+        } catch let error {
+            insertadoPublicador.send(completion: .failure(error))
         }
     }
     
-    
-    func obtenerReceta(){
-        let recetasEntity: Array<RecetaEntity> = try! dbQueue.read({ database in
+    func obtenerRecetasEntity() {
+        let recetasEntity: [RecetaEntity] = try! dbQueue.read({ database in
             try RecetaEntity.fetchAll(database)
         })
-        RecetasGRDBDataSource.obtenerPublicador.send(recetasEntity)
+        obtenerPublicador.send(recetasEntity)
     }
+    
 }

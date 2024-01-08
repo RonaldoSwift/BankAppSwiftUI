@@ -12,12 +12,14 @@ class LoginRepository {
     
     private let memoriaLogin : MemoriaLogin
     private let bankApi: BankApi
+    private let bankGRDB: BankGRDB
     
     var cancelLables = Set<AnyCancellable>()
     
-    init(memoriaLogin: MemoriaLogin, bankApi: BankApi) {
+    init(memoriaLogin: MemoriaLogin, bankApi: BankApi, bankGRDB: BankGRDB) {
         self.memoriaLogin = memoriaLogin
         self.bankApi = bankApi
+        self.bankGRDB = bankGRDB
     }
     
     // MARK: CRUD Login
@@ -62,4 +64,34 @@ class LoginRepository {
             }
             .eraseToAnyPublisher()
     }
+    
+    // MARK: User Database
+    func insertReceta() {
+        bankGRDB.insertarRecetaEnLaTabla(
+            idDeComida: 1,
+            tituloDeComida: "CHAUFA",
+            imagenDeComida: "NO"
+        )
+    }
+    
+    func requestRecetas() {
+        bankGRDB.obtenerRecetasEntity()
+    }
+    
+    func getRecetasPublicador() -> AnyPublisher<[Receta], Error> {
+        bankGRDB
+            .obtenerPublicador
+            .map { (recetasEntity: [RecetaEntity]) in
+                recetasEntity.map { (recetaEntity: RecetaEntity) in
+                    Receta(
+                        id: recetaEntity.id,
+                        title: "",
+                        image: "",
+                        imageType: ""
+                    )
+                }
+            }
+            .eraseToAnyPublisher()
+    }
+    
 }

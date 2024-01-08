@@ -12,6 +12,7 @@
 		2418BC5E2B4B5B740004F40A /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 2418BC5D2B4B5B740004F40A /* GRDB */; };
 		2418BC662B4B6E1C0004F40A /* RecetaEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC642B4B6E1C0004F40A /* RecetaEntity.swift */; };
 		2418BC672B4B6E1C0004F40A /* BankGRDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC652B4B6E1C0004F40A /* BankGRDB.swift */; };
+		2418BC692B4B731A0004F40A /* Receta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418BC682B4B731A0004F40A /* Receta.swift */; };
 		241D98442B3A05A5007BD97D /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98432B3A05A5007BD97D /* AppRootManager.swift */; };
 		241D98462B3A0BED007BD97D /* PrincipalRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98452B3A0BED007BD97D /* PrincipalRootView.swift */; };
 		241D98492B3A0C56007BD97D /* SplashRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98482B3A0C56007BD97D /* SplashRootView.swift */; };
@@ -122,6 +123,7 @@
 		2418BC5A2B4B45500004F40A /* TextToolbarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToolbarContent.swift; sourceTree = "<group>"; };
 		2418BC642B4B6E1C0004F40A /* RecetaEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecetaEntity.swift; sourceTree = "<group>"; };
 		2418BC652B4B6E1C0004F40A /* BankGRDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankGRDB.swift; sourceTree = "<group>"; };
+		2418BC682B4B731A0004F40A /* Receta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receta.swift; sourceTree = "<group>"; };
 		241D98432B3A05A5007BD97D /* AppRootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootManager.swift; sourceTree = "<group>"; };
 		241D98452B3A0BED007BD97D /* PrincipalRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalRootView.swift; sourceTree = "<group>"; };
 		241D98482B3A0C56007BD97D /* SplashRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRootView.swift; sourceTree = "<group>"; };
@@ -641,6 +643,7 @@
 		FA6A8DD12B312553002F76B0 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
+				2418BC682B4B731A0004F40A /* Receta.swift */,
 				FA6F02C32B352F9E005CA79E /* User.swift */,
 				FA6BF1942B3D015000C286FE /* Login.swift */,
 				2492B3F62B471653007AAA4E /* Authentication.swift */,
@@ -1092,6 +1095,7 @@
 				FA7B07522B47BE8300DFDD96 /* agenciaSercanaView.swift in Sources */,
 				FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */,
 				FA6BF1972B3D01CE00C286FE /* LoginRepository.swift in Sources */,
+				2418BC692B4B731A0004F40A /* Receta.swift in Sources */,
 				24E82C422B47C1670052EE51 /* PrincipalUiState.swift in Sources */,
 				FA6A97192B3FDE990004918D /* TicketSinMovimiento.swift in Sources */,
 				246313DF2B38D601004F2D28 /* RegisterSheetView.swift in Sources */,

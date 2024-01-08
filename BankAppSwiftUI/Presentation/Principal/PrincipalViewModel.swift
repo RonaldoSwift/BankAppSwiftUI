@@ -19,10 +19,12 @@ final class PrincipalViewModel: ObservableObject {
     
     init(loginRepository: LoginRepository) {
         self.loginRepository = loginRepository
-        getUser()
+        getUserFromWebService()
+        getRecetasFromDatabase()
+        loginRepository.requestRecetas()
     }
     
-    func getUser() {
+    func getUserFromWebService() {
         let jwt = loginRepository.getTokenFromMemoria()
         loginRepository
             .getUserFromWebService(apiToken: jwt, userId: 10)
@@ -37,6 +39,28 @@ final class PrincipalViewModel: ObservableObject {
             } receiveValue: { (user: User) in
                 // store in data base
                 print("\(user)")
+                //self.loginRepository.insertReceta()
+            }
+            .store(in: &cancellables)
+
+    }
+    
+    func insertUser() {
+        loginRepository.insertReceta()
+    }
+    
+    func getRecetasFromDatabase() {
+        loginRepository.getRecetasPublicador()
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch (completion) {
+                case .finished:
+                    print("asdf")
+                case .failure(let error):
+                    print("\(error)")
+                }
+            } receiveValue: { (recetas: [Receta]) in
+                print(recetas)
             }
             .store(in: &cancellables)
 
