@@ -60,7 +60,7 @@ class BankGRDB {
     }
     
     // MARK: Operaciones con la base de datos
-    func insertarRecetaEnLaTabla(idDeComida: Int, tituloDeComida:String, imagenDeComida: String) {
+    func insertUserIntTable(idDeComida: Int, tituloDeComida:String, imagenDeComida: String) {
         let recetaEntity = UsuarioEntity(
             id: idDeComida,
             title: tituloDeComida,
@@ -77,7 +77,7 @@ class BankGRDB {
         }
     }
     
-    func obtenerUsuariosEntity() {
+    func ordenarTraerUsuariosBaseDeDatos() {
         let usuariosEntity: [UsuarioEntity] = try! dbQueue.read({ database in
             try UsuarioEntity.fetchAll(database)
         })

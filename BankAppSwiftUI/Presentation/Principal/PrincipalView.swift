@@ -36,7 +36,7 @@ struct PrincipalView: View {
                         })
                 })
             }
-          
+            
             .environmentObject(consultasRouter)
             .tabItem {
                 Label("Consultas", systemImage: "magnifyingglass")
@@ -89,19 +89,6 @@ struct PrincipalView: View {
                 }
             
         }
-    }
-}
-
-struct NavLogo: View {
-
-    var body: some View {
-            VStack {
-                Asset.Imagenes.rightArrow.swiftUIImage
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-            }
-            .frame(width: .infinity)
-            .background(Color.red)
     }
 }
 

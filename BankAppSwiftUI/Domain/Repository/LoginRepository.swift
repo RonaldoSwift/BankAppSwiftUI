@@ -67,16 +67,16 @@ class LoginRepository {
     }
     
     // MARK: User Database
-    func insertUser() {
-        bankGRDB.insertarRecetaEnLaTabla(
+    func inserUserInDataBase() {
+        bankGRDB.insertUserIntTable(
             idDeComida: 1,
             tituloDeComida: "CHAUFA",
             imagenDeComida: "NO"
         )
     }
     
-    func requestRecetas() {
-        bankGRDB.obtenerUsuariosEntity()
+    func requestUsers() {
+        bankGRDB.ordenarTraerUsuariosBaseDeDatos()
     }
     
     func getUsersPublicador() -> AnyPublisher<[User], Error> {

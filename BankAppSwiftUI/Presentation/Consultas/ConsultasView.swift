@@ -16,10 +16,6 @@ struct ConsultasView: View {
     var body: some View {
         
         VStack(alignment: .leading,spacing: 10) {
-            Asset.Imagenes.logoPrincipal.swiftUIImage
-                .resizable()
-                .frame(width: 60, height: 60)
-                .frame(maxWidth: .infinity)
             
             HStack {
                 Image(systemName: "rectangle.on.rectangle.circle")

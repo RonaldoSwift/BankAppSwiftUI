@@ -12,7 +12,7 @@ struct ImageToolbarContent: ToolbarContent {
     
     var body: some ToolbarContent {
         ToolbarItem(placement: .principal) {
-            Asset.Imagenes.bankLogo.swiftUIImage
+            Asset.Imagenes.logoPrincipal.swiftUIImage
                 .resizable()
                 .scaledToFit()
                 .frame(width: 30)

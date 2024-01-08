@@ -20,7 +20,7 @@ final class PrincipalViewModel: ObservableObject {
     init(loginRepository: LoginRepository) {
         self.loginRepository = loginRepository
         getUsersFromDatabase()
-        loginRepository.requestRecetas()
+        loginRepository.requestUsers()
     }
     
     func getUsersFromDatabase() {
@@ -57,7 +57,7 @@ final class PrincipalViewModel: ObservableObject {
             } receiveValue: { (user: User) in
                 // store in data base
                 print("\(user)")
-                self.loginRepository.insertUser()
+                self.loginRepository.inserUserInDataBase()
             }
             .store(in: &cancellables)
 
