@@ -1,5 +1,21 @@
 #  Aplicacion de Banco
+Esta aplicación permite al usuario iniciar sesión, registrarse, verificar saldo, cuentas, transferencias, etc. 
 
+<p align="center">
+    <img src="Screenshots/home.png" alt="icon" width="30%"/>
+    <img src="Screenshots/detail.png" alt="icon" width="30%"/>
+    <img src="Screenshots/location.png" alt="icon" width="30%"/>
+</p>
+
+#  Arquitectura de la aplicación iOS
+<p align="center">
+    <img src="Screenshots/MainLogo.png" alt="icon" width="80%"/>
+</p>
+
+#  Arquitectura de la aplicación Servidor
+<p align="center">
+    <img src="Screenshots/ServerLogo.png" alt="icon" width="80%"/>
+</p>
 
 ## Running the server
 
