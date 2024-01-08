@@ -21,7 +21,7 @@ struct BankAppSwiftUIApp: App {
             Group {
                 switch appRootManager.currentRoot {
                 case .splash:
-                    PrincipalRootView()
+                    SplashRootView()
                     
                 case .authentication:
                     AuthenticationRootView()
@@ -50,7 +50,7 @@ extension BankAppSwiftUIApp {
         } else {
             recetasGRDBDataSource.inicializadorBaseDeDatosiOS14()
         }
-        recetasGRDBDataSource.crearTableDeReceta()
+        recetasGRDBDataSource.crearTableDeUsuario()
     }
     
     private func enableVisualNetworkRequests() {

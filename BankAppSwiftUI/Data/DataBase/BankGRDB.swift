@@ -14,7 +14,7 @@ var dbQueue: DatabaseQueue!
 class BankGRDB {
     
     let insertadoPublicador = PassthroughSubject<String,Error>()
-    let obtenerPublicador = PassthroughSubject<[RecetaEntity], Error>()
+    let obtenerPublicador = PassthroughSubject<[UsuarioEntity], Error>()
     
     // iOS 16
     @available(iOS 16, *)
@@ -43,10 +43,10 @@ class BankGRDB {
         dbQueue = try! DatabaseQueue(path: dataBasePath)
     }
     
-    func crearTableDeReceta() {
+    func crearTableDeUsuario() {
         do {
             try dbQueue.write({ database in
-                try database.create(table: "RecetaEntity", body: { tableDefinition in
+                try database.create(table: "UsuarioEntity", body: { tableDefinition in
                     tableDefinition.primaryKey("id", .integer)
                     tableDefinition.column("title", .text).notNull()
                     tableDefinition.column("image", .text).notNull()
@@ -61,7 +61,7 @@ class BankGRDB {
     
     // MARK: Operaciones con la base de datos
     func insertarRecetaEnLaTabla(idDeComida: Int, tituloDeComida:String, imagenDeComida: String) {
-        let recetaEntity = RecetaEntity(
+        let recetaEntity = UsuarioEntity(
             id: idDeComida,
             title: tituloDeComida,
             image: imagenDeComida
@@ -77,11 +77,11 @@ class BankGRDB {
         }
     }
     
-    func obtenerRecetasEntity() {
-        let recetasEntity: [RecetaEntity] = try! dbQueue.read({ database in
-            try RecetaEntity.fetchAll(database)
+    func obtenerUsuariosEntity() {
+        let usuariosEntity: [UsuarioEntity] = try! dbQueue.read({ database in
+            try UsuarioEntity.fetchAll(database)
         })
-        obtenerPublicador.send(recetasEntity)
+        obtenerPublicador.send(usuariosEntity)
     }
     
 }

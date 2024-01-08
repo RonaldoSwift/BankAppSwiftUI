@@ -55,6 +55,7 @@ class LoginRepository {
             .fetchUser(apiToken: apiToken, userId: userId)
             .map { (getUserResponse: GetUserResponse) in
                 User(
+                    id: 0,
                     street: getUserResponse.data.currentUser.lastName,
                     city: "",
                     state: "",
@@ -66,7 +67,7 @@ class LoginRepository {
     }
     
     // MARK: User Database
-    func insertReceta() {
+    func insertUser() {
         bankGRDB.insertarRecetaEnLaTabla(
             idDeComida: 1,
             tituloDeComida: "CHAUFA",
@@ -75,19 +76,21 @@ class LoginRepository {
     }
     
     func requestRecetas() {
-        bankGRDB.obtenerRecetasEntity()
+        bankGRDB.obtenerUsuariosEntity()
     }
     
-    func getRecetasPublicador() -> AnyPublisher<[Receta], Error> {
+    func getUsersPublicador() -> AnyPublisher<[User], Error> {
         bankGRDB
             .obtenerPublicador
-            .map { (recetasEntity: [RecetaEntity]) in
-                recetasEntity.map { (recetaEntity: RecetaEntity) in
-                    Receta(
-                        id: recetaEntity.id,
-                        title: "",
-                        image: "",
-                        imageType: ""
+            .map { (usersEntity: [UsuarioEntity]) in
+                usersEntity.map { (userEntity: UsuarioEntity) in
+                    User(
+                        id: userEntity.id,
+                        street: "",
+                        city: "",
+                        state: "",
+                        homeNumber: 0,
+                        postalCode: ""
                     )
                 }
             }

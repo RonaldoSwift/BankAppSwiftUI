@@ -19,11 +19,29 @@ final class PrincipalViewModel: ObservableObject {
     
     init(loginRepository: LoginRepository) {
         self.loginRepository = loginRepository
-        getUserFromWebService()
-        getRecetasFromDatabase()
+        getUsersFromDatabase()
         loginRepository.requestRecetas()
     }
     
+    func getUsersFromDatabase() {
+        loginRepository.getUsersPublicador()
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch (completion) {
+                case .finished:
+                    print("asdf")
+                case .failure(let error):
+                    print("\(error)")
+                }
+            } receiveValue: { (users: [User]) in
+                if(users.isEmpty) {
+                    self.getUserFromWebService()
+                }
+            }
+            .store(in: &cancellables)
+
+    }
+        
     func getUserFromWebService() {
         let jwt = loginRepository.getTokenFromMemoria()
         loginRepository
@@ -32,35 +50,14 @@ final class PrincipalViewModel: ObservableObject {
             .sink { completion in
                 switch (completion) {
                 case .finished:
-                    print("asdf")
+                    print("finished")
                 case .failure(let error):
                     print("\(error)")
                 }
             } receiveValue: { (user: User) in
                 // store in data base
                 print("\(user)")
-                //self.loginRepository.insertReceta()
-            }
-            .store(in: &cancellables)
-
-    }
-    
-    func insertUser() {
-        loginRepository.insertReceta()
-    }
-    
-    func getRecetasFromDatabase() {
-        loginRepository.getRecetasPublicador()
-            .receive(on: DispatchQueue.main)
-            .sink { completion in
-                switch (completion) {
-                case .finished:
-                    print("asdf")
-                case .failure(let error):
-                    print("\(error)")
-                }
-            } receiveValue: { (recetas: [Receta]) in
-                print(recetas)
+                self.loginRepository.insertUser()
             }
             .store(in: &cancellables)
 

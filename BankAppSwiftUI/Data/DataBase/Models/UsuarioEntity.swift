@@ -8,7 +8,7 @@
 import Foundation
 import GRDB
 
-struct UsuarioEntity: Codable, FetchableRecord,PersistableRecord {
+struct UsuarioEntity: Codable, FetchableRecord, PersistableRecord {
     let id: Int
     let title: String
     let image: String
