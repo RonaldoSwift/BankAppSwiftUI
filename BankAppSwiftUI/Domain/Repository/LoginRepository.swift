@@ -12,12 +12,14 @@ class LoginRepository {
     
     private let memoriaLogin : MemoriaLogin
     private let bankApi: BankApi
+    private let bankGRDB: BankGRDB
     
     var cancelLables = Set<AnyCancellable>()
     
-    init(memoriaLogin: MemoriaLogin, bankApi: BankApi) {
+    init(memoriaLogin: MemoriaLogin, bankApi: BankApi, bankGRDB: BankGRDB) {
         self.memoriaLogin = memoriaLogin
         self.bankApi = bankApi
+        self.bankGRDB = bankGRDB
     }
     
     // MARK: CRUD Login
@@ -53,6 +55,7 @@ class LoginRepository {
             .fetchUser(apiToken: apiToken, userId: userId)
             .map { (getUserResponse: GetUserResponse) in
                 User(
+                    id: 0,
                     street: getUserResponse.data.currentUser.lastName,
                     city: "",
                     state: "",
@@ -62,4 +65,36 @@ class LoginRepository {
             }
             .eraseToAnyPublisher()
     }
+    
+    // MARK: User Database
+    func inserUserInDataBase() {
+        bankGRDB.insertUserIntTable(
+            idDeComida: 1,
+            tituloDeComida: "CHAUFA",
+            imagenDeComida: "NO"
+        )
+    }
+    
+    func requestUsers() {
+        bankGRDB.ordenarTraerUsuariosBaseDeDatos()
+    }
+    
+    func getUsersPublicador() -> AnyPublisher<[User], Error> {
+        bankGRDB
+            .obtenerPublicador
+            .map { (usersEntity: [UsuarioEntity]) in
+                usersEntity.map { (userEntity: UsuarioEntity) in
+                    User(
+                        id: userEntity.id,
+                        street: "",
+                        city: "",
+                        state: "",
+                        homeNumber: 0,
+                        postalCode: ""
+                    )
+                }
+            }
+            .eraseToAnyPublisher()
+    }
+    
 }

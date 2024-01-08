@@ -19,13 +19,12 @@ final class PrincipalViewModel: ObservableObject {
     
     init(loginRepository: LoginRepository) {
         self.loginRepository = loginRepository
-        getUser()
+        getUsersFromDatabase()
+        loginRepository.requestUsers()
     }
     
-    func getUser() {
-        let jwt = loginRepository.getTokenFromMemoria()
-        loginRepository
-            .getUserFromWebService(apiToken: jwt, userId: 10)
+    func getUsersFromDatabase() {
+        loginRepository.getUsersPublicador()
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 switch (completion) {
@@ -34,9 +33,31 @@ final class PrincipalViewModel: ObservableObject {
                 case .failure(let error):
                     print("\(error)")
                 }
+            } receiveValue: { (users: [User]) in
+                if(users.isEmpty) {
+                    self.getUserFromWebService()
+                }
+            }
+            .store(in: &cancellables)
+
+    }
+        
+    func getUserFromWebService() {
+        let jwt = loginRepository.getTokenFromMemoria()
+        loginRepository
+            .getUserFromWebService(apiToken: jwt, userId: 10)
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch (completion) {
+                case .finished:
+                    print("finished")
+                case .failure(let error):
+                    print("\(error)")
+                }
             } receiveValue: { (user: User) in
                 // store in data base
                 print("\(user)")
+                self.loginRepository.inserUserInDataBase()
             }
             .store(in: &cancellables)
 

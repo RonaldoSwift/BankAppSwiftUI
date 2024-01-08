@@ -14,6 +14,8 @@ struct BankAppSwiftUIApp: App {
 
     @StateObject private var appRootManager = AppRootManager()
     
+    let recetasGRDBDataSource = BankGRDB()
+
     var body: some Scene {
         WindowGroup {
             Group {
@@ -33,12 +35,23 @@ struct BankAppSwiftUIApp: App {
     }
     
     init() {
+        initGRDB()
         enableVisualNetworkRequests()
         enableVisualTouchesOnDebug()
     }
 }
 
 extension BankAppSwiftUIApp {
+
+    private func initGRDB() {
+        // llamas ala funcion iOS16 y iOS14
+        if #available(iOS 16, *) {
+            recetasGRDBDataSource.inicializadorBaseDeDatosiOS16()
+        } else {
+            recetasGRDBDataSource.inicializadorBaseDeDatosiOS14()
+        }
+        recetasGRDBDataSource.crearTableDeUsuario()
+    }
     
     private func enableVisualNetworkRequests() {
         #if DEBUG

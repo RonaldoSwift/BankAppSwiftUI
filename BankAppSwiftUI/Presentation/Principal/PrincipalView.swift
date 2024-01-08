@@ -16,13 +16,14 @@ struct PrincipalView: View {
     @StateObject private var principalViewModel = PrincipalViewModel(
         loginRepository: LoginRepository(
             memoriaLogin: MemoriaLogin(),
-            bankApi: BankApi()
+            bankApi: BankApi(),
+            bankGRDB: BankGRDB()
         )
     )
     
     var body: some View {
         TabView {
-            //1
+            // 1
             NavigationStack(path: $consultasRouter.navPath) {
                 ZStack(content: {
                     ConsultasView()
@@ -35,12 +36,13 @@ struct PrincipalView: View {
                         })
                 })
             }
+            
             .environmentObject(consultasRouter)
             .tabItem {
                 Label("Consultas", systemImage: "magnifyingglass")
             }
             
-            //2
+            // 2
             NavigationStack(path: $transferenciaAOtraCuentaRouter.navPath) {
                 ZStack(content: {
                     TransferenciaView()
@@ -58,7 +60,7 @@ struct PrincipalView: View {
                 Label("Transferencia", systemImage: "arrowshape.left.arrowshape.right")
             }
             
-            //3
+            // 3
             NavigationStack(path: $prestamosRouter.navPath) {
                 ZStack(content: {
                     PagosView()

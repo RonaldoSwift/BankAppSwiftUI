@@ -34,12 +34,15 @@ internal enum Asset {
     internal static let next = ColorAsset(name: "next")
   }
   internal enum Imagenes {
+    internal static let arrowBack = ImageAsset(name: "ArrowBack")
+    internal static let bankLogo = ImageAsset(name: "BankLogo")
     internal static let creditCard = ImageAsset(name: "CreditCard")
     internal static let identityCard = ImageAsset(name: "IdentityCard")
     internal static let logoPrincipal = ImageAsset(name: "LogoPrincipal")
     internal static let logoWelcom = ImageAsset(name: "LogoWelcom")
     internal static let rightArrow = ImageAsset(name: "RightArrow")
     internal static let sugerencia = ImageAsset(name: "Sugerencia")
+    internal static let threeDots = ImageAsset(name: "ThreeDots")
     internal static let icBack = ImageAsset(name: "ic_back")
   }
 }

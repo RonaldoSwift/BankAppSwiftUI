@@ -10,9 +10,7 @@ import SwiftUI
 struct DetalleCuentaView: View {
     var body: some View {
         VStack {
-            
-            Text("Detalle de la cuenta")
-            
+                        
             ticketAhorro()
             
             ticketCuentaYInterbancaria()
@@ -30,6 +28,10 @@ struct DetalleCuentaView: View {
             Spacer()
         }
         .padding()
+        .toolbar(content: {
+            TextToolbarContent(title: "Detalle de cuenta")
+        })
+        .navigationBarBackButtonHidden(true)
     }
 }
 

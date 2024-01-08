@@ -7,8 +7,10 @@
 
 import Foundation
 
-public struct User: Codable {
+public struct User: Codable, Identifiable {
 
+    public let id: Int
+    
     public let street: String
     public let city: String
     public let state: String
