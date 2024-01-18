@@ -37,10 +37,11 @@
 		24E82C422B47C1670052EE51 /* PrincipalUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E82C412B47C1670052EE51 /* PrincipalUiState.swift */; };
 		24E82C452B49B2ED0052EE51 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E82C442B49B2ED0052EE51 /* LoginRequest.swift */; };
 		24E82C472B49BCC80052EE51 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E82C462B49BCC80052EE51 /* ErrorResponse.swift */; };
+		FA01AFE62B576BDA00E5285D /* PagosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA01AFE52B576BDA00E5285D /* PagosRouter.swift */; };
 		FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57BDE02B2D31C50096CDAC /* SplashView.swift */; };
 		FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */; };
 		FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */; };
-		FA5ADD902B33333500504EB0 /* BancaInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8F2B33333500504EB0 /* BancaInternetView.swift */; };
+		FA5ADD902B33333500504EB0 /* IrAWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8F2B33333500504EB0 /* IrAWebView.swift */; };
 		FA5EFD2F2B3C6D3900258AF4 /* UbicanosYLlamanosComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5EFD2E2B3C6D3900258AF4 /* UbicanosYLlamanosComponent.swift */; };
 		FA640EF32B3E7F95008428BF /* DetalleCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA640EF22B3E7F95008428BF /* DetalleCuentaView.swift */; };
 		FA66A5452B32AE38000B27E6 /* TransferenciaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A5442B32AE38000B27E6 /* TransferenciaView.swift */; };
@@ -82,10 +83,17 @@
 		FA6FC1A22B35270B0088A87F /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC1992B35270B0088A87F /* Inter-Bold.ttf */; };
 		FA6FE0A82B3E409D00DB1A02 /* TicketMonto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FE0A72B3E409D00DB1A02 /* TicketMonto.swift */; };
 		FA7734FE2B465A960032019B /* OtrasCuentasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7734FD2B465A960032019B /* OtrasCuentasView.swift */; };
+		FA7931C02B4CC00100E42AF2 /* Servicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7931BF2B4CC00100E42AF2 /* Servicio.swift */; };
+		FA7931C22B4CC42600E42AF2 /* PagosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7931C12B4CC42600E42AF2 /* PagosViewModel.swift */; };
+		FA7931C42B4CC8F100E42AF2 /* PagoUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7931C32B4CC8F100E42AF2 /* PagoUiState.swift */; };
 		FA7B07522B47BE8300DFDD96 /* agenciaSercanaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B07512B47BE8300DFDD96 /* agenciaSercanaView.swift */; };
 		FA7B07542B47BE9100DFDD96 /* tipoDePrestamoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B07532B47BE9100DFDD96 /* tipoDePrestamoView.swift */; };
 		FA7B07582B47C63800DFDD96 /* PrestamosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B07572B47C63800DFDD96 /* PrestamosRouter.swift */; };
 		FA7BB2D72B40A770005B1375 /* ConsultaSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BB2D62B40A770005B1375 /* ConsultaSheetView.swift */; };
+		FA7C674E2B4BA33F006B08D4 /* ServiciosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C674D2B4BA33F006B08D4 /* ServiciosResponse.swift */; };
+		FA7C67522B4BA7E1006B08D4 /* ServicesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C67512B4BA7E1006B08D4 /* ServicesRepository.swift */; };
+		FA84E0332B4E106D00B675D6 /* PagosWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E0322B4E106D00B675D6 /* PagosWebView.swift */; };
+		FA84E0352B4E18E500B675D6 /* PagosDeServicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E0342B4E18E500B675D6 /* PagosDeServicioView.swift */; };
 		FA88238A2B3F1CBC00E1FABD /* TicketAhorro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8823892B3F1CBC00E1FABD /* TicketAhorro.swift */; };
 		FA920DA92B46FFD10066FA03 /* AlertAceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA920DA82B46FFD10066FA03 /* AlertAceptView.swift */; };
 		FA920DAF2B4711370066FA03 /* TransferenciaAOtraCuentaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA920DAE2B4711370066FA03 /* TransferenciaAOtraCuentaRouter.swift */; };
@@ -94,7 +102,6 @@
 		FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */; };
 		FACED4912B2CB44B00B6BBC3 /* Imagenes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */; };
 		FACED4942B2CB44B00B6BBC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACED4932B2CB44B00B6BBC3 /* Preview Assets.xcassets */; };
-		FACED4992B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FACED4972B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld */; };
 		FACED4A32B2CB44B00B6BBC3 /* BankAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED4A22B2CB44B00B6BBC3 /* BankAppSwiftUITests.swift */; };
 		FACED4AD2B2CB44B00B6BBC3 /* BankAppSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED4AC2B2CB44B00B6BBC3 /* BankAppSwiftUIUITests.swift */; };
 		FACED4AF2B2CB44B00B6BBC3 /* BankAppSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACED4AE2B2CB44B00B6BBC3 /* BankAppSwiftUIUITestsLaunchTests.swift */; };
@@ -159,10 +166,11 @@
 		24E82C412B47C1670052EE51 /* PrincipalUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalUiState.swift; sourceTree = "<group>"; };
 		24E82C442B49B2ED0052EE51 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		24E82C462B49BCC80052EE51 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		FA01AFE52B576BDA00E5285D /* PagosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagosRouter.swift; sourceTree = "<group>"; };
 		FA57BDE02B2D31C50096CDAC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDeCuentaView.swift; sourceTree = "<group>"; };
 		FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarServicioView.swift; sourceTree = "<group>"; };
-		FA5ADD8F2B33333500504EB0 /* BancaInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancaInternetView.swift; sourceTree = "<group>"; };
+		FA5ADD8F2B33333500504EB0 /* IrAWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrAWebView.swift; sourceTree = "<group>"; };
 		FA5EFD2E2B3C6D3900258AF4 /* UbicanosYLlamanosComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbicanosYLlamanosComponent.swift; sourceTree = "<group>"; };
 		FA640EF22B3E7F95008428BF /* DetalleCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleCuentaView.swift; sourceTree = "<group>"; };
 		FA66A5442B32AE38000B27E6 /* TransferenciaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferenciaView.swift; sourceTree = "<group>"; };
@@ -205,10 +213,17 @@
 		FA6FC1992B35270B0088A87F /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		FA6FE0A72B3E409D00DB1A02 /* TicketMonto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketMonto.swift; sourceTree = "<group>"; };
 		FA7734FD2B465A960032019B /* OtrasCuentasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtrasCuentasView.swift; sourceTree = "<group>"; };
+		FA7931BF2B4CC00100E42AF2 /* Servicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servicio.swift; sourceTree = "<group>"; };
+		FA7931C12B4CC42600E42AF2 /* PagosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagosViewModel.swift; sourceTree = "<group>"; };
+		FA7931C32B4CC8F100E42AF2 /* PagoUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoUiState.swift; sourceTree = "<group>"; };
 		FA7B07512B47BE8300DFDD96 /* agenciaSercanaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agenciaSercanaView.swift; sourceTree = "<group>"; };
 		FA7B07532B47BE9100DFDD96 /* tipoDePrestamoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipoDePrestamoView.swift; sourceTree = "<group>"; };
 		FA7B07572B47C63800DFDD96 /* PrestamosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestamosRouter.swift; sourceTree = "<group>"; };
 		FA7BB2D62B40A770005B1375 /* ConsultaSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultaSheetView.swift; sourceTree = "<group>"; };
+		FA7C674D2B4BA33F006B08D4 /* ServiciosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiciosResponse.swift; sourceTree = "<group>"; };
+		FA7C67512B4BA7E1006B08D4 /* ServicesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesRepository.swift; sourceTree = "<group>"; };
+		FA84E0322B4E106D00B675D6 /* PagosWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagosWebView.swift; sourceTree = "<group>"; };
+		FA84E0342B4E18E500B675D6 /* PagosDeServicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagosDeServicioView.swift; sourceTree = "<group>"; };
 		FA8823892B3F1CBC00E1FABD /* TicketAhorro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketAhorro.swift; sourceTree = "<group>"; };
 		FA920DA82B46FFD10066FA03 /* AlertAceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAceptView.swift; sourceTree = "<group>"; };
 		FA920DAE2B4711370066FA03 /* TransferenciaAOtraCuentaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferenciaAOtraCuentaRouter.swift; sourceTree = "<group>"; };
@@ -218,7 +233,6 @@
 		FACED48C2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		FACED4902B2CB44B00B6BBC3 /* Imagenes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagenes.xcassets; sourceTree = "<group>"; };
 		FACED4932B2CB44B00B6BBC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FACED4982B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BankAppSwiftUI.xcdatamodel; sourceTree = "<group>"; };
 		FACED49E2B2CB44B00B6BBC3 /* BankAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACED4A22B2CB44B00B6BBC3 /* BankAppSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppSwiftUITests.swift; sourceTree = "<group>"; };
 		FACED4A82B2CB44B00B6BBC3 /* BankAppSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAppSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -323,8 +337,7 @@
 		2492B3F02B47148D007AAA4E /* BankWebService */ = {
 			isa = PBXGroup;
 			children = (
-				24E82C432B49B2DF0052EE51 /* Request */,
-				2492B3F32B4714ED007AAA4E /* Response */,
+				FA7C674C2B4BA250006B08D4 /* Modelo */,
 				2492B3F12B47148D007AAA4E /* BankApi.swift */,
 				24E82C462B49BCC80052EE51 /* ErrorResponse.swift */,
 			);
@@ -336,6 +349,7 @@
 			children = (
 				2492B3F42B471500007AAA4E /* LoginResponse.swift */,
 				24E82C3D2B4771BD0052EE51 /* GetUserResponse.swift */,
+				FA7C674D2B4BA33F006B08D4 /* ServiciosResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -455,12 +469,35 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		FA01AFE72B576F4D00E5285D /* PagosServicios */ = {
+			isa = PBXGroup;
+			children = (
+				FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */,
+			);
+			path = PagosServicios;
+			sourceTree = "<group>";
+		};
+		FA01AFE82B576F9900E5285D /* IrAWeb */ = {
+			isa = PBXGroup;
+			children = (
+				FA5ADD8F2B33333500504EB0 /* IrAWebView.swift */,
+			);
+			path = IrAWeb;
+			sourceTree = "<group>";
+		};
+		FA01AFE92B57711000E5285D /* OtrasCuentas */ = {
+			isa = PBXGroup;
+			children = (
+				FA7734FD2B465A960032019B /* OtrasCuentasView.swift */,
+			);
+			path = OtrasCuentas;
+			sourceTree = "<group>";
+		};
 		FA57BDDB2B2D2C830096CDAC /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				2418BC622B4B6E1C0004F40A /* DataBase */,
 				2492B3F02B47148D007AAA4E /* BankWebService */,
-				FA6A8DCF2B312513002F76B0 /* CoreData */,
 				FA6A8DCE2B31250C002F76B0 /* Memoria */,
 			);
 			path = Data;
@@ -478,13 +515,14 @@
 		FA57BDDD2B2D2C960096CDAC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FA01AFE92B57711000E5285D /* OtrasCuentas */,
+				FA66A53E2B32ADF0000B27E6 /* Prestamos */,
+				FA01AFE82B576F9900E5285D /* IrAWeb */,
+				FA01AFE72B576F4D00E5285D /* PagosServicios */,
+				FA66A53D2B32ADC1000B27E6 /* Pagos */,
 				246313E92B39639C004F2D28 /* Login */,
-				FA5ADD8E2B33330B00504EB0 /* BancaInternet */,
-				FA5ADD8B2B3332D300504EB0 /* PagarServicio */,
 				FA5ADD882B3331D800504EB0 /* DetalleDeCuenta */,
 				FA66A53F2B32ADFB000B27E6 /* ParaTi */,
-				FA66A53E2B32ADF0000B27E6 /* Prestamos */,
-				FA66A53D2B32ADC1000B27E6 /* Pagos */,
 				FA66A53C2B32ADB9000B27E6 /* Transferencia */,
 				FA66A54C2B32AEF6000B27E6 /* Consultas */,
 				FA6A8DCB2B31243A002F76B0 /* Principal */,
@@ -521,28 +559,11 @@
 			path = DetalleDeCuenta;
 			sourceTree = "<group>";
 		};
-		FA5ADD8B2B3332D300504EB0 /* PagarServicio */ = {
-			isa = PBXGroup;
-			children = (
-				FA5ADD8C2B3332ED00504EB0 /* PagarServicioView.swift */,
-			);
-			path = PagarServicio;
-			sourceTree = "<group>";
-		};
-		FA5ADD8E2B33330B00504EB0 /* BancaInternet */ = {
-			isa = PBXGroup;
-			children = (
-				FA5ADD8F2B33333500504EB0 /* BancaInternetView.swift */,
-			);
-			path = BancaInternet;
-			sourceTree = "<group>";
-		};
 		FA66A53C2B32ADB9000B27E6 /* Transferencia */ = {
 			isa = PBXGroup;
 			children = (
 				FA920DA72B46FE420066FA03 /* Components */,
 				FA66A5442B32AE38000B27E6 /* TransferenciaView.swift */,
-				FA7734FD2B465A960032019B /* OtrasCuentasView.swift */,
 				FA920DAE2B4711370066FA03 /* TransferenciaAOtraCuentaRouter.swift */,
 			);
 			path = Transferencia;
@@ -551,7 +572,11 @@
 		FA66A53D2B32ADC1000B27E6 /* Pagos */ = {
 			isa = PBXGroup;
 			children = (
+				FA84E0312B4E101B00B675D6 /* Components */,
 				FA66A5462B32AE45000B27E6 /* PagosView.swift */,
+				FA7931C12B4CC42600E42AF2 /* PagosViewModel.swift */,
+				FA7931C32B4CC8F100E42AF2 /* PagoUiState.swift */,
+				FA01AFE52B576BDA00E5285D /* PagosRouter.swift */,
 			);
 			path = Pagos;
 			sourceTree = "<group>";
@@ -622,14 +647,6 @@
 			path = Memoria;
 			sourceTree = "<group>";
 		};
-		FA6A8DCF2B312513002F76B0 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				FACED4972B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
 		FA6A8DD02B312538002F76B0 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +661,7 @@
 				FA6F02C32B352F9E005CA79E /* User.swift */,
 				FA6BF1942B3D015000C286FE /* Login.swift */,
 				2492B3F62B471653007AAA4E /* Authentication.swift */,
+				FA7931BF2B4CC00100E42AF2 /* Servicio.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -652,6 +670,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6BF1962B3D01CE00C286FE /* LoginRepository.swift */,
+				FA7C67512B4BA7E1006B08D4 /* ServicesRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -781,6 +800,24 @@
 			children = (
 				FA7B07512B47BE8300DFDD96 /* agenciaSercanaView.swift */,
 				FA7B07532B47BE9100DFDD96 /* tipoDePrestamoView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA7C674C2B4BA250006B08D4 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				2492B3F32B4714ED007AAA4E /* Response */,
+				24E82C432B49B2DF0052EE51 /* Request */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		FA84E0312B4E101B00B675D6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA84E0322B4E106D00B675D6 /* PagosWebView.swift */,
+				FA84E0342B4E18E500B675D6 /* PagosDeServicioView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1096,6 +1133,7 @@
 				FA6A97192B3FDE990004918D /* TicketSinMovimiento.swift in Sources */,
 				246313DF2B38D601004F2D28 /* RegisterSheetView.swift in Sources */,
 				2492B3F52B471500007AAA4E /* LoginResponse.swift in Sources */,
+				FA01AFE62B576BDA00E5285D /* PagosRouter.swift in Sources */,
 				24AA47772B41B2F2005852D2 /* SectionView.swift in Sources */,
 				FA7734FE2B465A960032019B /* OtrasCuentasView.swift in Sources */,
 				246313E12B38EB19004F2D28 /* AuthenticationRootView.swift in Sources */,
@@ -1107,6 +1145,8 @@
 				FA6A8DC22B3116AA002F76B0 /* WelcomeView.swift in Sources */,
 				FA6A97142B3F82190004918D /* TicketCuentaYInterbancaria.swift in Sources */,
 				FA7BB2D72B40A770005B1375 /* ConsultaSheetView.swift in Sources */,
+				FA84E0352B4E18E500B675D6 /* PagosDeServicioView.swift in Sources */,
+				FA84E0332B4E106D00B675D6 /* PagosWebView.swift in Sources */,
 				246313EF2B39F8FF004F2D28 /* AuthenticationRouter.swift in Sources */,
 				24E82C402B47BE2E0052EE51 /* PrincipalViewModel.swift in Sources */,
 				FA57BDE12B2D31C50096CDAC /* SplashView.swift in Sources */,
@@ -1115,14 +1155,18 @@
 				24E82C472B49BCC80052EE51 /* ErrorResponse.swift in Sources */,
 				FA5EFD2F2B3C6D3900258AF4 /* UbicanosYLlamanosComponent.swift in Sources */,
 				FA6FE0A82B3E409D00DB1A02 /* TicketMonto.swift in Sources */,
+				FA7931C42B4CC8F100E42AF2 /* PagoUiState.swift in Sources */,
 				241D98492B3A0C56007BD97D /* SplashRootView.swift in Sources */,
 				2492B3F22B47148D007AAA4E /* BankApi.swift in Sources */,
 				24E82C3E2B4771BD0052EE51 /* GetUserResponse.swift in Sources */,
 				FA640EF32B3E7F95008428BF /* DetalleCuentaView.swift in Sources */,
 				FA88238A2B3F1CBC00E1FABD /* TicketAhorro.swift in Sources */,
+				FA7C67522B4BA7E1006B08D4 /* ServicesRepository.swift in Sources */,
 				FA5ADD8D2B3332ED00504EB0 /* PagarServicioView.swift in Sources */,
+				FA7931C22B4CC42600E42AF2 /* PagosViewModel.swift in Sources */,
 				FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */,
 				FA6DFA722B33CDD60023295F /* Assets.swift in Sources */,
+				FA7931C02B4CC00100E42AF2 /* Servicio.swift in Sources */,
 				FA6A97172B3F8C900004918D /* ConsultasRouter.swift in Sources */,
 				FA7B07582B47C63800DFDD96 /* PrestamosRouter.swift in Sources */,
 				FA7B07542B47BE9100DFDD96 /* tipoDePrestamoView.swift in Sources */,
@@ -1133,6 +1177,7 @@
 				FA6DFA742B33CDD60023295F /* JSON.swift in Sources */,
 				2492B3F72B471653007AAA4E /* Authentication.swift in Sources */,
 				FA66A5492B32AE4F000B27E6 /* PrestamosView.swift in Sources */,
+				FA7C674E2B4BA33F006B08D4 /* ServiciosResponse.swift in Sources */,
 				FA6F02DF2B353706005CA79E /* NextButtonView.swift in Sources */,
 				2418BC5B2B4B45500004F40A /* TextToolbarContent.swift in Sources */,
 				2418BC592B4B3D600004F40A /* ImageToolbarContent.swift in Sources */,
@@ -1143,9 +1188,8 @@
 				FA66A54E2B32AF04000B27E6 /* ConsultasView.swift in Sources */,
 				FA66A54B2B32AE5E000B27E6 /* ParaTiView.swift in Sources */,
 				FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */,
-				FA5ADD902B33333500504EB0 /* BancaInternetView.swift in Sources */,
+				FA5ADD902B33333500504EB0 /* IrAWebView.swift in Sources */,
 				FA6BF1992B3D063000C286FE /* LoginViewModel.swift in Sources */,
-				FACED4992B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld in Sources */,
 				24AA477F2B41E8A7005852D2 /* View.swift in Sources */,
 				FA920DA92B46FFD10066FA03 /* AlertAceptView.swift in Sources */,
 				FA66A5472B32AE45000B27E6 /* PagosView.swift in Sources */,
@@ -1547,19 +1591,6 @@
 			productName = ShowTime;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		FACED4972B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FACED4982B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodel */,
-			);
-			currentVersion = FACED4982B2CB44B00B6BBC3 /* BankAppSwiftUI.xcdatamodel */;
-			path = BankAppSwiftUI.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FACED4812B2CB44A00B6BBC3 /* Project object */;
 }

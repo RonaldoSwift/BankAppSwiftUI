@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct PrincipalView: View {
-    
+    //1
     @ObservedObject var consultasRouter: ConsultasRouter = ConsultasRouter()
+    //2
     @ObservedObject var transferenciaAOtraCuentaRouter: TransferenciaAOtraCuentaRouter = TransferenciaAOtraCuentaRouter()
+    
+    //3
+    @ObservedObject var pagosRouter: PagosRouter = PagosRouter()
+    
+    //4
     @ObservedObject var prestamosRouter: PrestamosRouter = PrestamosRouter()
     
     @StateObject private var principalViewModel = PrincipalViewModel(
@@ -61,28 +67,32 @@ struct PrincipalView: View {
             }
             
             // 3
-            NavigationStack(path: $prestamosRouter.navPath) {
+            NavigationStack(path: $pagosRouter.navPath) {
                 ZStack(content: {
                     PagosView()
                     
-                        .navigationDestination(for: ConsultasRouter.Destination.self, destination: { destination in
+                        .navigationDestination(for: PagosRouter.Destination.self, destination: { destination in
                             switch (destination) {
-                            case .detalleCuenta:
-                                OtrasCuentasView()
+                            case .web:
+                                IrAWebView()
+                            case .pagarServicio:
+                                PagarServicioView()
                             }
                         })
                 })
             }
-            .environmentObject(prestamosRouter)
+            .environmentObject(pagosRouter)
             .tabItem {
                 Label("Pagos", systemImage: "dollarsign.arrow.circlepath")
             }
             
+            //4
             PrestamosView()
                 .tabItem {
                     Label("Prestamos", systemImage: "dollarsign.circle")
                 }
             
+            //5
             ParaTiView()
                 .tabItem {
                     Label("Para Ti", systemImage: "heart")

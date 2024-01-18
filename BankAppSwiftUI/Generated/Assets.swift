@@ -36,14 +36,17 @@ internal enum Asset {
   internal enum Imagenes {
     internal static let arrowBack = ImageAsset(name: "ArrowBack")
     internal static let bankLogo = ImageAsset(name: "BankLogo")
+    internal static let calendar = ImageAsset(name: "Calendar")
     internal static let creditCard = ImageAsset(name: "CreditCard")
     internal static let identityCard = ImageAsset(name: "IdentityCard")
     internal static let logoPrincipal = ImageAsset(name: "LogoPrincipal")
     internal static let logoWelcom = ImageAsset(name: "LogoWelcom")
+    internal static let phone = ImageAsset(name: "Phone")
     internal static let rightArrow = ImageAsset(name: "RightArrow")
     internal static let sugerencia = ImageAsset(name: "Sugerencia")
     internal static let threeDots = ImageAsset(name: "ThreeDots")
     internal static let icBack = ImageAsset(name: "ic_back")
+    internal static let light = ImageAsset(name: "light")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

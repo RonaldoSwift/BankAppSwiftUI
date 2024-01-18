@@ -14,6 +14,6 @@ final class AppRootManager: ObservableObject {
     enum AppRoots {
         case splash
         case authentication
-        case home
+        case principal
     }
 }

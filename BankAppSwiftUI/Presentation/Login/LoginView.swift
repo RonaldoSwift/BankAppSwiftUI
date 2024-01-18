@@ -11,7 +11,6 @@ import netfox
 struct LoginView: View {
     
     @EnvironmentObject private var appRootManager: AppRootManager
-    @State private var internetPassword: String = ""
     @State private var isButtonLoading: Bool = false
     
     @StateObject private var loginViewModel = LoginViewModel(
@@ -168,7 +167,7 @@ struct LoginView: View {
                 isButtonLoading = false
             case .success:
                 isButtonLoading = false
-                appRootManager.currentRoot = .home
+                appRootManager.currentRoot = .principal
             }
         })
     }

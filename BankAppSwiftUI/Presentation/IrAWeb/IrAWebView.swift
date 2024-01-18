@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct BancaInternetView: View {
+struct IrAWebView: View {
     var body: some View {
         Text("Banca por internet")
     }
 }
 
 #Preview {
-    BancaInternetView()
+    IrAWebView()
 }

@@ -11,6 +11,7 @@ struct SplashView: View {
     
     @EnvironmentObject private var appRootManager: AppRootManager
     @EnvironmentObject var router: AuthenticationRouter
+    var memoriaLogin : MemoriaLogin = MemoriaLogin()
     
     var body: some View {
         ZStack {
@@ -23,7 +24,12 @@ struct SplashView: View {
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 withAnimation(.spring) {
-                    appRootManager.currentRoot = .authentication
+                    
+                    if(memoriaLogin.obtenerTokenDeUsuario().isEmpty) { // Si el usuario no tiene token
+                        appRootManager.currentRoot = .authentication
+                    } else { // El usurio tiene token
+                        appRootManager.currentRoot = .principal
+                    }
                 }
             }
         }

@@ -29,6 +29,26 @@ internal enum L10n {
   }
   internal enum Register {
     internal enum Modal {
+      internal enum Empresa {
+        /// Empresa
+        internal static let text = L10n.tr("Localizable", "register.modal.Empresa.text", fallback: "Empresa")
+      }
+      internal enum Luz {
+        /// Luz
+        internal static let text = L10n.tr("Localizable", "register.modal.Luz.text", fallback: "Luz")
+      }
+      internal enum Retail {
+        /// Retail
+        internal static let text = L10n.tr("Localizable", "register.modal.Retail.text", fallback: "Retail")
+      }
+      internal enum Telecomunicacion {
+        /// Telecomunicacion
+        internal static let text = L10n.tr("Localizable", "register.modal.Telecomunicacion.text", fallback: "Telecomunicacion")
+      }
+      internal enum Telefono {
+        /// Telefono
+        internal static let text = L10n.tr("Localizable", "register.modal.Telefono.text", fallback: "Telefono")
+      }
       internal enum Debit {
         /// Register with my debit card
         internal static let text = L10n.tr("Localizable", "register.modal.debit.text", fallback: "Register with my debit card")
@@ -36,6 +56,28 @@ internal enum L10n {
       internal enum Dni {
         /// Register with my DNI and selfie
         internal static let text = L10n.tr("Localizable", "register.modal.dni.text", fallback: "Register with my DNI and selfie")
+      }
+      internal enum IrWeb {
+        /// Ir a la web
+        internal static let text = L10n.tr("Localizable", "register.modal.irWeb.text", fallback: "Ir a la web")
+      }
+      internal enum OtrosPagos {
+        /// Otros pagos
+        internal static let text = L10n.tr("Localizable", "register.modal.otrosPagos.text", fallback: "Otros pagos")
+      }
+      internal enum PagarServicios {
+        /// Pagar servicios
+        internal static let text = L10n.tr("Localizable", "register.modal.pagarServicios.text", fallback: "Pagar servicios")
+      }
+      internal enum Pagos {
+        internal enum Terceros {
+          /// Pagar prestamos a terceros
+          internal static let text = L10n.tr("Localizable", "register.modal.pagos.terceros.text", fallback: "Pagar prestamos a terceros")
+        }
+      }
+      internal enum ServicioQueDesea {
+        /// Elige el servicio que desea
+        internal static let text = L10n.tr("Localizable", "register.modal.servicioQueDesea.text", fallback: "Elige el servicio que desea")
       }
     }
   }

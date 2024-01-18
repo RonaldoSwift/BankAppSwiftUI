@@ -8,18 +8,30 @@
 import SwiftUI
 
 struct PagosView: View {
+    
+    @EnvironmentObject var pagosRouter: PagosRouter
+    
     var body: some View {
-        VStack {
-            Text("Pantalla Pagos View")
+        VStack(alignment: .leading) {
+            Text("Prestamos")
+                .font(Fonts.Inter.extraBold.swiftUIFont(size: 22))
+                .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
             
-            NavigationLink(destination: BancaInternetView()) {
-                Text("Ir a pantalla Banca por internet")
+            pagosWebView {
+                pagosRouter.navigate(to: PagosRouter.Destination.web)
             }
             
-            NavigationLink(destination: PagarServicioView()) {
-                Text("Ir Pantalla Pagos de servicio")
+            Text("Otros Pagos")
+                .font(Fonts.Inter.extraBold.swiftUIFont(size: 22))
+                .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
+            
+            pagosDeServicioView {
+                pagosRouter.navigate(to: PagosRouter.Destination.pagarServicio)
             }
+            
+            Spacer()
         }
+        .padding()
     }
 }
 
