@@ -15,3 +15,16 @@
 // Modal de Registro
 "register.modal.dni.text" = "Register with my DNI and selfie";
 "register.modal.debit.text" = "Register with my debit card";
+
+// Modal de Pago
+"register.modal.pagos.terceros.text" = "Pay loans to third parties";
+"register.modal.irWeb.text" = "Go to the website";
+"register.modal.otrosPagos.text" = "Other payments";
+"register.modal.pagarServicios.text" = "Pay for services";
+
+"register.modal.servicioQueDesea.text" = "Choose the service you want";
+"register.modal.Empresa.text" = "Company";
+"register.modal.Luz.text" = "Light";
+"register.modal.Retail.text" = "Retail";
+"register.modal.Telecomunicacion.text" = "Telecommunication";
+"register.modal.Telefono.text" = "Phone";

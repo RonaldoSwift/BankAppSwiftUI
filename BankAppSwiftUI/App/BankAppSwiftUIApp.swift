@@ -26,7 +26,7 @@ struct BankAppSwiftUIApp: App {
                 case .authentication:
                     AuthenticationRootView()
                     
-                case .home:
+                case .principal:
                     PrincipalRootView()
                 }
             }

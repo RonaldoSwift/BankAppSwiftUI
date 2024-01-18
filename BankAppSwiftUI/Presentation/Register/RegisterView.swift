@@ -63,7 +63,7 @@ struct RegisterView: View {
             )
             
             Button(action: {
-                appRootManager.currentRoot = .home
+                appRootManager.currentRoot = .principal
             }, label: {
                 Text("Siguiente")
                     .padding(.horizontal, 150) // Agrega un padding horizontal mayor

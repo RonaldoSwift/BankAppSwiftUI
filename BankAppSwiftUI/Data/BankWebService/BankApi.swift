@@ -11,7 +11,7 @@ class BankApi {
      * Example: http://localhost:8000/login
      */
     func fetchLogin(loginRequest: LoginRequest) -> AnyPublisher<LoginResponse, Error> {
-        guard var urlComponents = URLComponents(string: "http://localhost:8000/login") else {
+        guard let urlComponents = URLComponents(string: "http://localhost:8000/login") else {
             return Fail(error: RonaldoError.errorURL)
                 .eraseToAnyPublisher()
         }
@@ -85,6 +85,40 @@ class BankApi {
                 } catch {
                     print(error)
                     throw RonaldoError.errorData("")
+                }
+            }
+            .eraseToAnyPublisher()
+    }
+    
+    func fetchServices(apiKey: String) -> AnyPublisher<[ServiciosResponse], Error> {
+        guard var urlComponents = URLComponents(string: "http://localhost:8000/services") else {
+            return Fail(error: RonaldoError.errorURL)
+                .eraseToAnyPublisher()
+        }
+        
+        urlComponents.queryItems = [
+            URLQueryItem(name: "apiKey", value: apiKey)
+        ]
+        
+        guard let validUrl = urlComponents.url else {
+            return Fail(error: RonaldoError.errorDesconocido)
+                .eraseToAnyPublisher()
+        }
+        
+        var urlRequest = URLRequest(
+            url: validUrl
+        )
+        
+        urlRequest.httpMethod = "GET"
+        
+        return URLSession.shared.dataTaskPublisher(for: urlRequest)
+            .tryMap { (data: Data, _: URLResponse) in
+                do {
+                    let decoder = JSONDecoder()
+                    let getServicesResponse = try decoder.decode([ServiciosResponse].self, from: data)
+                    return getServicesResponse
+                } catch (let error) {
+                    throw RonaldoError.errorData("\(error)")
                 }
             }
             .eraseToAnyPublisher()

@@ -9,3 +9,16 @@
 // Modal de Registro
 "register.modal.dni.text" = "Registrarme con mi DNI y selfie";
 "register.modal.debit.text" = "Registrarme con tarjeta de débito";
+
+// Modal de Pago
+"register.modal.pagos.terceros.text" = "Pagar prestamos a terceros";
+"register.modal.irWeb.text" = "Ir a la web";
+"register.modal.otrosPagos.text" = "Otros pagos";
+"register.modal.pagarServicios.text" = "Pagar servicios";
+
+"register.modal.servicioQueDesea.text" = "Elige el servicio que desea";
+"register.modal.Empresa.text" = "Empresa";
+"register.modal.Luz.text" = "Luz";
+"register.modal.Retail.text" = "Retail";
+"register.modal.Telecomunicacion.text" = "Telecomunicacion";
+"register.modal.Telefono.text" = "Telefono";
