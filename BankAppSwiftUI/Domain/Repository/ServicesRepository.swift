@@ -11,13 +11,11 @@ import Combine
 class ServicesRepository {
     
     private let bankApi: BankApi
-    private let memoriaLogin: MemoriaLogin
     
     var cancelLables = Set<AnyCancellable>()
     
-    init(bankApi: BankApi, memoriaLogin: MemoriaLogin) {
+    init(bankApi: BankApi) {
         self.bankApi = bankApi
-        self.memoriaLogin = memoriaLogin
     }
     
     // MARK: CRUD Servicio
@@ -34,9 +32,5 @@ class ServicesRepository {
                 }
             })
             .eraseToAnyPublisher()
-    }
-    
-    func obtenerTokenDeMemoriaLogin() -> String {
-        return memoriaLogin.obtenerTokenDeUsuario()
     }
 }

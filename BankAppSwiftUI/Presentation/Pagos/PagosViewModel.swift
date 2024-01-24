@@ -13,20 +13,22 @@ import Dispatch
 final class PagosViewModel: ObservableObject {
     
     let servicesRepository : ServicesRepository
+    let loginRepository : LoginRepository
     
     @Published private(set) var pagoUiState = PagoUiState.inicial
     
     var cancellables = Set<AnyCancellable>()
     
-    init(servicesRepository: ServicesRepository) {
+    init(servicesRepository: ServicesRepository, loginRepository: LoginRepository) {
         self.servicesRepository = servicesRepository
+        self.loginRepository = loginRepository
     }
     
     func starService() {
         
         pagoUiState = PagoUiState.cargando
         
-        var jwt = servicesRepository.obtenerTokenDeMemoriaLogin()
+        let jwt = loginRepository.getTokenFromMemoria()
         
         servicesRepository.getServicesFromWebService(apiToken: jwt)
             .subscribe(on: DispatchQueue.global())

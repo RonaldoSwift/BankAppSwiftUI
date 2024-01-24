@@ -29,5 +29,36 @@
       "id": 104,
       "name": "Telefono" 
     }
+  ],
+
+  "suppliers": [
+    {
+      "id": 11,
+      "name": "ELECTRO PUNO" 
+    },
+    {
+      "id": 22,
+      "name": "ELECTROCENTRO"
+    },
+    {
+      "id": 33,
+      "name": "ELECTRONOROESTE"
+    },
+    {
+      "id": 44,
+      "name": "ENEL"
+    },
+    {
+      "id": 55,
+      "name": "HIDRANDINA"
+    },
+    {
+      "id": 66,
+      "name": "LUZ DEL SUR"
+    },
+    {
+      "id": 77,
+      "name": "SEAL"
+    }
   ]
 }

@@ -82,12 +82,20 @@ server.get("/users/:userId", (req, res) => {
     }, delay);
 });
 
-
 server.get("/services", (req, res) => {
     const delay = 3000; //cargando en 3 segundos
     setTimeout(() => {
        
         res.status(200).jsonp(dbjson.services);
+
+    }, delay);
+});
+
+server.get("/suppliers", (req, res) => {
+    const delay = 3000;
+    setTimeout(() => {
+
+        res.status(200).json(dbjson.suppliers)
 
     }, delay);
 });

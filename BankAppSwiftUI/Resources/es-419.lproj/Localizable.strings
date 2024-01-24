@@ -22,3 +22,21 @@
 "register.modal.Retail.text" = "Retail";
 "register.modal.Telecomunicacion.text" = "Telecomunicacion";
 "register.modal.Telefono.text" = "Telefono";
+
+//Modal de Pago Servicio Luz
+"pagar.servicio.luz.text" = "Luz";
+"pagar.servicio.pagarServicioRapido.text" = "Paga tu recibo rapido y facil";
+"pagar.servicio.empresa.text" = "Empresa";
+"pagar.servicio.servicio.text" = "Servicio";
+"pagar.servicio.horario.text" = "Esta operacion se puede realizar en el siguiente horario : 09:00 a.m. a 09:00 p.m.";
+"pagar.servicio.suministro.text" = "Ingrese el suministro";
+"pagar.servicio.recibos.text" = "Buscar mis recibos";
+
+//Modal de Pago Servicio WebService
+"pay.service.webService.electroPuno.text" = "Electro Puno";
+"pay.service.webService.electroCentro.text" = "Electro Centro";
+"pay.service.webService.electroNoroEste.text" = "ElectroNoroEste";
+"pay.service.webService.enell.text" = "Enel";
+"pay.service.webService.hidrandina.text" = "Hidrandina";
+"pay.service.webService.luzDelSur.text" = "Luz del sur";
+"pay.service.webService.seal.text" = "Seal";
