@@ -28,3 +28,22 @@
 "register.modal.Retail.text" = "Retail";
 "register.modal.Telecomunicacion.text" = "Telecommunication";
 "register.modal.Telefono.text" = "Phone";
+
+//Modal de Pago Servicio Luz
+"pay.service.luz.text" = "Light";
+"pay.service.pagarServicioRapido.text" = "Pay your bill fast and easy";
+"pay.service.empresa.text" = "Company";
+"pay.service.servicio.text" = "Service";
+"pay.service.horario.text" = "This operation can be performed during the following hours: 09:00 a.m. to 09:00 p.m.";
+"pay.service.suministro.text" = "Enter the supply";
+"pay.service.recibos.text" = "Search my receipts";
+
+
+//Modal de Pago Servicio WebService
+"pay.service.webService.electro.Puno.text" = "Electro Puno";
+"pay.service.webService.electroCenter.text" = "Electro Center";
+"pay.service.webService.electro.Noro.East.text" = "Electro Noro East";
+"pay.service.webService.enel.text" = "Enel";
+"pay.service.webService.hydrandina.text" = "Hydrandina";
+"pay.service.webService.south.Light.text" = "South Light";
+"pay.service.webService.sello.text" = "Sello";

@@ -12,6 +12,7 @@ final class PagosRouter: ObservableObject {
     
     public enum Destination: Codable, Hashable {
         case web
+        case serviciosView
         case pagarServicio
     }
     

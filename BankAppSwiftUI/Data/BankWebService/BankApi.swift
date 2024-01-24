@@ -124,6 +124,39 @@ class BankApi {
             .eraseToAnyPublisher()
     }
     
+    
+    func fetchSuppliers(apiKey: String) -> AnyPublisher<[SuppliersResponse], Error> {
+        guard var urlComponents = URLComponents(string: "http://localhost:8000/suppliers") else {
+            return Fail(error: RonaldoError.errorURL)
+                .eraseToAnyPublisher()
+        }
+        
+        urlComponents.queryItems = [
+            URLQueryItem(name: "apiKey", value: apiKey)
+        ]
+        
+        guard let validUrl = urlComponents.url else {
+            return Fail(error: RonaldoError.errorDesconocido)
+                .eraseToAnyPublisher()
+        }
+        
+        var urlRequest = URLRequest(
+            url: validUrl
+        )
+        
+        return URLSession.shared.dataTaskPublisher(for: urlRequest)
+            .tryMap { (data: Data, _: URLResponse) in
+                do {
+                    let decoder = JSONDecoder()
+                    let getSuppliersResponse = try decoder.decode([SuppliersResponse].self, from: data)
+                    return getSuppliersResponse
+                } catch (let error) {
+                    throw RonaldoError.errorData("\(error)")
+                }
+            }
+            .eraseToAnyPublisher()
+    }
+    
     enum RonaldoError: Error, Equatable {
         case errorURL
         case urlInvalido

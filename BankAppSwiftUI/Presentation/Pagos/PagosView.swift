@@ -26,7 +26,7 @@ struct PagosView: View {
                 .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
             
             pagosDeServicioView {
-                pagosRouter.navigate(to: PagosRouter.Destination.pagarServicio)
+                pagosRouter.navigate(to: PagosRouter.Destination.serviciosView)
             }
             
             Spacer()

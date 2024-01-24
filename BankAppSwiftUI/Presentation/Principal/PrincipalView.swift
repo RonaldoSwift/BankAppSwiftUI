@@ -75,6 +75,8 @@ struct PrincipalView: View {
                             switch (destination) {
                             case .web:
                                 IrAWebView()
+                            case .serviciosView:
+                                ServiciosView()
                             case .pagarServicio:
                                 PagarServicioView()
                             }
