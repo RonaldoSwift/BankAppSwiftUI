@@ -9,12 +9,12 @@ import SwiftUI
 
 struct PrestamosView: View {
     
-    @EnvironmentObject var router: PrestamosRouter
+    @EnvironmentObject var prestamosRouter: PrestamosRouter
     @State var showSheet = false
     
     var body: some View {
         VStack(spacing: 10) {
-            VStack{
+            VStack {
                 Text("¿Necesitas un")
                     .font(Fonts.Inter.extraBold.swiftUIFont(size: 25))
                     .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
@@ -32,12 +32,11 @@ struct PrestamosView: View {
                 .multilineTextAlignment(.center)
 
             agenciaSercana {
-                showSheet.toggle()
+                prestamosRouter.navigate(to: PrestamosRouter.Destination.agenciaMasSercana)
             }
-            //Error 
+             
             tipoDePrestamo {
-                router.navigate(to: PrestamosRouter.Destination.tipoDePrestamo)
-                
+                prestamosRouter.navigate(to: PrestamosRouter.Destination.tiposDePrestamo)
             }
         }
         .padding()

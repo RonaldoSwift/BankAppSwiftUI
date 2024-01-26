@@ -11,7 +11,8 @@ import SwiftUI
 final class PrestamosRouter: ObservableObject {
     
     public enum Destination: Codable, Hashable {
-        case tipoDePrestamo
+        case agenciaMasSercana
+        case tiposDePrestamo
     }
     
     @Published var navPath = NavigationPath()

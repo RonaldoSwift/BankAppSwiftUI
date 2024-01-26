@@ -8,15 +8,10 @@
 import SwiftUI
 
 struct PrincipalView: View {
-    //1
+    
     @ObservedObject var consultasRouter: ConsultasRouter = ConsultasRouter()
-    //2
     @ObservedObject var transferenciaAOtraCuentaRouter: TransferenciaAOtraCuentaRouter = TransferenciaAOtraCuentaRouter()
-    
-    //3
     @ObservedObject var pagosRouter: PagosRouter = PagosRouter()
-    
-    //4
     @ObservedObject var prestamosRouter: PrestamosRouter = PrestamosRouter()
     
     @StateObject private var principalViewModel = PrincipalViewModel(
@@ -89,10 +84,23 @@ struct PrincipalView: View {
             }
             
             //4
-            PrestamosView()
-                .tabItem {
-                    Label("Prestamos", systemImage: "dollarsign.circle")
+            NavigationStack(path: $prestamosRouter.navPath) {
+                ZStack {
+                    PrestamosView()
+                        .navigationDestination(for: PrestamosRouter.Destination.self, destination: { destination in
+                            switch(destination) {
+                            case .agenciaMasSercana:
+                                AgenciaSercanaView()
+                            case .tiposDePrestamo:
+                                TipoPrestamo()
+                            }
+                        })
                 }
+            }
+            .environmentObject(prestamosRouter)
+            .tabItem {
+                Label("Prestamos", systemImage: "dollarsign.circle")
+            }
             
             //5
             ParaTiView()
