@@ -41,10 +41,15 @@ internal func ticketCuentaYInterbancaria() -> some View {
                 }
                 Spacer()
                 
-                Image(systemName: "bonjour")
-                    .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
-                
-                // TextField eliminado
+                Button {
+                    print("click")
+                } label: {
+                    Asset.Imagenes.compartir.swiftUIImage
+                        .resizable()
+                        .frame(width: 20,height: 20)
+                        .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
+                    
+                }
             }
             .frame(width: 340, height: 100)
             .background(Color.clear)

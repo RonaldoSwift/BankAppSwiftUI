@@ -22,7 +22,7 @@
 "register.modal.otrosPagos.text" = "Other payments";
 "register.modal.pagarServicios.text" = "Pay for services";
 
-"register.modal.servicioQueDesea.text" = "Choose the service you want";
+"register.modal.servicioQueDesea.text" = "Choose the service you wish to pay for";
 "register.modal.Empresa.text" = "Company";
 "register.modal.Luz.text" = "Light";
 "register.modal.Retail.text" = "Retail";

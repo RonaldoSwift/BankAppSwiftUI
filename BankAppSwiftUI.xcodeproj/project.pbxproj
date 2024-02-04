@@ -43,7 +43,6 @@
 		FA587D572B62B54100601DBA /* TipoPrestamo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA587D562B62B54100601DBA /* TipoPrestamo.swift */; };
 		FA5ADD8A2B3331F700504EB0 /* DetalleDeCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */; };
 		FA5ADD8D2B3332ED00504EB0 /* ServiciosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8C2B3332ED00504EB0 /* ServiciosView.swift */; };
-		FA5ADD902B33333500504EB0 /* IrAWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5ADD8F2B33333500504EB0 /* IrAWebView.swift */; };
 		FA5C43562B635E5D00B32D93 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C43552B635E5D00B32D93 /* LocationManager.swift */; };
 		FA5EFD2F2B3C6D3900258AF4 /* UbicanosYLlamanosComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5EFD2E2B3C6D3900258AF4 /* UbicanosYLlamanosComponent.swift */; };
 		FA640EF32B3E7F95008428BF /* DetalleCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA640EF22B3E7F95008428BF /* DetalleCuentaView.swift */; };
@@ -92,6 +91,9 @@
 		FA7B07522B47BE8300DFDD96 /* agenciaSercanaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B07512B47BE8300DFDD96 /* agenciaSercanaView.swift */; };
 		FA7B07542B47BE9100DFDD96 /* tipoDePrestamoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B07532B47BE9100DFDD96 /* tipoDePrestamoView.swift */; };
 		FA7B07582B47C63800DFDD96 /* PrestamosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B07572B47C63800DFDD96 /* PrestamosRouter.swift */; };
+		FA7B80CE2B69E23700517CA8 /* AhorrarCeldaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B80CD2B69E23700517CA8 /* AhorrarCeldaView.swift */; };
+		FA7BAA582B6C1ED500B49752 /* SeguroCeldaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BAA572B6C1ED500B49752 /* SeguroCeldaView.swift */; };
+		FA7BAA5A2B6C1EE600B49752 /* VenderMasCeldaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BAA592B6C1EE600B49752 /* VenderMasCeldaView.swift */; };
 		FA7BB2D72B40A770005B1375 /* ConsultaSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BB2D62B40A770005B1375 /* ConsultaSheetView.swift */; };
 		FA7C674E2B4BA33F006B08D4 /* ServiciosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C674D2B4BA33F006B08D4 /* ServiciosResponse.swift */; };
 		FA7C67522B4BA7E1006B08D4 /* ServicesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C67512B4BA7E1006B08D4 /* ServicesRepository.swift */; };
@@ -99,6 +101,7 @@
 		FA84E0352B4E18E500B675D6 /* PagosDeServicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E0342B4E18E500B675D6 /* PagosDeServicioView.swift */; };
 		FA88238A2B3F1CBC00E1FABD /* TicketAhorro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8823892B3F1CBC00E1FABD /* TicketAhorro.swift */; };
 		FA888FED2B5B713F00878134 /* PagarServicioSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA888FEC2B5B713F00878134 /* PagarServicioSheetView.swift */; };
+		FA89ED782B6471EA004556B5 /* ParaTiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89ED772B6471EA004556B5 /* ParaTiRouter.swift */; };
 		FA8C294C2B59DF2D00E5466E /* PagarServicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C294B2B59DF2D00E5466E /* PagarServicioView.swift */; };
 		FA8C294E2B5A174700E5466E /* SuppliersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C294D2B5A174700E5466E /* SuppliersResponse.swift */; };
 		FA8C29502B5A1A8900E5466E /* SupplierRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C294F2B5A1A8900E5466E /* SupplierRepository.swift */; };
@@ -182,7 +185,6 @@
 		FA587D562B62B54100601DBA /* TipoPrestamo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoPrestamo.swift; sourceTree = "<group>"; };
 		FA5ADD892B3331F700504EB0 /* DetalleDeCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDeCuentaView.swift; sourceTree = "<group>"; };
 		FA5ADD8C2B3332ED00504EB0 /* ServiciosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiciosView.swift; sourceTree = "<group>"; };
-		FA5ADD8F2B33333500504EB0 /* IrAWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrAWebView.swift; sourceTree = "<group>"; };
 		FA5C43552B635E5D00B32D93 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FA5EFD2E2B3C6D3900258AF4 /* UbicanosYLlamanosComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbicanosYLlamanosComponent.swift; sourceTree = "<group>"; };
 		FA640EF22B3E7F95008428BF /* DetalleCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleCuentaView.swift; sourceTree = "<group>"; };
@@ -232,6 +234,9 @@
 		FA7B07512B47BE8300DFDD96 /* agenciaSercanaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agenciaSercanaView.swift; sourceTree = "<group>"; };
 		FA7B07532B47BE9100DFDD96 /* tipoDePrestamoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipoDePrestamoView.swift; sourceTree = "<group>"; };
 		FA7B07572B47C63800DFDD96 /* PrestamosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestamosRouter.swift; sourceTree = "<group>"; };
+		FA7B80CD2B69E23700517CA8 /* AhorrarCeldaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhorrarCeldaView.swift; sourceTree = "<group>"; };
+		FA7BAA572B6C1ED500B49752 /* SeguroCeldaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguroCeldaView.swift; sourceTree = "<group>"; };
+		FA7BAA592B6C1EE600B49752 /* VenderMasCeldaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenderMasCeldaView.swift; sourceTree = "<group>"; };
 		FA7BB2D62B40A770005B1375 /* ConsultaSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultaSheetView.swift; sourceTree = "<group>"; };
 		FA7C674D2B4BA33F006B08D4 /* ServiciosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiciosResponse.swift; sourceTree = "<group>"; };
 		FA7C67512B4BA7E1006B08D4 /* ServicesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesRepository.swift; sourceTree = "<group>"; };
@@ -239,6 +244,7 @@
 		FA84E0342B4E18E500B675D6 /* PagosDeServicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagosDeServicioView.swift; sourceTree = "<group>"; };
 		FA8823892B3F1CBC00E1FABD /* TicketAhorro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketAhorro.swift; sourceTree = "<group>"; };
 		FA888FEC2B5B713F00878134 /* PagarServicioSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarServicioSheetView.swift; sourceTree = "<group>"; };
+		FA89ED772B6471EA004556B5 /* ParaTiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParaTiRouter.swift; sourceTree = "<group>"; };
 		FA8C294B2B59DF2D00E5466E /* PagarServicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarServicioView.swift; sourceTree = "<group>"; };
 		FA8C294D2B5A174700E5466E /* SuppliersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuppliersResponse.swift; sourceTree = "<group>"; };
 		FA8C294F2B5A1A8900E5466E /* SupplierRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierRepository.swift; sourceTree = "<group>"; };
@@ -498,14 +504,6 @@
 			path = Servicios;
 			sourceTree = "<group>";
 		};
-		FA01AFE82B576F9900E5285D /* IrAWeb */ = {
-			isa = PBXGroup;
-			children = (
-				FA5ADD8F2B33333500504EB0 /* IrAWebView.swift */,
-			);
-			path = IrAWeb;
-			sourceTree = "<group>";
-		};
 		FA01AFE92B57711000E5285D /* OtrasCuentas */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,7 +540,6 @@
 				FA8C294A2B59DF0000E5466E /* PagoServicio */,
 				FA01AFE92B57711000E5285D /* OtrasCuentas */,
 				FA66A53E2B32ADF0000B27E6 /* Prestamos */,
-				FA01AFE82B576F9900E5285D /* IrAWeb */,
 				FA01AFE72B576F4D00E5285D /* Servicios */,
 				FA66A53D2B32ADC1000B27E6 /* Pagos */,
 				246313E92B39639C004F2D28 /* Login */,
@@ -636,7 +633,9 @@
 		FA66A53F2B32ADFB000B27E6 /* ParaTi */ = {
 			isa = PBXGroup;
 			children = (
+				FA7B80CC2B69E13700517CA8 /* Components */,
 				FA66A54A2B32AE5E000B27E6 /* ParaTiView.swift */,
+				FA89ED772B6471EA004556B5 /* ParaTiRouter.swift */,
 			);
 			path = ParaTi;
 			sourceTree = "<group>";
@@ -844,6 +843,16 @@
 			children = (
 				FA7B07512B47BE8300DFDD96 /* agenciaSercanaView.swift */,
 				FA7B07532B47BE9100DFDD96 /* tipoDePrestamoView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA7B80CC2B69E13700517CA8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA7B80CD2B69E23700517CA8 /* AhorrarCeldaView.swift */,
+				FA7BAA572B6C1ED500B49752 /* SeguroCeldaView.swift */,
+				FA7BAA592B6C1EE600B49752 /* VenderMasCeldaView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1205,6 +1214,7 @@
 				24E82C452B49B2ED0052EE51 /* LoginRequest.swift in Sources */,
 				FA6F02CA2B35304E005CA79E /* prueba4.swift in Sources */,
 				FA6A8DC22B3116AA002F76B0 /* WelcomeView.swift in Sources */,
+				FA7BAA5A2B6C1EE600B49752 /* VenderMasCeldaView.swift in Sources */,
 				FA8C294C2B59DF2D00E5466E /* PagarServicioView.swift in Sources */,
 				FA6A97142B3F82190004918D /* TicketCuentaYInterbancaria.swift in Sources */,
 				FA7BB2D72B40A770005B1375 /* ConsultaSheetView.swift in Sources */,
@@ -1227,8 +1237,10 @@
 				FA88238A2B3F1CBC00E1FABD /* TicketAhorro.swift in Sources */,
 				FA7C67522B4BA7E1006B08D4 /* ServicesRepository.swift in Sources */,
 				FA5ADD8D2B3332ED00504EB0 /* ServiciosView.swift in Sources */,
+				FA7B80CE2B69E23700517CA8 /* AhorrarCeldaView.swift in Sources */,
 				FA8C29562B5A30B300E5466E /* PagarServicioUiState.swift in Sources */,
 				FA7931C22B4CC42600E42AF2 /* PagosViewModel.swift in Sources */,
+				FA89ED782B6471EA004556B5 /* ParaTiRouter.swift in Sources */,
 				FA6A8DCA2B31224D002F76B0 /* DocumentNumberView.swift in Sources */,
 				FA5C43562B635E5D00B32D93 /* LocationManager.swift in Sources */,
 				FA6DFA722B33CDD60023295F /* Assets.swift in Sources */,
@@ -1255,7 +1267,7 @@
 				FA587D542B62B4F500601DBA /* AgenciaSercanaView.swift in Sources */,
 				FA66A54B2B32AE5E000B27E6 /* ParaTiView.swift in Sources */,
 				FACED48D2B2CB44A00B6BBC3 /* BankAppSwiftUIApp.swift in Sources */,
-				FA5ADD902B33333500504EB0 /* IrAWebView.swift in Sources */,
+				FA7BAA582B6C1ED500B49752 /* SeguroCeldaView.swift in Sources */,
 				FA888FED2B5B713F00878134 /* PagarServicioSheetView.swift in Sources */,
 				FA6BF1992B3D063000C286FE /* LoginViewModel.swift in Sources */,
 				FA587D572B62B54100601DBA /* TipoPrestamo.swift in Sources */,
@@ -1372,7 +1384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1430,7 +1442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1465,6 +1477,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.BankAppSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1496,6 +1511,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.BankAppSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1511,10 +1529,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.BankAppSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1531,10 +1552,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.BankAppSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1550,9 +1574,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.BankAppSwiftUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1568,9 +1596,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.BankAppSwiftUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

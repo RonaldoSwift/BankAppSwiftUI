@@ -16,7 +16,7 @@
 "register.modal.otrosPagos.text" = "Otros pagos";
 "register.modal.pagarServicios.text" = "Pagar servicios";
 
-"register.modal.servicioQueDesea.text" = "Elige el servicio que desea";
+"register.modal.servicioQueDesea.text" = "Elige el servicio que deseas pagar";
 "register.modal.Empresa.text" = "Empresa";
 "register.modal.Luz.text" = "Luz";
 "register.modal.Retail.text" = "Retail";

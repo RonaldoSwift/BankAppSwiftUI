@@ -144,8 +144,8 @@ internal enum L10n {
         }
       }
       internal enum ServicioQueDesea {
-        /// Choose the service you want
-        internal static let text = L10n.tr("Localizable", "register.modal.servicioQueDesea.text", fallback: "Choose the service you want")
+        /// Choose the service you wish to pay for
+        internal static let text = L10n.tr("Localizable", "register.modal.servicioQueDesea.text", fallback: "Choose the service you wish to pay for")
       }
     }
   }

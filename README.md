@@ -2,9 +2,9 @@
 Esta aplicación permite al usuario iniciar sesión, registrarse, verificar saldo, cuentas, transferencias, etc. 
 
 <p align="center">
-    <img src="Screenshots/home.png" alt="icon" width="30%"/>
-    <img src="Screenshots/detail.png" alt="icon" width="30%"/>
-    <img src="Screenshots/location.png" alt="icon" width="30%"/>
+    <img src="Screenshots/WelcomeScreenshot.png" alt="icon" width="30%"/>
+    <img src="Screenshots/LoginScreenshot.png" alt="icon" width="30%"/>
+    <img src="Screenshots/ConsultasViewScreenshot.png" alt="icon" width="30%"/>
 </p>
 
 #  Arquitectura de la aplicación iOS
@@ -76,3 +76,7 @@ brew install sourcery
 * ShowTime
 * Factory
 
+## Especificaciones
+
+1. Soporte iOS version: 16.0
+2. Soporte para plataformas iPhone y iPad

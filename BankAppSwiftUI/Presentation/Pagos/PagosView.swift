@@ -10,6 +10,7 @@ import SwiftUI
 struct PagosView: View {
     
     @EnvironmentObject var pagosRouter: PagosRouter
+    @Environment(\.openURL) var openURL
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -18,7 +19,7 @@ struct PagosView: View {
                 .foregroundColor(Asset.Colores.greenbutton.swiftUIColor)
             
             pagosWebView {
-                pagosRouter.navigate(to: PagosRouter.Destination.web)
+                openURL(URL(string: "https://www.mibanco.com.pe")!)
             }
             
             Text("Otros Pagos")
@@ -32,6 +33,10 @@ struct PagosView: View {
             Spacer()
         }
         .padding()
+        .toolbar(content: {
+            TextToolbarContent(title: "Pagos")
+        })
+        .navigationBarBackButtonHidden(true)
     }
 }
 

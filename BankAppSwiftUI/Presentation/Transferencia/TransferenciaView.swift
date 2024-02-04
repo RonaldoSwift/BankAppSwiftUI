@@ -28,7 +28,6 @@ struct TransferenciaView: View {
                     }
                 }
             }
-            .navigationTitle("Transferencias")
         }
         .alert(isPresented: $showingAlert) {
             Alert(
@@ -42,6 +41,10 @@ struct TransferenciaView: View {
                 )
             )
         }
+        .toolbar(content: {
+            TextToolbarContent(title: "Transferencia")
+        })
+        .navigationBarBackButtonHidden(true)
     }
 }
 

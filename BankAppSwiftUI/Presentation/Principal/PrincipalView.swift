@@ -13,6 +13,7 @@ struct PrincipalView: View {
     @ObservedObject var transferenciaAOtraCuentaRouter: TransferenciaAOtraCuentaRouter = TransferenciaAOtraCuentaRouter()
     @ObservedObject var pagosRouter: PagosRouter = PagosRouter()
     @ObservedObject var prestamosRouter: PrestamosRouter = PrestamosRouter()
+    @ObservedObject var paraTiRouter: ParaTiRouter = ParaTiRouter()
     
     @StateObject private var principalViewModel = PrincipalViewModel(
         loginRepository: LoginRepository(
@@ -68,8 +69,6 @@ struct PrincipalView: View {
                     
                         .navigationDestination(for: PagosRouter.Destination.self, destination: { destination in
                             switch (destination) {
-                            case .web:
-                                IrAWebView()
                             case .serviciosView:
                                 ServiciosView()
                             case .pagarServicio:
@@ -83,7 +82,7 @@ struct PrincipalView: View {
                 Label("Pagos", systemImage: "dollarsign.arrow.circlepath")
             }
             
-            //4
+            // 4
             NavigationStack(path: $prestamosRouter.navPath) {
                 ZStack {
                     PrestamosView()
@@ -102,12 +101,25 @@ struct PrincipalView: View {
                 Label("Prestamos", systemImage: "dollarsign.circle")
             }
             
-            //5
-            ParaTiView()
-                .tabItem {
-                    Label("Para Ti", systemImage: "heart")
+            // 5
+            NavigationStack(path: $paraTiRouter.navPath) {
+                ZStack {
+                    ParaTiView()
+                        .navigationDestination(for: ParaTiRouter.Destination.self, destination: { destination in
+                            switch(destination) {
+                            case .ahorrar:
+                                AgenciaSercanaView()
+                            case .seguros:
+                                AgenciaSercanaView()
+                            case .venderMas:
+                                AgenciaSercanaView()
+                            }
+                        })
                 }
-            
+            }
+            .tabItem {
+                Label("Para Ti", systemImage: "heart")
+            }
         }
     }
 }
