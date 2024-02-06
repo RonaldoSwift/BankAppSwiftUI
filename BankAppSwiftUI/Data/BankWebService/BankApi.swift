@@ -124,7 +124,6 @@ class BankApi {
             .eraseToAnyPublisher()
     }
     
-    
     func fetchSuppliers(apiKey: String) -> AnyPublisher<[SuppliersResponse], Error> {
         guard var urlComponents = URLComponents(string: "http://localhost:8000/suppliers") else {
             return Fail(error: RonaldoError.errorURL)

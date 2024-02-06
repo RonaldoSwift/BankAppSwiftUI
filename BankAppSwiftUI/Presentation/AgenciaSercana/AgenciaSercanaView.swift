@@ -40,6 +40,10 @@ struct AgenciaSercanaView: View {
         .onAppear {
             showLocation()
         }
+        .toolbar(content: {
+            TextToolbarContent(title: "Ubicanos")
+        })
+        .navigationBarBackButtonHidden(true)
     }
 }
 

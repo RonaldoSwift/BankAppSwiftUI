@@ -40,6 +40,10 @@ struct PrestamosView: View {
             }
         }
         .padding()
+        .toolbar(content: {
+            TextToolbarContent(title: "Prestamos")
+        })
+        .navigationBarBackButtonHidden(true)
     }
 }
 

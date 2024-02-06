@@ -131,6 +131,10 @@ struct PagarServicioView: View {
             )
             .presentationDetents([.height(500), .large])
         })
+        .toolbar(content: {
+            TextToolbarContent(title: "Pagar Servicio")
+        })
+        .navigationBarBackButtonHidden(true)
     }
 }
 

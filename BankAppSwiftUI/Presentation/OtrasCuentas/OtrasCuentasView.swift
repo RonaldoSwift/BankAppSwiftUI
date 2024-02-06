@@ -127,6 +127,10 @@ struct OtrasCuentasView: View {
             
         }
         .padding()
+        .toolbar(content: {
+            TextToolbarContent(title: "Transferencias")
+        })
+        .navigationBarBackButtonHidden(true)
         Spacer()
     }
 }
