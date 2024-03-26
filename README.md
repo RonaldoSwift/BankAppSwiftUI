@@ -69,12 +69,12 @@ brew install sourcery
 
 ## Libraries
 
-* SwiftGen
-* SwiftLint 
-* netfox
-* Sourcery
-* ShowTime
-* Factory
+* SwiftGen - We installed it by using command line tool
+* SwiftLint - We installed it by using command line tool
+* netfox (Visual Network Request) - https://github.com/kasketis/netfox
+* Sourcery (Code generator for mocks and unit tests) - https://github.com/krzysztofzablocki/Sourcery
+* ShowTime (Enable visual touches for debug) - https://github.com/KaneCheshire/ShowTime
+* Factory (Container-Based Dependency Injection) - https://github.com/hmlongco/Factory
 
 ## Especificaciones
 

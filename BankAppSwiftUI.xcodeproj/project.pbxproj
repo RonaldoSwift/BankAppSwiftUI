@@ -15,6 +15,7 @@
 		241D98442B3A05A5007BD97D /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98432B3A05A5007BD97D /* AppRootManager.swift */; };
 		241D98462B3A0BED007BD97D /* PrincipalRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98452B3A0BED007BD97D /* PrincipalRootView.swift */; };
 		241D98492B3A0C56007BD97D /* SplashRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D98482B3A0C56007BD97D /* SplashRootView.swift */; };
+		24556DCA2BAFB34A0046D20A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24556DC92BAFB34A0046D20A /* ProfileView.swift */; };
 		246313DF2B38D601004F2D28 /* RegisterSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246313DE2B38D601004F2D28 /* RegisterSheetView.swift */; };
 		246313E12B38EB19004F2D28 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246313E02B38EB19004F2D28 /* AuthenticationRootView.swift */; };
 		246313ED2B3963B7004F2D28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246313EC2B3963B7004F2D28 /* LoginView.swift */; };
@@ -145,6 +146,7 @@
 		241D98432B3A05A5007BD97D /* AppRootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootManager.swift; sourceTree = "<group>"; };
 		241D98452B3A0BED007BD97D /* PrincipalRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalRootView.swift; sourceTree = "<group>"; };
 		241D98482B3A0C56007BD97D /* SplashRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRootView.swift; sourceTree = "<group>"; };
+		24556DC92BAFB34A0046D20A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		246313DE2B38D601004F2D28 /* RegisterSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSheetView.swift; sourceTree = "<group>"; };
 		246313E02B38EB19004F2D28 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
 		246313EC2B3963B7004F2D28 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -349,6 +351,14 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		24556DCB2BAFB3510046D20A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				24556DC92BAFB34A0046D20A /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		246313E92B39639C004F2D28 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +544,7 @@
 		FA57BDDD2B2D2C960096CDAC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				24556DCB2BAFB3510046D20A /* Profile */,
 				FA587D552B62B51300601DBA /* TipoDePrestamo */,
 				FA587D522B62B4BD00601DBA /* AgenciaSercana */,
 				FA92B3D82B5ED5290062E5EF /* PagarServicioSheet */,
@@ -1275,6 +1286,7 @@
 				FA920DA92B46FFD10066FA03 /* AlertAceptView.swift in Sources */,
 				FA66A5472B32AE45000B27E6 /* PagosView.swift in Sources */,
 				FA8C294E2B5A174700E5466E /* SuppliersResponse.swift in Sources */,
+				24556DCA2BAFB34A0046D20A /* ProfileView.swift in Sources */,
 				241D98462B3A0BED007BD97D /* PrincipalRootView.swift in Sources */,
 				FA6F02C42B352F9E005CA79E /* User.swift in Sources */,
 				246313ED2B3963B7004F2D28 /* LoginView.swift in Sources */,

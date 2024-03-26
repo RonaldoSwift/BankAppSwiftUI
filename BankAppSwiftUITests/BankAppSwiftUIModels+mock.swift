@@ -26,6 +26,7 @@ extension User {
         postalCode: String = "00000-000"
     ) -> User {
         .init(
+            id: 0,
             street: street,
             city: city,
             state: state,
