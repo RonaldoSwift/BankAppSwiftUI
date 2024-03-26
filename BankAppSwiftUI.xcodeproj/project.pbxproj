@@ -139,6 +139,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		240FF9AA2BB27347007C7631 /* ConsultasViewScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConsultasViewScreenshot.png; sourceTree = "<group>"; };
+		240FF9AB2BB27347007C7631 /* LoginScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginScreenshot.png; sourceTree = "<group>"; };
+		240FF9AC2BB27347007C7631 /* WelcomeScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeScreenshot.png; sourceTree = "<group>"; };
+		240FF9AE2BB27347007C7631 /* ServerLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ServerLogo.png; sourceTree = "<group>"; };
+		240FF9AF2BB27363007C7631 /* MainLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainLogo.png; sourceTree = "<group>"; };
 		2418BC582B4B3D600004F40A /* ImageToolbarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToolbarContent.swift; sourceTree = "<group>"; };
 		2418BC5A2B4B45500004F40A /* TextToolbarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToolbarContent.swift; sourceTree = "<group>"; };
 		2418BC642B4B6E1C0004F40A /* UsuarioEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuarioEntity.swift; sourceTree = "<group>"; };
@@ -297,6 +302,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240FF9A92BB27347007C7631 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				240FF9AF2BB27363007C7631 /* MainLogo.png */,
+				240FF9AA2BB27347007C7631 /* ConsultasViewScreenshot.png */,
+				240FF9AB2BB27347007C7631 /* LoginScreenshot.png */,
+				240FF9AC2BB27347007C7631 /* WelcomeScreenshot.png */,
+				240FF9AE2BB27347007C7631 /* ServerLogo.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		2418BC572B4B3D100004F40A /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -924,6 +941,7 @@
 		FACED4802B2CB44A00B6BBC3 = {
 			isa = PBXGroup;
 			children = (
+				240FF9A92BB27347007C7631 /* Screenshots */,
 				24AA47842B426A82005852D2 /* Server */,
 				24D2A77D2B37AEFE00EDF389 /* Meta */,
 				24D2A7732B37920500EDF389 /* .swiftlint.yml */,
